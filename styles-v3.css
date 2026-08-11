@@ -97,7 +97,7 @@ a { color: inherit; }
 
 .segmentNav {
   max-width: 1180px; margin: 58px auto 0; padding: 0 30px;
-  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px;
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px;
 }
 .segmentNav a {
   min-height: 148px; padding: 24px; background: #fff; border: 1px solid var(--line);
@@ -134,6 +134,7 @@ a { color: inherit; }
 .number { font-weight: 900; font-size: 14px; color: var(--accent); }
 .tag { background: var(--soft); color: var(--ink); border-radius: 999px; padding: 8px 13px; font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: .7px; }
 .signalCard h3 { font-size: clamp(25px, 3vw, 36px); line-height: 1.12; letter-spacing: -1.4px; margin: 0 0 18px; }
+.articleDate { display: block; margin: -15px 0 14px; color: var(--muted); font-size: 11px; font-weight: 900; letter-spacing: .4px; }
 .signalCard > p { color: var(--muted); line-height: 1.65; margin: 0 0 26px; }
 .impact { background: var(--soft); padding: 20px; border-radius: 14px; margin-top: auto; }
 .impact span { color: var(--accent); text-transform: uppercase; font-size: 10px; letter-spacing: 1px; font-weight: 900; }
@@ -171,6 +172,7 @@ a { color: inherit; }
 .regionRadar strong { font-size: 20px; }
 .regionalLead { margin-top: 18px; padding: 22px; border: 1px solid #d8ece6; border-radius: 16px; background: #f7fcfa; }
 .regionalLead > span { color: var(--mint-dark); text-transform: uppercase; letter-spacing: 1px; font-size: 10px; font-weight: 900; }
+.regionalLead .articleDate { margin: 6px 0 0; }
 .regionalLead h3 { margin: 10px 0; font-size: 21px; line-height: 1.2; letter-spacing: -.5px; }
 .regionalLead p { margin: 0 0 12px; color: var(--muted); font-size: 13px; line-height: 1.55; }
 .regionalLead a { color: var(--mint-dark); font-size: 12px; font-weight: 900; text-decoration: none; }
@@ -187,6 +189,34 @@ a { color: inherit; }
 .regionList p { margin: 0 0 12px; color: var(--muted); line-height: 1.55; font-size: 14px; }
 .regionList a { color: var(--mint-dark); font-size: 12px; font-weight: 900; text-decoration: none; }
 .regionList a:hover { text-decoration: underline; }
+
+.businessWindow { max-width: 1280px; margin: 120px auto 20px; padding: 64px; background: var(--purple); color: #fff; border-radius: 28px; scroll-margin-top: 24px; }
+.businessHead { display: grid; grid-template-columns: 1.15fr .85fr; gap: 48px; align-items: end; margin-bottom: 38px; }
+.businessHead .kicker { color: #78d6bd; }
+.businessHead h2 { margin: 0; color: var(--yellow); font-size: clamp(42px, 6vw, 72px); line-height: .98; letter-spacing: -3.5px; }
+.businessHead > p { margin: 0; color: rgba(255,255,255,.72); line-height: 1.65; font-size: 14px; }
+.businessGrid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 16px; }
+.stockCard { min-height: 390px; padding: 25px; background: #fff; color: var(--ink); border-radius: 20px; display: flex; flex-direction: column; border-top: 7px solid var(--card-accent); }
+.stockCard.cour { --card-accent:#ff745f; }
+.stockCard.duol { --card-accent:#62b95a; }
+.stockCard.dtol { --card-accent:#3fb193; }
+.stockTop { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+.stockTop > div { display: flex; align-items: center; gap: 8px; }
+.stockTop span { color: var(--muted); font-size: 9px; font-weight: 900; letter-spacing: 1px; }
+.stockTop strong { color: var(--purple); font-size: 15px; }
+.stockTop time { color: var(--muted); font-size: 10px; font-weight: 800; }
+.stockPrice { margin: 28px 0 22px; display: flex; align-items: baseline; gap: 8px; }
+.stockPrice strong { color: var(--purple); font-size: 44px; line-height: 1; letter-spacing: -2px; }
+.stockPrice span { color: var(--muted); font-size: 11px; font-weight: 900; }
+.stockCard h3 { margin: 0 0 12px; font-size: 22px; letter-spacing: -.7px; }
+.stockCard > p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.55; }
+.stockCard > p b { color: var(--ink); }
+.businessComment { margin-top: auto; padding-top: 18px; color: var(--ink); font-size: 12px; line-height: 1.55; font-weight: 700; }
+.sourceRow { display: flex; gap: 14px; margin-top: 16px; }
+.sourceRow a { color: var(--mint-dark); font-size: 11px; font-weight: 900; text-decoration: none; }
+.privateCard { --card-accent:var(--yellow); background: #fff7e4; }
+.privateIcon { width: 48px; height: 48px; margin-bottom: 34px; display: grid; place-items: center; border-radius: 50%; background: var(--yellow); color: var(--purple); font-size: 20px; font-weight: 900; }
+.businessDisclaimer { margin: 22px 0 0; color: rgba(255,255,255,.55); font-size: 10px; line-height: 1.5; }
 
 .watchlist { padding-bottom: 110px; }
 .splitWatchlists { display: grid; gap: 22px; }
@@ -231,6 +261,9 @@ footer > a { color: var(--yellow); font-weight: 900; text-decoration: none; }
   .sectionHead { grid-template-columns: 1fr; gap: 20px; }
   .segmentNav { grid-template-columns: 1fr; }
   .globalSection .signalGrid { grid-template-columns: 1fr 1fr; }
+  .businessWindow { margin-left: 30px; margin-right: 30px; }
+  .businessHead { grid-template-columns: 1fr; gap: 20px; }
+  .businessGrid { grid-template-columns: 1fr 1fr; }
   .brandCloud { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .watchGroup .brandCloud, .detailedCloud { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
   .takeaway { margin-left: 30px; margin-right: 30px; grid-template-columns: 1fr; gap: 20px; }
@@ -255,6 +288,9 @@ footer > a { color: var(--yellow); font-weight: 900; text-decoration: none; }
   .mediaMentions { margin: 80px 20px 0; padding: 30px 24px; }
   .emptyMedia { flex-direction: column; }
   .region { margin: 90px 20px 0; padding: 34px 26px; }
+  .businessWindow { margin: 90px 20px 0; padding: 34px 24px; }
+  .businessGrid { grid-template-columns: 1fr; }
+  .stockCard { min-height: 340px; }
   .regionIntro h2 { letter-spacing: -2.5px; }
   .brandCloud { grid-template-columns: 1fr; }
   .watchGroup { padding: 20px; }

@@ -45,7 +45,7 @@ const $=selector=>document.querySelector(selector),grid=$("#courseGrid"),input=$
 function buildIndex(courses){
   const df=new Map();
   courses.forEach((course,index)=>{
-    course._index=index;course._type=courseType(course);course._title=normalize(course.name);course._words=tokenize(course.name);course._stems=course._words.map(stem);
+    course._index=index;course._type=courseType(course);course._title=normalize(course.name);course._lecturers=normalize(course.lecturers||"");course._words=tokenize(`${course.name} ${course.lecturers||""}`);course._titleWords=tokenize(course.name);course._lecturerWords=tokenize(course.lecturers||"");course._stems=course._words.map(stem);
     new Set(course._words).forEach(word=>df.set(word,(df.get(word)||0)+1));
   });
   state.df=df;
@@ -62,18 +62,21 @@ function relatedTerms(query){
 
 function evaluate(course,rawQuery){
   const query=normalize(rawQuery);
-  if(!query)return {score:1,reason:"",matched:[]};
+  if(!query)return {score:1,reason:"",matched:[],eligible:true};
   const tokens=tokenize(query),related=relatedTerms(query),matched=[],fuzzy=[];
   let score=0;
   if(course._title===query){score+=1400;matched.push("přesný název");}
   else if(course._title.startsWith(query)){score+=900;matched.push("začátek názvu");}
   else if(course._title.includes(query)){score+=650;matched.push("celá fráze v názvu");}
+  if(course._lecturers===query){score+=1350;matched.push("přesný lektor");}
+  else if(course._lecturers.includes(query)){score+=850;matched.push("lektor");}
 
   let covered=0;
   tokens.forEach(token=>{
     const idf=Math.log((state.catalog.courses.length+1)/((state.df.get(token)||0)+1))+1;
     const tokenStem=stem(token);
-    if(course._words.includes(token)){score+=150*idf;covered++;matched.push(token);return;}
+    if(course._titleWords.includes(token)){score+=150*idf;covered++;matched.push(token);return;}
+    if(course._lecturerWords.includes(token)){score+=135*idf;covered++;matched.push(token);return;}
     if(course._stems.includes(tokenStem)){score+=115*idf;covered++;matched.push(token);return;}
     if(course._words.some(word=>word.startsWith(token)||token.startsWith(word))){score+=85*idf;covered++;matched.push(token);return;}
     const similar=course._words.find(word=>token.length>=4&&distance(word,token)<=1);
@@ -92,18 +95,24 @@ function evaluate(course,rawQuery){
   if(asksLive&&course._type==="Seduo naživo")score+=420;
   if(asksCourse&&course._type==="Videokurz")score+=180;
 
+  const exactPhrase=course._title.includes(query)||course._lecturers.includes(query);
+  const eligible=tokens.length<=1
+    ? covered===1||synonymHits>0||exactPhrase
+    : covered===tokens.length||exactPhrase;
+
   let reason="Příbuzné téma";
-  if(matched.includes("přesný název"))reason="Přesná shoda názvu";
+  if(matched.includes("přesný lektor")||matched.includes("lektor"))reason=`Lektor: ${course.lecturers}`;
+  else if(matched.includes("přesný název"))reason="Přesná shoda názvu";
   else if(matched.includes("celá fráze v názvu")||matched.includes("začátek názvu"))reason="Silná shoda v názvu";
   else if(covered===tokens.length&&tokens.length)reason=`Odpovídá ${tokens.length===1?"hledanému výrazu":"všem slovům dotazu"}`;
   else if(fuzzy.length)reason=`Podobný výraz: ${fuzzy[0]}`;
   else if(synonymHit)reason=`Příbuzné téma: ${synonymHit}`;
-  return {score,reason,matched:[...new Set(matched.filter(item=>!item.includes("název")))]};
+  return {score,reason,matched:[...new Set(matched.filter(item=>!item.includes("název")&&!item.includes("lektor")))],eligible};
 }
 
 function baseResults(){
   if(!state.catalog)return [];
-  return state.catalog.courses.map(course=>({course,...evaluate(course,state.query)})).filter(item=>!state.query||item.score>0);
+  return state.catalog.courses.map(course=>({course,...evaluate(course,state.query)})).filter(item=>!state.query||item.eligible);
 }
 
 function filterCounts(items){
@@ -148,9 +157,10 @@ function card(item,index){
   if(state.query){const relevance=document.createElement("span");relevance.className="relevancePill";relevance.textContent=resultLabel(index,item);meta.append(relevance);}
   if(course.flag&&course.flag!==course._type){const flag=document.createElement("span");flag.className="flagPill";flag.textContent=course.flag;meta.append(flag);}
   const name=document.createElement("p");name.className="courseName";name.textContent=course.name;
+  const facts=document.createElement("p");facts.className="courseFacts";facts.textContent=[course._type,course.duration,course.lecturers].filter(Boolean).join(" · ");
   const why=document.createElement("p");why.className="matchReason";why.textContent=state.query?`${reason}${matched.length?` · ${matched.slice(0,3).join(", ")}`:""}`:`Typ obsahu: ${course._type}`;
   const link=document.createElement("span");link.className="courseLink";link.textContent="Otevřít na Seduo.cz ↗";
-  body.append(meta,name,why,link);a.append(visual,body);return a;
+  body.append(meta,name,facts,why,link);a.append(visual,body);return a;
 }
 
 function syncUrl(){

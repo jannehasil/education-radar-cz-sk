@@ -91,14 +91,16 @@ kbd, .clear { min-width: 30px; height: 30px; border: 1px solid #dce0dd; border-r
 .courseBody .relevancePill { color: #2b187f; background: #e8e2ff; }
 .courseBody .flagPill { color: #26533b; background: var(--mint); }
 .courseBody .courseName { margin: 0; font: 700 19px/1.34 "Manrope", sans-serif; letter-spacing: -.02em; }
+.courseBody .courseFacts { margin: -12px 0 0; color: #38433d; font-size: 13px; font-weight: 700; }
 .courseBody .matchReason { margin: -10px 0 0; color: var(--muted); font-size: 13px; line-height: 1.45; }
 .courseBody .courseLink { margin-top: auto; }
 .courseGrid.isSearch { grid-template-columns: 1fr; gap: 12px; }
 .courseGrid.isSearch .resultCard { min-height: 0; display: grid; grid-template-columns: 180px 1fr; }
 .courseGrid.isSearch .courseVisual { height: 100%; min-height: 168px; }
-.courseGrid.isSearch .courseBody { min-height: 168px; padding: 22px 25px; display: grid; grid-template-columns: 1fr auto; grid-template-areas: "meta link" "name link" "reason link"; align-content: center; column-gap: 28px; row-gap: 7px; }
+.courseGrid.isSearch .courseBody { min-height: 168px; padding: 22px 25px; display: grid; grid-template-columns: 1fr auto; grid-template-areas: "meta link" "name link" "facts link" "reason link"; align-content: center; column-gap: 28px; row-gap: 7px; }
 .courseGrid.isSearch .cardMeta { grid-area: meta; }
 .courseGrid.isSearch .courseName { grid-area: name; font-size: 21px; }
+.courseGrid.isSearch .courseFacts { grid-area: facts; margin: 0; }
 .courseGrid.isSearch .matchReason { grid-area: reason; margin: 0; }
 .courseGrid.isSearch .courseLink { grid-area: link; align-self: center; white-space: nowrap; }
 .loadMore, .empty button { display: block; margin: 40px auto 0; padding: 14px 22px; border: 0; border-radius: 12px; background: var(--purple); color: white; font-weight: 800; cursor: pointer; }

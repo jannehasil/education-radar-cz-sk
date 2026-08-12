@@ -1,2702 +1,3598 @@
 {
-  "observed_at": "2026-08-12T08:39:15.388Z",
+  "observed_at": "2026-08-12T09:17:30.281Z",
   "timezone": "Europe/Prague",
   "source_url": "https://www.seduo.cz/kategorie/vsechny-kurzy/videokurzy?sort=newest",
   "total_count": 449,
   "marketing_new_count": 6,
-  "new_since_previous": null,
-  "removed_since_previous": null,
   "courses": [
     {
+      "duration": "53m",
       "flag": "Novinka",
+      "lecturers": "Seduo.cz",
       "name": "Seduo podcast: Umění diplomacie každodenního života",
       "slug": "seduo-podcast-umeni-diplomacie-v-kazdodennim-zivote",
       "url": "https://www.seduo.cz/seduo-podcast-umeni-diplomacie-v-kazdodennim-zivote"
     },
     {
+      "duration": "46m",
       "flag": "Novinka",
+      "lecturers": "Karel Pošíval",
       "name": "Vyjednávej jako vyjednavač: systém úspěšného vyjednávání",
       "slug": "vyjednavej-jako-vyjednavac-system-uspesneho-vyjednavani",
       "url": "https://www.seduo.cz/vyjednavej-jako-vyjednavac-system-uspesneho-vyjednavani"
     },
     {
+      "duration": "33m",
       "flag": "Novinka",
+      "lecturers": "Lukáš Barda",
       "name": "Digitální rovnováha: jak dostat technologie pod kontrolu",
       "slug": "digitalni-rovnovaha-jak-dostat-technologie-pod-kontrolu",
       "url": "https://www.seduo.cz/digitalni-rovnovaha-jak-dostat-technologie-pod-kontrolu"
     },
     {
+      "duration": "52m",
       "flag": "Novinka",
+      "lecturers": "Seduo.cz a Daniel Gamrot",
       "name": "Seduo podcast: Základy vibecodingu (fakt úplně pro každýho)",
       "slug": "seduo-podcast-zaklady-vibecodingu-fakt-uplne-pro-kazdyho",
       "url": "https://www.seduo.cz/seduo-podcast-zaklady-vibecodingu-fakt-uplne-pro-kazdyho"
     },
     {
+      "duration": "44m",
       "flag": "Novinka",
+      "lecturers": "David Kálmán",
       "name": "Strategické rozhodování: Nenechte se nachytat vlastní hlavou",
       "slug": "strategicke-rozhodovani-nenechte-se-nachytat-vlastni-hlavou",
       "url": "https://www.seduo.cz/strategicke-rozhodovani-nenechte-se-nachytat-vlastni-hlavou"
     },
     {
+      "duration": "41m",
       "flag": "Novinka",
+      "lecturers": "Martina Georgievová",
       "name": "Seduo naživo: Nastavte si hranice bez zbytečných konfliktů",
       "slug": "seduo-nazivo-nastavte-si-hranice-bez-zbytecnych-konfliktu",
       "url": "https://www.seduo.cz/seduo-nazivo-nastavte-si-hranice-bez-zbytecnych-konfliktu"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Neztraťte klid, empatii a kontakt sami se sebou",
       "slug": "seduo-podcast-neztratte-klid-empatii-a-kontakt-sami-se-sebou",
       "url": "https://www.seduo.cz/seduo-podcast-neztratte-klid-empatii-a-kontakt-sami-se-sebou"
     },
     {
+      "duration": "48m",
       "flag": "Nejprodávanější",
+      "lecturers": "Daniel Gamrot",
       "name": "Seduo naživo: Tipy pro digitální produktivitu",
       "slug": "tipy-digitalni-produktivita",
       "url": "https://www.seduo.cz/tipy-digitalni-produktivita"
     },
     {
+      "duration": "47m",
       "flag": "Nejprodávanější",
+      "lecturers": "Mike & Lucie",
       "name": "Angličtina bez stresu: Poslouchejte, mluvte a učte se",
       "slug": "anglictina-bez-stresu-poslouchejte-mluvte-a-ucte-se",
       "url": "https://www.seduo.cz/anglictina-bez-stresu-poslouchejte-mluvte-a-ucte-se"
     },
     {
+      "duration": "39m",
       "flag": "Nejprodávanější",
+      "lecturers": "Barbora Brabcová",
       "name": "Job Crafting prakticky: přetvořte si práci podle sebe",
       "slug": "job-crafting-prakticky-pretvorte-si-praci-podle-sebe",
       "url": "https://www.seduo.cz/job-crafting-prakticky-pretvorte-si-praci-podle-sebe"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Dejte vašemu tělu aspoň 11 minut denně",
       "slug": "seduo-podcast-dejte-vasemu-telu-aspon-11-minut-denne",
       "url": "https://www.seduo.cz/seduo-podcast-dejte-vasemu-telu-aspon-11-minut-denne"
     },
     {
-      "flag": null,
+      "duration": "6h 56m",
+      "flag": "",
+      "lecturers": "Petr Kohoutek",
       "name": "Microsoft Access: spravujte data jako profík",
       "slug": "microsoft-access-spravujte-data-jako-profik",
       "url": "https://www.seduo.cz/microsoft-access-spravujte-data-jako-profik"
     },
     {
+      "duration": "1h 5m",
       "flag": "Nejprodávanější",
+      "lecturers": "Karel Pošíval",
       "name": "Vyjednávej jako vyjednavač: nejčastější chyby v komunikaci",
       "slug": "vyjednavej-jako-vyjednavaci-nejcastejsi-chyby-v-komunikaci",
       "url": "https://www.seduo.cz/vyjednavej-jako-vyjednavaci-nejcastejsi-chyby-v-komunikaci"
     },
     {
+      "duration": "50m",
       "flag": "Zaváděcí sleva",
+      "lecturers": "Martina Čápová",
       "name": "Zaměstnávání lidí se zdravotním znevýhodněním: bez obav a mýtů",
       "slug": "zamestnavani-lidi-se-zdravotnim-znevyhodnenim-bez-obav-a-mytu",
       "url": "https://www.seduo.cz/zamestnavani-lidi-se-zdravotnim-znevyhodnenim-bez-obav-a-mytu"
     },
     {
+      "duration": "43m",
       "flag": "Nejprodávanější",
+      "lecturers": "Tomáš Doležal",
       "name": "Konec zbytečné práce: praktická automatizace pro každého",
       "slug": "konec-zbytecne-prace-prakticka-automatizace-pro-kazdeho",
       "url": "https://www.seduo.cz/konec-zbytecne-prace-prakticka-automatizace-pro-kazdeho"
     },
     {
+      "duration": "45m",
       "flag": "Nejprodávanější",
+      "lecturers": "Martin Vasquez",
       "name": "Komunikační sebeobrana: reagujte pohotově v každé situaci",
       "slug": "komunikacni-sebeobrana",
       "url": "https://www.seduo.cz/komunikacni-sebeobrana"
     },
     {
+      "duration": "3h 18m",
       "flag": "Nejprodávanější",
+      "lecturers": "Martin Světlík",
       "name": "Maxikurz práce s Macem",
       "slug": "maxikurz-prace-s-macem",
       "url": "https://www.seduo.cz/maxikurz-prace-s-macem"
     },
     {
-      "flag": null,
+      "duration": "56m",
+      "flag": "",
+      "lecturers": "Ján Jaroš",
       "name": "GDPR pro firmy: prakticky, srozumitelně a bez strašení",
       "slug": "gdpr-pro-firmy-prakticky-srozumitelne-a-bez-straseni",
       "url": "https://www.seduo.cz/gdpr-pro-firmy-prakticky-srozumitelne-a-bez-straseni"
     },
     {
-      "flag": null,
+      "duration": "",
+      "flag": "",
+      "lecturers": "",
       "name": "Seduo podcast: Najít smysluplnou práci je bingo",
       "slug": "seduo-podcast-delat-smysluplnou-praci-je-bingo",
       "url": "https://www.seduo.cz/seduo-podcast-delat-smysluplnou-praci-je-bingo"
     },
     {
+      "duration": "1h 0m",
       "flag": "Nejprodávanější",
+      "lecturers": "Janka Chudlíková",
       "name": "Umění zpětné vazby: jak efektivně chválit i kritizovat",
       "slug": "umeni-zpetne-vazby-jak-efektivne-chvalit-i-kritizovat",
       "url": "https://www.seduo.cz/umeni-zpetne-vazby-jak-efektivne-chvalit-i-kritizovat"
     },
     {
+      "duration": "47m",
       "flag": "Nejprodávanější",
+      "lecturers": "Peter Strcula",
       "name": "Moderní prodej II: praktický průvodce prodejním rozhovorem",
       "slug": "moderni-prodej-ii",
       "url": "https://www.seduo.cz/moderni-prodej-ii"
     },
     {
+      "duration": "1h 4m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jakub Oliva",
       "name": "Pracovní právo 2026: novinky a chystané změny",
       "slug": "pracovni-pravo-2026",
       "url": "https://www.seduo.cz/pracovni-pravo-2026"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Toxické vztahy, jak je poznat a řešit",
       "slug": "seduo-podcast-toxicke-vztahy",
       "url": "https://www.seduo.cz/seduo-podcast-toxicke-vztahy"
     },
     {
+      "duration": "1h 7m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jiří Krátký",
       "name": "Vodopád, agile, hybrid: zvolte správný přístup pro váš projekt",
       "slug": "vodopad-agile-hybrid-zvolte-spravny-pristup-pro-vas-projekt",
       "url": "https://www.seduo.cz/vodopad-agile-hybrid-zvolte-spravny-pristup-pro-vas-projekt"
     },
     {
-      "flag": null,
+      "duration": "25m",
+      "flag": "",
+      "lecturers": "Ján Jaroš",
       "name": "GDPR pro každého: mějte své osobní údaje pod kontrolou",
       "slug": "gdpr-pro-kazdeho",
       "url": "https://www.seduo.cz/gdpr-pro-kazdeho"
     },
     {
+      "duration": "1h 49m",
       "flag": "Nejprodávanější",
+      "lecturers": "Petr Kohoutek",
       "name": "Microsoft Sharepoint: uspořádejte si dokumenty a týmovou spolupráci",
       "slug": "microsoft-sharepoint-usporadejte-si-dokumenty-a-tymovou-spolupraci",
       "url": "https://www.seduo.cz/microsoft-sharepoint-usporadejte-si-dokumenty-a-tymovou-spolupraci"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Průvodce spokojeným dnem od budíku až po usnutí",
       "slug": "seduo-podcast-pruvodce-spokojenym-dnem-od-budiku-az-po-usnuti",
       "url": "https://www.seduo.cz/seduo-podcast-pruvodce-spokojenym-dnem-od-budiku-az-po-usnuti"
     },
     {
+      "duration": "50m",
       "flag": "Nejprodávanější",
+      "lecturers": "Lukáš Bakoš",
       "name": "Naučte se učit: jak na chytřejší růst bez zahlcení",
       "slug": "naucte-se-ucit",
       "url": "https://www.seduo.cz/naucte-se-ucit"
     },
     {
-      "flag": null,
+      "duration": "",
+      "flag": "",
+      "lecturers": "",
       "name": "Prezentační minimum: rychlá nalejvárna pro každého",
       "slug": "prezentacni-minimum-rychla-nalejvarna-pro-kazdeho",
       "url": "https://www.seduo.cz/prezentacni-minimum-rychla-nalejvarna-pro-kazdeho"
     },
     {
-      "flag": null,
+      "duration": "42m",
+      "flag": "",
+      "lecturers": "Jana Jáčová",
       "name": "Finance 2026: přehled aktuálních změn v kostce",
       "slug": "finance-2026-prehled-aktualnich-zmen-v-kostce",
       "url": "https://www.seduo.cz/finance-2026-prehled-aktualnich-zmen-v-kostce"
     },
     {
+      "duration": "55m",
       "flag": "Zaváděcí sleva",
+      "lecturers": "Bohunka Hihlánová",
       "name": "Vzdělávání chytře: rozvíjejte lidi s malým týmem i rozpočtem",
       "slug": "vzdelavani-chytre-rozvijejte-lidi-s-malym-tymem-i-rozpoctem",
       "url": "https://www.seduo.cz/vzdelavani-chytre-rozvijejte-lidi-s-malym-tymem-i-rozpoctem"
     },
     {
+      "duration": "1h 0m",
       "flag": "Nejprodávanější",
+      "lecturers": "Honza Vojtko",
       "name": "Rozumět vztahům: jak se lépe vyznat v sobě i v druhých",
       "slug": "rozumet-vztahum-jak-se-lepe-vyznat-v-sobe-i-v-druhych",
       "url": "https://www.seduo.cz/rozumet-vztahum-jak-se-lepe-vyznat-v-sobe-i-v-druhych"
     },
     {
+      "duration": "56m",
       "flag": "Podcast",
+      "lecturers": "Seduo.cz",
       "name": "Seduo podcast: Nežijte podle druhých",
       "slug": "seduo-podcast-nezijte-podle-druhych",
       "url": "https://www.seduo.cz/seduo-podcast-nezijte-podle-druhych"
     },
     {
-      "flag": null,
+      "duration": "",
+      "flag": "",
+      "lecturers": "",
       "name": "ESG: praktický checklist pro HR",
       "slug": "esg-prakticky-checklist-pro-hr",
       "url": "https://www.seduo.cz/esg-prakticky-checklist-pro-hr"
     },
     {
+      "duration": "1h 4m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jiří Krátký",
       "name": "Projektové řízení od A do Z: od prvního nápadu až po hladké spuštění",
       "slug": "projektove-rizeni-od-a-do-z-od-prvniho-napadu-az-po-hladke-spusteni",
       "url": "https://www.seduo.cz/projektove-rizeni-od-a-do-z-od-prvniho-napadu-az-po-hladke-spusteni"
     },
     {
+      "duration": "2h 3m",
       "flag": "Nejprodávanější",
+      "lecturers": "Alma Career a Tomáš Ervín Dombrovský",
       "name": "Moderní trendy v HR",
       "slug": "moderni-trendy-v-hr",
       "url": "https://www.seduo.cz/moderni-trendy-v-hr"
     },
     {
+      "duration": "33m",
       "flag": "Nejprodávanější",
+      "lecturers": "Petr Kohoutek",
       "name": "Microsoft Planner: plánujte přehledně a efektivně",
       "slug": "microsoft-planner-planujte-prehledne-a-efektivne",
       "url": "https://www.seduo.cz/microsoft-planner-planujte-prehledne-a-efektivne"
     },
     {
+      "duration": "49m",
       "flag": "Nejprodávanější",
+      "lecturers": "Peter Strcula",
       "name": "Moderní prodej I: deset nejčastějších chyb obchodníků",
       "slug": "moderni-prodej-i-deset-nejcastejsich-chyb-obchodniku",
       "url": "https://www.seduo.cz/moderni-prodej-i-deset-nejcastejsich-chyb-obchodniku"
     },
     {
+      "duration": "11h 22m",
       "flag": "Nejprodávanější",
+      "lecturers": "Petr Kohoutek",
       "name": "Maxikurz MS Office: Word, Outlook, OneDrive, Teams a Copilot",
       "slug": "maxikurz-ms-office",
       "url": "https://www.seduo.cz/maxikurz-ms-office"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Dělejte s AI to, co vás tolik nebaví",
       "slug": "seduo-podcast-delejte-s-ai-to-co-vas-tolik-nebavi",
       "url": "https://www.seduo.cz/seduo-podcast-delejte-s-ai-to-co-vas-tolik-nebavi"
     },
     {
+      "duration": "48m",
       "flag": "Zaváděcí sleva",
+      "lecturers": "Marek Velas",
       "name": "Talent management: jak si udržet ty nejlepší",
       "slug": "talent-management-jak-si-udrzet-ty-nejlepsi",
       "url": "https://www.seduo.cz/talent-management-jak-si-udrzet-ty-nejlepsi"
     },
     {
-      "flag": null,
+      "duration": "45m",
+      "flag": "",
+      "lecturers": "Jakub-Marek Štěpán",
       "name": "Diverzita prakticky: jak zvládat odlišnosti a líp si rozumět",
       "slug": "diverzita-prakticky-jak-zvladat-odlisnosti-a-lip-si-rozumet",
       "url": "https://www.seduo.cz/diverzita-prakticky-jak-zvladat-odlisnosti-a-lip-si-rozumet"
     },
     {
+      "duration": "44m",
       "flag": "Nejprodávanější",
+      "lecturers": "Martin Světlík",
       "name": "Seduo naživo: Tipy a triky pro MacBook",
       "slug": "tipy-a-triky-pro-macbook",
       "url": "https://www.seduo.cz/tipy-a-triky-pro-macbook"
     },
     {
+      "duration": "45m",
       "flag": "Nejprodávanější",
+      "lecturers": "Lucia Mešková",
       "name": "Zákaznický servis: poskytování výjimečné zákaznické zkušenosti",
       "slug": "zakaznicky-servis-poskytovani-vyjimecne-zakaznicke-zkusenosti",
       "url": "https://www.seduo.cz/zakaznicky-servis-poskytovani-vyjimecne-zakaznicke-zkusenosti"
     },
     {
+      "duration": "1h 27m",
       "flag": "Nejprodávanější",
+      "lecturers": "Petr Kohoutek",
       "name": "Novinky v Excelu 2025",
       "slug": "novinky-v-excelu-2025",
       "url": "https://www.seduo.cz/novinky-v-excelu-2025"
     },
     {
+      "duration": "1h 23m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Lasák",
       "name": "Microsoft Power Automate: krok za krokem k automatizaci vaší práce",
       "slug": "microsoft-power-automate-krok-za-krokem-k-automatizaci-vasi-prace",
       "url": "https://www.seduo.cz/microsoft-power-automate-krok-za-krokem-k-automatizaci-vasi-prace"
     },
     {
+      "duration": "2h 35m",
       "flag": "Nejprodávanější",
+      "lecturers": "Daniel Gamrot",
       "name": "Maxikurz umělé inteligence: kompletní průvodce AI světem",
       "slug": "maxikurz-umele-inteligence",
       "url": "https://www.seduo.cz/maxikurz-umele-inteligence"
     },
     {
+      "duration": "50m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jiří Krátký",
       "name": "AI pro projekťáky: váš parťák pro plánování, realizaci i reporting",
       "slug": "ai-pro-projektaky-vas-partak-pro-planovani-realizaci-i-reporting",
       "url": "https://www.seduo.cz/ai-pro-projektaky-vas-partak-pro-planovani-realizaci-i-reporting"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Přestaňte se biflovat, začněte si představovat",
       "slug": "seduo-podcast-prestante-se-biflovat-zacnete-si-predstavovat",
       "url": "https://www.seduo.cz/seduo-podcast-prestante-se-biflovat-zacnete-si-predstavovat"
     },
     {
+      "duration": "53m",
       "flag": "Nejprodávanější",
+      "lecturers": "Martina Georgievová",
       "name": "Zvládání konfliktů v práci: jak udržet klid a najít řešení",
       "slug": "zvladani-konfliktu-v-praci",
       "url": "https://www.seduo.cz/zvladani-konfliktu-v-praci"
     },
     {
+      "duration": "1h 38m",
       "flag": "Nejprodávanější",
+      "lecturers": "Petr Kohoutek",
       "name": "Microsoft Copilot 2025: váš osobní AI asistent",
       "slug": "microsoft-copilot-2025-vas-osobni-ai-asistent",
       "url": "https://www.seduo.cz/microsoft-copilot-2025-vas-osobni-ai-asistent"
     },
     {
+      "duration": "58m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jan Ženatý",
       "name": "Umět vypnout: jak zklidnit hlavu a tělo během pár minut",
       "slug": "umet-vypnout-jak-zklidnit-hlavu-a-telo-behem-par-minut",
       "url": "https://www.seduo.cz/umet-vypnout-jak-zklidnit-hlavu-a-telo-behem-par-minut"
     },
     {
+      "duration": "1h 47m",
       "flag": "Nejprodávanější",
+      "lecturers": "Linda Martišková (Nezhybová)",
       "name": "Canva pro každého: tvořte grafiku jako od profíka",
       "slug": "canva-pro-kazdeho-tvorte-grafiku-jako-od-profika",
       "url": "https://www.seduo.cz/canva-pro-kazdeho-tvorte-grafiku-jako-od-profika"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Nehledejte zkratky a jezte s rozumem",
       "slug": "seduo-podcast-nehledejte-zkratky-a-jezte-s-rozumem",
       "url": "https://www.seduo.cz/seduo-podcast-nehledejte-zkratky-a-jezte-s-rozumem"
     },
     {
+      "duration": "1h 3m",
       "flag": "Nejprodávanější",
+      "lecturers": "Petr Kohoutek",
       "name": "Microsoft OneDrive: kompletní průvodce organizací a sdílení souborů",
       "slug": "microsoft-onedrive-kompletni-pruvodce-organizaci-a-sdileni-souboru",
       "url": "https://www.seduo.cz/microsoft-onedrive-kompletni-pruvodce-organizaci-a-sdileni-souboru"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Zvládejte náročné situace jako kapitán letadla",
       "slug": "seduo-podcast-zvladejte-narocne-situace-jako-kapitan-letadla",
       "url": "https://www.seduo.cz/seduo-podcast-zvladejte-narocne-situace-jako-kapitan-letadla"
     },
     {
+      "duration": "33m",
       "flag": "Nejprodávanější",
+      "lecturers": "Vladislav Sochanič",
       "name": "HR jako partner pro lídry a byznys",
       "slug": "hr-jako-partner-pro-lidry-a-byznys",
       "url": "https://www.seduo.cz/hr-jako-partner-pro-lidry-a-byznys"
     },
     {
+      "duration": "52m",
       "flag": "Nejprodávanější",
+      "lecturers": "Barbora Brabcová",
       "name": "AI pro obchodníky: praktické nástroje pro reálné situace",
       "slug": "ai-pro-obchodniky-prakticke-nastroje-pro-realne-situace",
       "url": "https://www.seduo.cz/ai-pro-obchodniky-prakticke-nastroje-pro-realne-situace"
     },
     {
+      "duration": "46m",
       "flag": "Nejprodávanější",
+      "lecturers": "Tatiana Ondrejková",
       "name": "Síla neúspěchu: přestaňte se bát chyb",
       "slug": "sila-neuspechu-prestante-se-bat-chyb",
       "url": "https://www.seduo.cz/sila-neuspechu-prestante-se-bat-chyb"
     },
     {
+      "duration": "2h 42m",
       "flag": "Nejprodávanější",
+      "lecturers": "Filip Kahoun",
       "name": "Maxikurz leadershipu s Filipem Kahounem",
       "slug": "maxikurz-leadershipu",
       "url": "https://www.seduo.cz/maxikurz-leadershipu"
     },
     {
+      "duration": "56m",
       "flag": "Nejprodávanější",
+      "lecturers": "Lenka Čápová",
       "name": "Projektové minimum: základy projektového řízení pro každého",
       "slug": "projektove-mininum",
       "url": "https://www.seduo.cz/projektove-mininum"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Přemýšlejte jako šachový velmistr",
       "slug": "seduo-podcast-kriticke-mysleni",
       "url": "https://www.seduo.cz/seduo-podcast-kriticke-mysleni"
     },
     {
+      "duration": "45m",
       "flag": "Nejprodávanější",
+      "lecturers": "Karol Suchánek",
       "name": "10 hacků pro digitální bezpečnost",
       "slug": "10-hacku-pro-digitalni-bezpecnost",
       "url": "https://www.seduo.cz/10-hacku-pro-digitalni-bezpecnost"
     },
     {
+      "duration": "49m",
       "flag": "Nejprodávanější",
+      "lecturers": "Petr Kohoutek",
       "name": "E-maily efektivně: tipy a triky do Outlooku",
       "slug": "tipy-triky-outlook",
       "url": "https://www.seduo.cz/tipy-triky-outlook"
     },
     {
+      "duration": "2h 55m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Minář",
       "name": "Maxikurz Google: Gmail, Disk, Kalendář, Dokumenty, Tabulky",
       "slug": "maxikurz-google-gmail-disk-kalendar-dokumenty-tabulky",
       "url": "https://www.seduo.cz/maxikurz-google-gmail-disk-kalendar-dokumenty-tabulky"
     },
     {
+      "duration": "3h 23m",
       "flag": "Nejprodávanější",
+      "lecturers": "Honza Vojtko",
       "name": "Maxikurz vztahů s Honzou Vojtkem",
       "slug": "maxikurz-vztahu",
       "url": "https://www.seduo.cz/maxikurz-vztahu"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Přestaňte řešit druhý",
       "slug": "seduo-podcast-prestante-resit-druhy",
       "url": "https://www.seduo.cz/seduo-podcast-prestante-resit-druhy"
     },
     {
+      "duration": "41m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jakub Oliva",
       "name": "Novela zákoníku práce je tady!",
       "slug": "zakonik-prace-2025",
       "url": "https://www.seduo.cz/zakonik-prace-2025"
     },
     {
+      "duration": "47m",
       "flag": "Nejprodávanější",
+      "lecturers": "Filip Kahoun",
       "name": "Psychologie dlouhověkosti: jak žít déle díky vnitřní pohodě",
       "slug": "psychologie-dlouhovekosti",
       "url": "https://www.seduo.cz/psychologie-dlouhovekosti"
     },
     {
+      "duration": "39m",
       "flag": "Zaváděcí sleva",
+      "lecturers": "Denis Bulejka",
       "name": "Vlivná komunikace. Umění zapojit ke spolupráci",
       "slug": "vlivna-komunikace-umeni-zapojit-ke-spolupraci",
       "url": "https://www.seduo.cz/vlivna-komunikace-umeni-zapojit-ke-spolupraci"
     },
     {
+      "duration": "53m",
       "flag": "Nejprodávanější",
+      "lecturers": "Petra Hučíková",
       "name": "AI pro HR prakticky: ulehčete si inzeráty, pohovory, směrnice",
       "slug": "ai-pro-hr-prakticky-ulehcete-si-inzeraty-pohovory-smernice",
       "url": "https://www.seduo.cz/ai-pro-hr-prakticky-ulehcete-si-inzeraty-pohovory-smernice"
     },
     {
+      "duration": "33m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Minář",
       "name": "Google Dokumenty, Tabulky a Prezentace",
       "slug": "google-dokumenty-tabulky-a-prezentace",
       "url": "https://www.seduo.cz/google-dokumenty-tabulky-a-prezentace"
     },
     {
+      "duration": "1h 40m",
       "flag": "Nejprodávanější",
+      "lecturers": "Petr Kohoutek",
       "name": "Microsoft Outlook: kompletní průvodce poštou, kalendářem a úkoly",
       "slug": "microsoft-outlook-kompletni-pruvodce-postou-kalendarem-a-ukoly",
       "url": "https://www.seduo.cz/microsoft-outlook-kompletni-pruvodce-postou-kalendarem-a-ukoly"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Prodej je jako rande. Nepřesvědčujte, ale zaujměte",
       "slug": "seduo-podcast-prodej-jako-rande-nepresvedcujte-ale-zaujmete",
       "url": "https://www.seduo.cz/seduo-podcast-prodej-jako-rande-nepresvedcujte-ale-zaujmete"
     },
     {
+      "duration": "52m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jan Ženatý",
       "name": "Mentální odolnost: jak ustát tlak každodenního života",
       "slug": "mentalni-odolnost-jak-ustat-tlak-kazdodenniho-zivota",
       "url": "https://www.seduo.cz/mentalni-odolnost-jak-ustat-tlak-kazdodenniho-zivota"
     },
     {
+      "duration": "36m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Minář",
       "name": "Google Disk: mějte soubory vždy po ruce",
       "slug": "google-disk-mejte-soubory-vzdy-po-ruce",
       "url": "https://www.seduo.cz/google-disk-mejte-soubory-vzdy-po-ruce"
     },
     {
+      "duration": "53m",
       "flag": "Nejprodávanější",
+      "lecturers": "Zuzana Čaputová",
       "name": "Leadership s empatií: umění vést a zůstat sama sebou",
       "slug": "leadership-s-empatii-umeni-vest-a-zustat-sama-sebou",
       "url": "https://www.seduo.cz/leadership-s-empatii-umeni-vest-a-zustat-sama-sebou"
     },
     {
+      "duration": "43m",
       "flag": "Nejprodávanější",
+      "lecturers": "Daniel Gamrot",
       "name": "Praktický průvodce promptováním: jak efektivně komunikovat s AI",
       "slug": "prakticky-pruvodce-promptovanim-jak-efektivne-komunikovat-s-ai",
       "url": "https://www.seduo.cz/prakticky-pruvodce-promptovanim-jak-efektivne-komunikovat-s-ai"
     },
     {
-      "flag": null,
+      "duration": "50m",
+      "flag": "",
+      "lecturers": "Filip Kahoun",
       "name": "Leadership II: jak efektivně motivovat tým",
       "slug": "leadership-ii-jak-efektivne-motivovat-tym",
       "url": "https://www.seduo.cz/leadership-ii-jak-efektivne-motivovat-tym"
     },
     {
+      "duration": "52m",
       "flag": "Nejprodávanější",
+      "lecturers": "Petr Kohoutek",
       "name": "Tipy a vychytávky ve Wordu",
       "slug": "tipy-a-vychytavky-ve-wordu",
       "url": "https://www.seduo.cz/tipy-a-vychytavky-ve-wordu"
     },
     {
+      "duration": "50m",
       "flag": "Nejprodávanější",
+      "lecturers": "Eliška Šestáková",
       "name": "Dělejte si (opravdu) dobré poznámky",
       "slug": "delejte-si-opravdu-dobre-poznamky",
       "url": "https://www.seduo.cz/delejte-si-opravdu-dobre-poznamky"
     },
     {
+      "duration": "2h 17m",
       "flag": "Nejprodávanější",
+      "lecturers": "Petr Kohoutek",
       "name": "Microsoft Teams: kompletní průvodce pro efektivní práci v týmu",
       "slug": "microsoft-teams-kompletni-pruvodce-pro-efektivni-praci-v-tymu",
       "url": "https://www.seduo.cz/microsoft-teams-kompletni-pruvodce-pro-efektivni-praci-v-tymu"
     },
     {
-      "flag": null,
+      "duration": "32m",
+      "flag": "",
+      "lecturers": "Pavel Minář",
       "name": "Google Kalendář: efektivní organizace času a plánování",
       "slug": "google-kalendar-efektivni-organizace-casu-a-planovani",
       "url": "https://www.seduo.cz/google-kalendar-efektivni-organizace-casu-a-planovani"
     },
     {
+      "duration": "41m",
       "flag": "Nejprodávanější",
+      "lecturers": "Tomáš Železník",
       "name": "Mistr ve výrobě: jak vést pracovníky a získat respekt",
       "slug": "mistr-ve-vyrobe-jak-vest-pracovniky-a-ziskat-respekt",
       "url": "https://www.seduo.cz/mistr-ve-vyrobe-jak-vest-pracovniky-a-ziskat-respekt"
     },
     {
-      "flag": null,
+      "duration": "49m",
+      "flag": "",
+      "lecturers": "Filip Kahoun",
       "name": "Leadership III: jak postavit a vést silný tým",
       "slug": "leadership-iii-jak-postavit-silny-tym",
       "url": "https://www.seduo.cz/leadership-iii-jak-postavit-silny-tym"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Domluvte se jako profesionální vyjednavač",
       "slug": "seduo-podcast-domluvte-se-jako-profesionalni-vyjednavac",
       "url": "https://www.seduo.cz/seduo-podcast-domluvte-se-jako-profesionalni-vyjednavac"
     },
     {
-      "flag": null,
+      "duration": "45m",
+      "flag": "",
+      "lecturers": "Pavel Minář",
       "name": "Gmail: buďte pánem své pošty",
       "slug": "gmail-budte-panem-sve--posty",
       "url": "https://www.seduo.cz/gmail-budte-panem-sve--posty"
     },
     {
+      "duration": "4h 44m",
       "flag": "Nejprodávanější",
+      "lecturers": "Petr Kohoutek",
       "name": "Microsoft Word: kompletní průvodce od začátečníka po experta",
       "slug": "microsoft-word-kompletni-pruvodce-od-zacatecnika-po-experta",
       "url": "https://www.seduo.cz/microsoft-word-kompletni-pruvodce-od-zacatecnika-po-experta"
     },
     {
+      "duration": "2h 32m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jan Ženatý",
       "name": "Maxikurz mentální odolnosti s Janem Ženatým",
       "slug": "maxikurz-mentalni-odolnosti",
       "url": "https://www.seduo.cz/maxikurz-mentalni-odolnosti"
     },
     {
+      "duration": "44m",
       "flag": "Nejprodávanější",
+      "lecturers": "Barbora Brabcová",
       "name": "AI Act: Povinnosti pro vaši firmu",
       "slug": "ai-act-povinnosti-pro-vasi-firmu",
       "url": "https://www.seduo.cz/ai-act-povinnosti-pro-vasi-firmu"
     },
     {
+      "duration": "1h 3m",
       "flag": "Nejprodávanější",
+      "lecturers": "Petr Havlíček",
       "name": "Hubněte s rozumem: jak jíst a žít zdravěji",
       "slug": "hubnete-s-rozumem-jak-jist-a-zit-zdraveji",
       "url": "https://www.seduo.cz/hubnete-s-rozumem-jak-jist-a-zit-zdraveji"
     },
     {
-      "flag": null,
-      "name": "Google Workspace:  kancelář vždy po ruce – bezpečně a odkudkoliv",
+      "duration": "31m",
+      "flag": "",
+      "lecturers": "Pavel Minář",
+      "name": "Google Workspace: kancelář vždy po ruce – bezpečně a odkudkoliv",
       "slug": "google-workspace-kancelar-vzdy-po-ruce-bezpecne-a-odkudkoliv",
       "url": "https://www.seduo.cz/google-workspace-kancelar-vzdy-po-ruce-bezpecne-a-odkudkoliv"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Být nejlepší verzí sebe sama",
       "slug": "seduo-podcast-byt-nejlepsi-verzi-sebe-sama",
       "url": "https://www.seduo.cz/seduo-podcast-byt-nejlepsi-verzi-sebe-sama"
     },
     {
+      "duration": "53m",
       "flag": "Nejprodávanější",
+      "lecturers": "Janka Chudlíková",
       "name": "Plánujte si svůj život: jak se nenechat semlít každodenní rutinou",
       "slug": "planujte-si-svuj-zivot-jak-se-nenechat-semlit-kazdodenni-rutinou",
       "url": "https://www.seduo.cz/planujte-si-svuj-zivot-jak-se-nenechat-semlit-kazdodenni-rutinou"
     },
     {
+      "duration": "1h 0m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jakub-Marek Štěpán",
       "name": "Praktická firemní kultura: jak na lepší pracovní prostředí každý den",
       "slug": "firemni-kultura",
       "url": "https://www.seduo.cz/firemni-kultura"
     },
     {
+      "duration": "39m",
       "flag": "Nejprodávanější",
+      "lecturers": "Karol Suchánek",
       "name": "Připravte firmu na nové kybernetické výzvy",
       "slug": "pripravte-firmu-na-nove-kyberneticke-vyzvy",
       "url": "https://www.seduo.cz/pripravte-firmu-na-nove-kyberneticke-vyzvy"
     },
     {
+      "duration": "46m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Pafko",
       "name": "Umět být šťastný v práci i v životě",
       "slug": "umet-byt-stastny-v-praci-i-v-zivote",
       "url": "https://www.seduo.cz/umet-byt-stastny-v-praci-i-v-zivote"
     },
     {
+      "duration": "4h 17m",
       "flag": "Nejprodávanější",
+      "lecturers": "Ing. et Ing. Jiří Špaček, Ph.D.",
       "name": "AutoCAD: základy technického kreslení a projektování",
       "slug": "autocad-zaklady-technickeho-kresleni-a-projektovani",
       "url": "https://www.seduo.cz/autocad-zaklady-technickeho-kresleni-a-projektovani"
     },
     {
-      "flag": null,
+      "duration": "40m",
+      "flag": "",
+      "lecturers": "Laura Blažeková",
       "name": "Mezigenerační spolupráce: jak zvládnout věkové rozdíly v práci",
       "slug": "mezigeneracni-spoluprace-jak-zvladnout-vekove-rozdily-v-praci",
       "url": "https://www.seduo.cz/mezigeneracni-spoluprace-jak-zvladnout-vekove-rozdily-v-praci"
     },
     {
+      "duration": "1h 2m",
       "flag": "Nejprodávanější",
+      "lecturers": "Filip Kahoun",
       "name": "Leadership I: jak být sám sobě dobrým šéfem",
       "slug": "leadership-i-jak-byt-sam-sobe-dobrym-sefem",
       "url": "https://www.seduo.cz/leadership-i-jak-byt-sam-sobe-dobrym-sefem"
     },
     {
+      "duration": "5h 19m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Lasák",
       "name": "Profíkem v Power BI za 5 hodin",
       "slug": "profikem-v-power-bi-za-5-hodin",
       "url": "https://www.seduo.cz/profikem-v-power-bi-za-5-hodin"
     },
     {
+      "duration": "1h 1m",
       "flag": "Nejprodávanější",
+      "lecturers": "Bronislav Sobotka",
       "name": "Angličtina na maximum: zapojte AI a digitální pomocníky",
       "slug": "anglictina-na-maximum",
       "url": "https://www.seduo.cz/anglictina-na-maximum"
     },
     {
+      "duration": "",
       "flag": "WEBINÁŘ",
+      "lecturers": "",
       "name": "Seduo naživo: Zkroťte devět sabotérů ve vaší hlavě",
       "slug": "seduo-nazivo-zkrotte-devet-saboteru-ve-vasi-hlave",
       "url": "https://www.seduo.cz/seduo-nazivo-zkrotte-devet-saboteru-ve-vasi-hlave"
     },
     {
+      "duration": "1h 49m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Lasák",
       "name": "Microsoft Power BI: vizualizace dat prakticky",
       "slug": "microsoft-power-bi-vizualizace-dat",
       "url": "https://www.seduo.cz/microsoft-power-bi-vizualizace-dat"
     },
     {
+      "duration": "1h 18m",
       "flag": "Nejprodávanější",
+      "lecturers": "Honza Vojtko",
       "name": "Anatomie vztahů: inventura vašeho života",
       "slug": "anatomie-vztahu-rozumet-lepe-sobe-i-ostatnim",
       "url": "https://www.seduo.cz/anatomie-vztahu-rozumet-lepe-sobe-i-ostatnim"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Lidé se nedají \"zmenežovat\"",
       "slug": "seduo-podcast-lide-se-nedaji-zmenezovat",
       "url": "https://www.seduo.cz/seduo-podcast-lide-se-nedaji-zmenezovat"
     },
     {
+      "duration": "37m",
       "flag": "Nejprodávanější",
+      "lecturers": "Daniel Gamrot",
       "name": "Seduo naživo: Bavte se s umělou inteligencí",
       "slug": "seduo-nazivo-bavte-se-v-lete-s-umelou-inteligenci",
       "url": "https://www.seduo.cz/seduo-nazivo-bavte-se-v-lete-s-umelou-inteligenci"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Dělejte si to tady hezký (než přijde zubatá)",
       "slug": "seduo-podcast-delejte-si-to-tady-hezky-nez-prijde-zubata",
       "url": "https://www.seduo.cz/seduo-podcast-delejte-si-to-tady-hezky-nez-prijde-zubata"
     },
     {
+      "duration": "5h 28m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Moric",
       "name": "Maxikurz osobního rozvoje s Pavlem Moricem",
       "slug": "maxikurz-osobniho-rozvoje-s-pavlem-moricem",
       "url": "https://www.seduo.cz/maxikurz-osobniho-rozvoje-s-pavlem-moricem"
     },
     {
+      "duration": "1h 8m",
       "flag": "Nejprodávanější",
+      "lecturers": "Luke Ponsford",
       "name": "Mastering (the art of) Business English",
       "slug": "mastering-the-art-of-business-english",
       "url": "https://www.seduo.cz/mastering-the-art-of-business-english"
     },
     {
+      "duration": "4h 25m",
       "flag": "Nejprodávanější",
+      "lecturers": "Eva Marková",
       "name": "Maxikurz efektivní komunikace s Evou Markovou",
       "slug": "maxikurz-efektivni-komunikace-s-evou-markovou",
       "url": "https://www.seduo.cz/maxikurz-efektivni-komunikace-s-evou-markovou"
     },
     {
+      "duration": "17m",
       "flag": "Nejprodávanější",
+      "lecturers": "Luke Ponsford",
       "name": "Quick English Tips II",
       "slug": "quick-english-tips-ii",
       "url": "https://www.seduo.cz/quick-english-tips-ii"
     },
     {
+      "duration": "53m",
       "flag": "Nejprodávanější",
+      "lecturers": "Martin Kavka a Seduo.cz",
       "name": "Požární ochrana pro každého: jak zvládnout požár a neuhořet",
       "slug": "pozarni-ochrana-pro-kazdeho-jak-zvladnout-pozar",
       "url": "https://www.seduo.cz/pozarni-ochrana-pro-kazdeho-jak-zvladnout-pozar"
     },
     {
+      "duration": "50m",
       "flag": "Nejprodávanější",
+      "lecturers": "Filip Kahoun",
       "name": "Síla pozornosti: jak ovládnout nejmocnější psychickou energii",
       "slug": "sila-pozornosti-ovladnete-nejmocnejsi-psychickou-energii",
       "url": "https://www.seduo.cz/sila-pozornosti-ovladnete-nejmocnejsi-psychickou-energii"
     },
     {
+      "duration": "1h 6m",
       "flag": "Nejprodávanější",
+      "lecturers": "Lea Kolkopová",
       "name": "Každodenní pokec v italštině",
       "slug": "kazdodenni-pokec-v-italstine",
       "url": "https://www.seduo.cz/kazdodenni-pokec-v-italstine"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Angličtina není duch svatý. Sama na vás nesestoupí",
       "slug": "seduo-podcast-anglictina-neni-duch-svaty-sama-na-vas-nesestoupi",
       "url": "https://www.seduo.cz/seduo-podcast-anglictina-neni-duch-svaty-sama-na-vas-nesestoupi"
     },
     {
+      "duration": "48m",
       "flag": "Nejprodávanější",
+      "lecturers": "Daniel Gamrot",
       "name": "Umělá inteligence prakticky: průvodce užitečnými AI aplikacemi",
       "slug": "umela-inteligence-prakticky-pruvodce-uzitecnymi-ai-aplikacemi",
       "url": "https://www.seduo.cz/umela-inteligence-prakticky-pruvodce-uzitecnymi-ai-aplikacemi"
     },
     {
+      "duration": "1h 37m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Lasák",
       "name": "Microsoft Power BI: pokročilá analýza dat pomocí jazyka DAX",
       "slug": "power-bi-pokrocila-analyza-dat-pomoci-jazyka-dax",
       "url": "https://www.seduo.cz/power-bi-pokrocila-analyza-dat-pomoci-jazyka-dax"
     },
     {
+      "duration": "1h 23m",
       "flag": "Nejprodávanější",
+      "lecturers": "Barbora Brabcová",
       "name": "Umělá inteligence na maximum: ulehčete si díky AI vaši práci",
       "slug": "umela-inteligence-na-maximum",
       "url": "https://www.seduo.cz/umela-inteligence-na-maximum"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Domluvte se s každým",
       "slug": "sedouo-podcast-domluvte-se-s-kazdym",
       "url": "https://www.seduo.cz/sedouo-podcast-domluvte-se-s-kazdym"
     },
     {
+      "duration": "52m",
       "flag": "Nejprodávanější",
+      "lecturers": "Janka Chudlíková",
       "name": "První pomoc ve stresu",
       "slug": "prvni-pomoc-ve-stresu",
       "url": "https://www.seduo.cz/prvni-pomoc-ve-stresu"
     },
     {
+      "duration": "56m",
       "flag": "Nejprodávanější",
+      "lecturers": "Luke Ponsford",
       "name": "(Not so) Basic Business English",
       "slug": "not-so-basic-business-english",
       "url": "https://www.seduo.cz/not-so-basic-business-english"
     },
     {
+      "duration": "1h 19m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Moric",
       "name": "Odvaha žít jinak",
       "slug": "odvaha-zit-jinak",
       "url": "https://www.seduo.cz/odvaha-zit-jinak"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: První pomocí nejde ublížit",
       "slug": "seduo-podcast-prvni-pomoci-nejde-ublizit",
       "url": "https://www.seduo.cz/seduo-podcast-prvni-pomoci-nejde-ublizit"
     },
     {
+      "duration": "2h 52m",
       "flag": "Nejprodávanější",
+      "lecturers": "Martin Světlík",
       "name": "Pages, Keynote, Numbers: vaše kancelář v Applu",
       "slug": "pages-keynote-numbers-vase-kancelar-v-applu",
       "url": "https://www.seduo.cz/pages-keynote-numbers-vase-kancelar-v-applu"
     },
     {
+      "duration": "12m",
       "flag": "Nejprodávanější",
+      "lecturers": "Luke Ponsford",
       "name": "Quick English Tips I",
       "slug": "quick-english-tips-i",
       "url": "https://www.seduo.cz/quick-english-tips-i"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Rychlokurz ESG pro každého",
       "slug": "seduo-podcast-rychlokurz-esg-pro-kazdeho",
       "url": "https://www.seduo.cz/seduo-podcast-rychlokurz-esg-pro-kazdeho"
     },
     {
+      "duration": "54m",
       "flag": "Nejprodávanější",
+      "lecturers": "Vladimír Beneš",
       "name": "Zůstat nad věcí: náročné situace s chladnou hlavou",
       "slug": "zustat-nad-veci-narocne-situace-s-chladnou-hlavou",
       "url": "https://www.seduo.cz/zustat-nad-veci-narocne-situace-s-chladnou-hlavou"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Pište si poznámky (vlastními slovy)",
       "slug": "seduo-podcast-piste-si-poznamky-vlastnimi-slovy",
       "url": "https://www.seduo.cz/seduo-podcast-piste-si-poznamky-vlastnimi-slovy"
     },
     {
-      "flag": null,
+      "duration": "57m",
+      "flag": "",
+      "lecturers": "Jiří Kula",
       "name": "Manažer donaha: tabu a klišé, o kterých se nemluví",
       "slug": "manazer-donaha-tabu-a-klise-o-kterych-se-nemluvi",
       "url": "https://www.seduo.cz/manazer-donaha-tabu-a-klise-o-kterych-se-nemluvi"
     },
     {
+      "duration": "47m",
       "flag": "Nejprodávanější",
+      "lecturers": "Tereza Náplavová",
       "name": "Pracujte zdravě: základy ergonomie v kanceláři i na home office",
       "slug": "pracujte-zdrave-v-kancelari-i-na-home-office",
       "url": "https://www.seduo.cz/pracujte-zdrave-v-kancelari-i-na-home-office"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Režisér nebo šéf by hlavně neměl překážet",
       "slug": "seduo-podcast-reziser-i-sef-by-hlavne-nemel-prekazet",
       "url": "https://www.seduo.cz/seduo-podcast-reziser-i-sef-by-hlavne-nemel-prekazet"
     },
     {
+      "duration": "1h 17m",
       "flag": "Nejprodávanější",
+      "lecturers": "Vlaďka Bartáková",
       "name": "Rodičovské přešlapy: jak vychovávat a nezbláznit se",
       "slug": "rodicovske-preslapy-jak-vychovavat-a-nezblaznit-se",
       "url": "https://www.seduo.cz/rodicovske-preslapy-jak-vychovavat-a-nezblaznit-se"
     },
     {
+      "duration": "1h 19m",
       "flag": "Nejprodávanější",
+      "lecturers": "Tamara Ksandrová",
       "name": "Úspěšný nábor od A po Z",
       "slug": "uspesny-nabor-od-a-po-z",
       "url": "https://www.seduo.cz/uspesny-nabor-od-a-po-z"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Produktivita není plný a barevný kalendář",
       "slug": "seduo-podcast-daniel-gamrot",
       "url": "https://www.seduo.cz/seduo-podcast-daniel-gamrot"
     },
     {
+      "duration": "2h 5m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jakub Oliva",
       "name": "Pracovní právo pro HR a manažery",
       "slug": "pracovni-pravo-pro-hr-a-manazery",
       "url": "https://www.seduo.cz/pracovni-pravo-pro-hr-a-manazery"
     },
     {
+      "duration": "47m",
       "flag": "Nejprodávanější",
+      "lecturers": "Juraj Surma",
       "name": "Průvodce efektivními 1:1 meetingy pro manažery",
       "slug": "pruvodce-efektivnimi-1-1-meetingy-pro-manazery",
       "url": "https://www.seduo.cz/pruvodce-efektivnimi-1-1-meetingy-pro-manazery"
     },
     {
+      "duration": "1h 45m",
       "flag": "Nejprodávanější",
+      "lecturers": "Martin Světlík",
       "name": "Ovládněte iPhone jako teenager",
       "slug": "ovladnete-iphone-jako-teenager",
       "url": "https://www.seduo.cz/ovladnete-iphone-jako-teenager"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Přestaňte hledat pravdy",
       "slug": "seduo-podcast-prestante-hledat-pravdy",
       "url": "https://www.seduo.cz/seduo-podcast-prestante-hledat-pravdy"
     },
     {
+      "duration": "53m",
       "flag": "Nejprodávanější",
+      "lecturers": "Peter Strcula",
       "name": "Umění prodeje: jak se stát úspěšným prodejcem",
       "slug": "umeni-prodeje-jak-se-stat-uspesnym-prodejcem",
       "url": "https://www.seduo.cz/umeni-prodeje-jak-se-stat-uspesnym-prodejcem"
     },
     {
+      "duration": "2h 48m",
       "flag": "Nejprodávanější",
+      "lecturers": "Daniel Gamrot",
       "name": "Maxikurz osobní produktivity",
       "slug": "maxikurz--osobni-produktivity",
       "url": "https://www.seduo.cz/maxikurz--osobni-produktivity"
     },
     {
-      "flag": null,
+      "duration": "34m",
+      "flag": "",
+      "lecturers": "Daniel Gamrot",
       "name": "Lepší soustředění: jak řídit svou pozornost",
       "slug": "lepsi-soustredeni-jak-ridit-svou-pozornost",
       "url": "https://www.seduo.cz/lepsi-soustredeni-jak-ridit-svou-pozornost"
     },
     {
+      "duration": "",
       "flag": "Podcast",
+      "lecturers": "",
       "name": "Seduo podcast: Vzdělávání nemusí být jen kurz",
       "slug": "seduo-podcast-vzdelavani-nemusi-byt-jen-kurz",
       "url": "https://www.seduo.cz/seduo-podcast-vzdelavani-nemusi-byt-jen-kurz"
     },
     {
+      "duration": "44m",
       "flag": "Nejprodávanější",
+      "lecturers": "Josef Mareš",
       "name": "Řešte problémy jako vyšetřovatel 1. oddělení",
       "slug": "reste-problemy-jako-vysetrovatel",
       "url": "https://www.seduo.cz/reste-problemy-jako-vysetrovatel"
     },
     {
+      "duration": "29m",
       "flag": "Nejprodávanější",
+      "lecturers": "Daniel Gamrot",
       "name": "Budování návyků: jak na dlouhodobé změny",
       "slug": "budovani-navyku-jak-na-dlouhodobe-zmeny",
       "url": "https://www.seduo.cz/budovani-navyku-jak-na-dlouhodobe-zmeny"
     },
     {
+      "duration": "1h 14m",
       "flag": "Nejprodávanější",
+      "lecturers": "Bronislav Sobotka",
       "name": "Jak na výslovnost v angličtině",
       "slug": "jak-na-vyslovnost-v-anglictine",
       "url": "https://www.seduo.cz/jak-na-vyslovnost-v-anglictine"
     },
     {
+      "duration": "10h 1m",
       "flag": "Nejprodávanější",
+      "lecturers": "Míša Nofftz Skopalová",
       "name": "Maxikurz němčiny s Míšou Nofftz Skopalovou",
       "slug": "maxikurz-nemciny-s-misou-nofftz-skopalovou",
       "url": "https://www.seduo.cz/maxikurz-nemciny-s-misou-nofftz-skopalovou"
     },
     {
+      "duration": "1h 5m",
       "flag": "Nejprodávanější",
+      "lecturers": "Míša Nofftz Skopalová",
       "name": "Členy v němčině",
       "slug": "cleny-v-nemcine",
       "url": "https://www.seduo.cz/cleny-v-nemcine"
     },
     {
+      "duration": "34m",
       "flag": "Nejprodávanější",
+      "lecturers": "Daniel Gamrot",
       "name": "Ovládněte priority: najděte čas na to podstatné",
       "slug": "ovladnete-priority-najdete-cas-na-to-podstatne",
       "url": "https://www.seduo.cz/ovladnete-priority-najdete-cas-na-to-podstatne"
     },
     {
+      "duration": "1h 19m",
       "flag": "Nejprodávanější",
+      "lecturers": "Martin Konečný",
       "name": "Vyjednávání a zvládání manipulace v praxi",
       "slug": "zvladani-manipulace-ve-vyjednavani",
       "url": "https://www.seduo.cz/zvladani-manipulace-ve-vyjednavani"
     },
     {
+      "duration": "38m",
       "flag": "Nejprodávanější",
+      "lecturers": "Daniel Gamrot",
       "name": "Úkoly pod kontrolou: jak na nic nezapomenout",
       "slug": "ukoly-pod-kontrolou-jak-na-nic-nezapomenout",
       "url": "https://www.seduo.cz/ukoly-pod-kontrolou-jak-na-nic-nezapomenout"
     },
     {
-      "flag": null,
+      "duration": "33m",
+      "flag": "",
+      "lecturers": "Daniel Gamrot",
       "name": "Základy osobní produktivity: jak se soustředit na to důležité",
       "slug": "zaklady-osobni-produktivity-jak-se-soustredit-na-to-dulezite",
       "url": "https://www.seduo.cz/zaklady-osobni-produktivity-jak-se-soustredit-na-to-dulezite"
     },
     {
+      "duration": "1h 36m",
       "flag": "Nejprodávanější",
+      "lecturers": "Míša Nofftz Skopalová",
       "name": "Slovosled v němčině polopatě",
       "slug": "slovosled-v-nemcine-polopate",
       "url": "https://www.seduo.cz/slovosled-v-nemcine-polopate"
     },
     {
+      "duration": "38m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jakub Oliva",
       "name": "Jak na whistleblowing: praktický návod (nejen) pro zaměstnavatele",
       "slug": "jak-na-whistleblowing-prakticky-navod-nejen-pro-zamestnavatele",
       "url": "https://www.seduo.cz/jak-na-whistleblowing-prakticky-navod-nejen-pro-zamestnavatele"
     },
     {
-      "flag": null,
+      "duration": "36m",
+      "flag": "",
+      "lecturers": "Ondřej Krátký",
       "name": "Dobrá práce! Tipy na spokojenost a lepší pracovní výsledky",
       "slug": "dobra-prace-tipy-na-spokojenost-a-lepsi-pracovni-vysledky",
       "url": "https://www.seduo.cz/dobra-prace-tipy-na-spokojenost-a-lepsi-pracovni-vysledky"
     },
     {
+      "duration": "55m",
       "flag": "Nejprodávanější",
+      "lecturers": "Tomáš Třeštík",
       "name": "Fotografování pro každého: dobrá fotka foťákem i mobilem",
       "slug": "fotografovani-pro-kazdeho-dobra-fotka-fotakem-i-mobilem",
       "url": "https://www.seduo.cz/fotografovani-pro-kazdeho-dobra-fotka-fotakem-i-mobilem"
     },
     {
+      "duration": "1h 11m",
       "flag": "Nejprodávanější",
+      "lecturers": "Tomáš Rektor",
       "name": "Zvládání závislostí: jak bojovat s vlastní slabostí",
       "slug": "zvladani-zavislosti-jak-bojovat-s-vlastni-slabosti",
       "url": "https://www.seduo.cz/zvladani-zavislosti-jak-bojovat-s-vlastni-slabosti"
     },
     {
+      "duration": "1h 11m",
       "flag": "Nejprodávanější",
+      "lecturers": "Filip Kahoun",
       "name": "Průvodce začínajícího lídra: jak získat respekt a nepohořet",
       "slug": "pruvodce-zacinajiciho-lidra",
       "url": "https://www.seduo.cz/pruvodce-zacinajiciho-lidra"
     },
     {
+      "duration": "1h 5m",
       "flag": "Nejprodávanější",
+      "lecturers": "Honza Vojtko",
       "name": "Pasti ve vztazích a jak do nich nespadnout",
       "slug": "pasti-ve-vztazich-a-jak-do-nich-nespadnout",
       "url": "https://www.seduo.cz/pasti-ve-vztazich-a-jak-do-nich-nespadnout"
     },
     {
-      "flag": null,
+      "duration": "1h 10m",
+      "flag": "",
+      "lecturers": "Martina Georgievová",
       "name": "Průvodce manažera týmovým rozvojem",
       "slug": "pruvodce-manazera-tymovym-rozvojem",
       "url": "https://www.seduo.cz/pruvodce-manazera-tymovym-rozvojem"
     },
     {
+      "duration": "45m",
       "flag": "Nejprodávanější",
+      "lecturers": "Marian Jelínek",
       "name": "Tajemství flow: jak využít svůj potenciál na maximum",
       "slug": "tajemstvi-flow-jak-vyuzit-svuj-potencial-na-maximum",
       "url": "https://www.seduo.cz/tajemstvi-flow-jak-vyuzit-svuj-potencial-na-maximum"
     },
     {
+      "duration": "47m",
       "flag": "Nejprodávanější",
+      "lecturers": "Karol Suchánek",
       "name": "Bezpečně v online světě: jak ochránit své peníze, data a identitu",
       "slug": "bezpecne-v-online-svete-jak-ochranit-sve-penize-data-a-identitu",
       "url": "https://www.seduo.cz/bezpecne-v-online-svete-jak-ochranit-sve-penize-data-a-identitu"
     },
     {
+      "duration": "1h 1m",
       "flag": "Nejprodávanější",
+      "lecturers": "Eva Marková",
       "name": "Sociální hry v komunikaci: jak být silným, asertivním hráčem",
       "slug": "socialni-hry-v-komunikaci-jak-byt-silnym-asertivnim-hracem",
       "url": "https://www.seduo.cz/socialni-hry-v-komunikaci-jak-byt-silnym-asertivnim-hracem"
     },
     {
+      "duration": "1h 12m",
       "flag": "Nejprodávanější",
+      "lecturers": "Ivana Kudrnová",
       "name": "Každodenní pokec ve španělštině",
       "slug": "kazdodenni-pokec-ve-spanelstine",
       "url": "https://www.seduo.cz/kazdodenni-pokec-ve-spanelstine"
     },
     {
+      "duration": "51m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jakub Pok",
       "name": "Dokonalá paměť: jak si zapamatovat cokoliv rychle a napořád",
       "slug": "dokonala-pamet-jak-si-zapamatovat-cokoliv-rychle-a-naporad",
       "url": "https://www.seduo.cz/dokonala-pamet-jak-si-zapamatovat-cokoliv-rychle-a-naporad"
     },
     {
-      "flag": null,
+      "duration": "57m",
+      "flag": "",
+      "lecturers": "Pavel Wieser",
       "name": "Nešvary v prezentaci a jak se jich zbavit",
       "slug": "nesvary-v-prezentaci-a-jak-se-jich-zbavit",
       "url": "https://www.seduo.cz/nesvary-v-prezentaci-a-jak-se-jich-zbavit"
     },
     {
+      "duration": "1h 16m",
       "flag": "Nejprodávanější",
+      "lecturers": "Martin Světlík",
       "name": "iPad jako všestranný pracovní nástroj",
       "slug": "ipad-jako-vsestranny-pracovni-nastroj",
       "url": "https://www.seduo.cz/ipad-jako-vsestranny-pracovni-nastroj"
     },
     {
-      "flag": null,
+      "duration": "53m",
+      "flag": "",
+      "lecturers": "Jan Hřebejk",
       "name": "U mě dobrý: hledání životního optimismu",
       "slug": "u-me-dobry-hledani-zivotniho-optimismu",
       "url": "https://www.seduo.cz/u-me-dobry-hledani-zivotniho-optimismu"
     },
     {
+      "duration": "1h 8m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Moric",
       "name": "Život na pohodu",
       "slug": "zivot-na-pohodu",
       "url": "https://www.seduo.cz/zivot-na-pohodu"
     },
     {
+      "duration": "1h 16m",
       "flag": "Nejprodávanější",
+      "lecturers": "Michal Pastier",
       "name": "Efektivní budování značky v době chaosu",
       "slug": "efektivni-budovani-znacky-v-dobe-chaosu",
       "url": "https://www.seduo.cz/efektivni-budovani-znacky-v-dobe-chaosu"
     },
     {
+      "duration": "23h 26m",
       "flag": "Nejprodávanější",
+      "lecturers": "Bronislav Sobotka",
       "name": "Kompletní angličtina s Broňou Sobotkou",
       "slug": "kompletni-anglictina-s-bronou-sobotkou",
       "url": "https://www.seduo.cz/kompletni-anglictina-s-bronou-sobotkou"
     },
     {
+      "duration": "2h 3m",
       "flag": "Nejprodávanější",
+      "lecturers": "Míša Nofftz Skopalová",
       "name": "Německé časy od A do Z",
       "slug": "nemecke-casy-od-a-do-z",
       "url": "https://www.seduo.cz/nemecke-casy-od-a-do-z"
     },
     {
+      "duration": "1h 21m",
       "flag": "Nejprodávanější",
+      "lecturers": "Marek Hrkal",
       "name": "Pracujte v PowerPointu jako profík",
       "slug": "pracujte-v-powerpointu-jako-profik",
       "url": "https://www.seduo.cz/pracujte-v-powerpointu-jako-profik"
     },
     {
-      "flag": null,
+      "duration": "53m",
+      "flag": "",
+      "lecturers": "Anastasia Kuzmina",
       "name": "Cesta za úspěchem trojnásobné olympijské vítězky",
       "slug": "cesta-za-uspechem-trojnasobne-olympijske-vitezky",
       "url": "https://www.seduo.cz/cesta-za-uspechem-trojnasobne-olympijske-vitezky"
     },
     {
-      "flag": null,
+      "duration": "1h 1m",
+      "flag": "",
+      "lecturers": "Libor Mattuš",
       "name": "Biohacking: Zdravé návyky pro každý den",
       "slug": "biohacking-zdrave-navyky-pro-kazdyden",
       "url": "https://www.seduo.cz/biohacking-zdrave-navyky-pro-kazdyden"
     },
     {
+      "duration": "46m",
       "flag": "Nejprodávanější",
+      "lecturers": "Martina Viktorie Kopecká",
       "name": "Hledání životní rovnováhy",
       "slug": "hledani-zivotni-rovnovahy",
       "url": "https://www.seduo.cz/hledani-zivotni-rovnovahy"
     },
     {
+      "duration": "1h 10m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jakub Oliva",
       "name": "Průvodce pracovním právem pro každého",
       "slug": "pruvodce-pracovnim-pravem-pro-kazdeho",
       "url": "https://www.seduo.cz/pruvodce-pracovnim-pravem-pro-kazdeho"
     },
     {
+      "duration": "1h 18m",
       "flag": "Nejprodávanější",
+      "lecturers": "Petr Ludwig",
       "name": "Myšlenkové mapy: jak vizualizovat a utřídit své myšlenky",
       "slug": "myslenkove-mapy-jak-vizualizovat-a-utridit-sve-myslenky",
       "url": "https://www.seduo.cz/myslenkove-mapy-jak-vizualizovat-a-utridit-sve-myslenky"
     },
     {
+      "duration": "46m",
       "flag": "Nejprodávanější",
+      "lecturers": "Šimon Pánek",
       "name": "Odvaha jít vlastní cestou",
       "slug": "odvaha-jit-vlastni-cestou",
       "url": "https://www.seduo.cz/odvaha-jit-vlastni-cestou"
     },
     {
+      "duration": "51m",
       "flag": "Nejprodávanější",
+      "lecturers": "Martina Málková",
       "name": "Profesionální zákaznická péče: jak na telefonní komunikaci s klientem",
       "slug": "profesionalni-zakaznicka-pece-jak-na-telefonni-komunikaci-s-klientem",
       "url": "https://www.seduo.cz/profesionalni-zakaznicka-pece-jak-na-telefonni-komunikaci-s-klientem"
     },
     {
-      "flag": null,
+      "duration": "1h 3m",
+      "flag": "",
+      "lecturers": "Ján Markoš",
       "name": "Zatočte s fake news",
       "slug": "zatocte-s-fake-news",
       "url": "https://www.seduo.cz/zatocte-s-fake-news"
     },
     {
+      "duration": "1h 6m",
       "flag": "Nejprodávanější",
+      "lecturers": "Míša Nofftz Skopalová",
       "name": "Hovorová němčina pro každý den",
       "slug": "hovorova-nemcina-pro-kazdy-den",
       "url": "https://www.seduo.cz/hovorova-nemcina-pro-kazdy-den"
     },
     {
+      "duration": "1h 31m",
       "flag": "Nejprodávanější",
+      "lecturers": "Linda Martišková (Nezhybová)",
       "name": "Základy grafiky pro negrafiky",
       "slug": "zaklady-grafiky-pro-negrafiky",
       "url": "https://www.seduo.cz/zaklady-grafiky-pro-negrafiky"
     },
     {
+      "duration": "1h 46m",
       "flag": "Nejprodávanější",
+      "lecturers": "Bronislav Sobotka",
       "name": "Nejčastější chyby v angličtině a jak se jim vyhnout",
       "slug": "nejcastejsi-chyby-v-anglictine-a-jak-se-jim-vyhnout",
       "url": "https://www.seduo.cz/nejcastejsi-chyby-v-anglictine-a-jak-se-jim-vyhnout"
     },
     {
-      "flag": null,
+      "duration": "",
+      "flag": "",
+      "lecturers": "",
       "name": "První pomoc: jak zachránit život",
       "slug": "prvni-pomoc-jak-zachranit-zivot",
       "url": "https://www.seduo.cz/prvni-pomoc-jak-zachranit-zivot"
     },
     {
+      "duration": "3h 54m",
       "flag": "Nejprodávanější",
+      "lecturers": "Filip Kahoun",
       "name": "Osobní marketing: 3 v 1",
       "slug": "osobni-marketing-3-v-1",
       "url": "https://www.seduo.cz/osobni-marketing-3-v-1"
     },
     {
-      "flag": null,
+      "duration": "1h 11m",
+      "flag": "",
+      "lecturers": "Jarek Procházka",
       "name": "Agilní řízení: Jak řídit tým v měnícím se světě",
       "slug": "agilni-rizeni-jak-ridit-tym-v-menicim-se-svete",
       "url": "https://www.seduo.cz/agilni-rizeni-jak-ridit-tym-v-menicim-se-svete"
     },
     {
+      "duration": "1h 8m",
       "flag": "Nejprodávanější",
+      "lecturers": "Hana Smičková (Šimáčková)",
       "name": "Každodenní pokec ve francouzštině",
       "slug": "kazdodenni-pokec-ve-francouzstine",
       "url": "https://www.seduo.cz/kazdodenni-pokec-ve-francouzstine"
     },
     {
+      "duration": "1h 23m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Lasák",
       "name": "Vizualizace a grafy v Excelu",
       "slug": "vizualizace-a-grafy-v-excelu",
       "url": "https://www.seduo.cz/vizualizace-a-grafy-v-excelu"
     },
     {
+      "duration": "1h 1m",
       "flag": "Nejprodávanější",
+      "lecturers": "Juraj Surma",
       "name": "Koučování pro nekouče: jak využít koučink v manažerské praxi",
       "slug": "koucovani-pro-nekouce",
       "url": "https://www.seduo.cz/koucovani-pro-nekouce"
     },
     {
+      "duration": "1h 25m",
       "flag": "Nejprodávanější",
+      "lecturers": "Míša Nofftz Skopalová",
       "name": "Mluv jako Němec! Kurz německé výslovnosti",
       "slug": "mluv-jako-nemec-kurz-nemecke-vyslovnosti",
       "url": "https://www.seduo.cz/mluv-jako-nemec-kurz-nemecke-vyslovnosti"
     },
     {
+      "duration": "1h 2m",
       "flag": "Nejprodávanější",
+      "lecturers": "Margareta Křížová",
       "name": "Peníze pod kontrolou: průvodce osobními financemi pro každého",
       "slug": "penize-pod-kontrolou-pruvodce-osobnimi-financemi-pro-kazdeho",
       "url": "https://www.seduo.cz/penize-pod-kontrolou-pruvodce-osobnimi-financemi-pro-kazdeho"
     },
     {
+      "duration": "1h 11m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Lasák",
       "name": "Základy Excelu pro začátečníky",
       "slug": "zaklady-excelu-pro-zacatecniky",
       "url": "https://www.seduo.cz/zaklady-excelu-pro-zacatecniky"
     },
     {
+      "duration": "45m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jakub Železný",
       "name": "Profesionální mluvený projev s Jakubem Železným",
       "slug": "profesionalni-mluveny-projev-s-jakubem-zeleznym",
       "url": "https://www.seduo.cz/profesionalni-mluveny-projev-s-jakubem-zeleznym"
     },
     {
+      "duration": "1h 21m",
       "flag": "Nejprodávanější",
+      "lecturers": "Tomáš Stöhr",
       "name": "Metody LEAN managementu",
       "slug": "metody-leanmanagementu",
       "url": "https://www.seduo.cz/metody-leanmanagementu"
     },
     {
+      "duration": "1h 11m",
       "flag": "Nejprodávanější",
+      "lecturers": "Martina Georgievová",
       "name": "Umění facilitace: efektivní vedení porad, workshopů a jednání",
       "slug": "umeni-facilitace",
       "url": "https://www.seduo.cz/umeni-facilitace"
     },
     {
+      "duration": "1h 9m",
       "flag": "Nejprodávanější",
+      "lecturers": "Honza Vojtko",
       "name": "Lepší vztahy: spokojenější vztahy bez mýtů a iluzí",
       "slug": "lepsi-vztahy",
       "url": "https://www.seduo.cz/lepsi-vztahy"
     },
     {
+      "duration": "2h 16m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Lasák",
       "name": "Profíkem na funkce v Excelu",
       "slug": "profikem-na-funkce-v-excelu",
       "url": "https://www.seduo.cz/profikem-na-funkce-v-excelu"
     },
     {
+      "duration": "54m",
       "flag": "Nejprodávanější",
+      "lecturers": "Bronislav Sobotka",
       "name": "English For Business Meetings",
       "slug": "english-for-business-meetings",
       "url": "https://www.seduo.cz/english-for-business-meetings"
     },
     {
+      "duration": "1h 21m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jiří Kula",
       "name": "Umění přesvědčit druhé",
       "slug": "umeni-presvedcit-druhe",
       "url": "https://www.seduo.cz/umeni-presvedcit-druhe"
     },
     {
+      "duration": "54m",
       "flag": "Nejprodávanější",
+      "lecturers": "Rastislav Duriš",
       "name": "Týmová spolupráce: jak rozvíjet špičkový tým",
       "slug": "tymova-spoluprace-jak-rozvijet-spickovy-tym",
       "url": "https://www.seduo.cz/tymova-spoluprace-jak-rozvijet-spickovy-tym"
     },
     {
+      "duration": "1h 21m",
       "flag": "Nejprodávanější",
+      "lecturers": "Filip Kahoun",
       "name": "Osobní marketing III.: Jak se prezentovat na sítích",
       "slug": "osobni-marketing-iii-jak-se-prezentovat-na-sitich",
       "url": "https://www.seduo.cz/osobni-marketing-iii-jak-se-prezentovat-na-sitich"
     },
     {
+      "duration": "1h 35m",
       "flag": "Nejprodávanější",
+      "lecturers": "Martin Konečný",
       "name": "Vyjednávání pro každý den",
       "slug": "vyjednavani-pro-kazdy-den",
       "url": "https://www.seduo.cz/vyjednavani-pro-kazdy-den"
     },
     {
+      "duration": "1h 1m",
       "flag": "Nejprodávanější",
+      "lecturers": "Ján Uriga",
       "name": "Zákaznická zkušenost: jak vytvářet pozitivní vztah k vaší značce",
       "slug": "zakaznicka-zkusenost",
       "url": "https://www.seduo.cz/zakaznicka-zkusenost"
     },
     {
+      "duration": "44m",
       "flag": "Nejprodávanější",
+      "lecturers": "Tomáš Rektor",
       "name": "Kvalitnější spánek: více energie pro každý den",
       "slug": "kvalitnejsi-spanek-vice-energie-pro-kazdy-den",
       "url": "https://www.seduo.cz/kvalitnejsi-spanek-vice-energie-pro-kazdy-den"
     },
     {
+      "duration": "1h 6m",
       "flag": "Nejprodávanější",
+      "lecturers": "Cyril Höschl",
       "name": "Nemoci duše aneb bláznit je lidské",
       "slug": "nemoci-duse-aneb-blaznit-je-lidske",
       "url": "https://www.seduo.cz/nemoci-duse-aneb-blaznit-je-lidske"
     },
     {
+      "duration": "1h 26m",
       "flag": "Nejprodávanější",
+      "lecturers": "GrowJOB a Michal Musil",
       "name": "Prodej 2.0: jak být úspěšnější při prodejním rozhovoru",
       "slug": "prodej-2-0-jak-byt-uspesnejsi-pri-prodejnim-rozhovoru",
       "url": "https://www.seduo.cz/prodej-2-0-jak-byt-uspesnejsi-pri-prodejnim-rozhovoru"
     },
     {
+      "duration": "56m",
       "flag": "Nejprodávanější",
+      "lecturers": "Marian Jelínek",
       "name": "Myšlení pod kontrolou: jak zvládat emoce a negativní myšlenky",
       "slug": "mysleni-pod-kontrolou-jak-zvladat-emoce-a-negativni-myslenky",
       "url": "https://www.seduo.cz/mysleni-pod-kontrolou-jak-zvladat-emoce-a-negativni-myslenky"
     },
     {
+      "duration": "1h 4m",
       "flag": "Nejprodávanější",
+      "lecturers": "Petra Větrovská",
       "name": "PPC reklama: optimalizace kampaní",
       "slug": "optimalizace-ppc-kampani",
       "url": "https://www.seduo.cz/optimalizace-ppc-kampani"
     },
     {
-      "flag": null,
+      "duration": "1h 18m",
+      "flag": "",
+      "lecturers": "Iveta Clarke",
       "name": "Umění zranitelnosti: posilovna emoční odvahy",
       "slug": "umeni-zranitelnosti-posilovna-emocni-odvahy",
       "url": "https://www.seduo.cz/umeni-zranitelnosti-posilovna-emocni-odvahy"
     },
     {
+      "duration": "1h 12m",
       "flag": "Nejprodávanější",
+      "lecturers": "Petra Větrovská",
       "name": "Základy PPC reklamy v Google Ads a Skliku",
       "slug": "zaklady-ppc-reklamy",
       "url": "https://www.seduo.cz/zaklady-ppc-reklamy"
     },
     {
-      "flag": null,
+      "duration": "57m",
+      "flag": "",
+      "lecturers": "Ján Markoš",
       "name": "Hackněte svou hlavu!",
       "slug": "hacknete-svoji-hlavu",
       "url": "https://www.seduo.cz/hacknete-svoji-hlavu"
     },
     {
+      "duration": "40m",
       "flag": "Nejprodávanější",
+      "lecturers": "Michaela Švejdová",
       "name": "Šikana v práci: jak ji rozeznat a řešit",
       "slug": "sikana-v-praci-jak-ji-rozeznat-a-resit",
       "url": "https://www.seduo.cz/sikana-v-praci-jak-ji-rozeznat-a-resit"
     },
     {
+      "duration": "1h 2m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Moric",
       "name": "Umění žít aneb tvůrce vlastního života",
       "slug": "umeni-zit-aneb-tvurce-vlastniho-zivota",
       "url": "https://www.seduo.cz/umeni-zit-aneb-tvurce-vlastniho-zivota"
     },
     {
-      "flag": null,
+      "duration": "1h 0m",
+      "flag": "",
+      "lecturers": "Eva Marková",
       "name": "Praktická typologie osobnosti: Jak úspěšně komunikovat s různými typy lidí",
       "slug": "prakticka-typologie-osobnosti-jak-uspesne-komunikovat-s-ruznymi-typy-lidi",
       "url": "https://www.seduo.cz/prakticka-typologie-osobnosti-jak-uspesne-komunikovat-s-ruznymi-typy-lidi"
     },
     {
+      "duration": "51m",
       "flag": "Nejprodávanější",
+      "lecturers": "Viktor Kostický",
       "name": "Prodejní techniky: jak ovlivnit nákupní rozhodování",
       "slug": "prodejni-techniky-jak-ovlivnit-nakupni-rozhodovani",
       "url": "https://www.seduo.cz/prodejni-techniky-jak-ovlivnit-nakupni-rozhodovani"
     },
     {
+      "duration": "43m",
       "flag": "Nejprodávanější",
+      "lecturers": "Renata Novotná",
       "name": "Onboarding prakticky: krok za krokem adaptací nováčků",
       "slug": "onboarding-prakticky-krok-za-krokem-adaptaci-novacku",
       "url": "https://www.seduo.cz/onboarding-prakticky-krok-za-krokem-adaptaci-novacku"
     },
     {
+      "duration": "58m",
       "flag": "Nejprodávanější",
+      "lecturers": "Michal Pastier",
       "name": "Kreativita jako superschopnost pro každého",
       "slug": "kreativita-jako-superschopnost-pro-kazdeho",
       "url": "https://www.seduo.cz/kreativita-jako-superschopnost-pro-kazdeho"
     },
     {
+      "duration": "1h 20m",
       "flag": "Nejprodávanější",
+      "lecturers": "Daniel Gamrot",
       "name": "Jak vytvořit skvělý videokurz od A do Z",
       "slug": "jak-vytvorit-skvely-videokurz",
       "url": "https://www.seduo.cz/jak-vytvorit-skvely-videokurz"
     },
     {
+      "duration": "42m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jan Ženatý",
       "name": "Energy management: jak zvládat únavu a mít dost energie",
       "slug": "energy-management",
       "url": "https://www.seduo.cz/energy-management"
     },
     {
+      "duration": "52m",
       "flag": "Nejprodávanější",
+      "lecturers": "Radek Jaroš",
       "name": "Cesta na vrchol: za hranicí komfortní zóny s himálajským horolezcem",
       "slug": "cesta-na-vrchol-za-hranici-komfortni-zony-s-himalajskym-horolezcem",
       "url": "https://www.seduo.cz/cesta-na-vrchol-za-hranici-komfortni-zony-s-himalajskym-horolezcem"
     },
     {
+      "duration": "53m",
       "flag": "Nejprodávanější",
+      "lecturers": "Adela Vinczeová (Banášová)",
       "name": "Sebepřijetí jako cesta ke spokojenosti s Adelou Vinczeovou",
       "slug": "sebeprijeti-jako-cesta-ke-spokojenosti-s-adelou-vinczeovou",
       "url": "https://www.seduo.cz/sebeprijeti-jako-cesta-ke-spokojenosti-s-adelou-vinczeovou"
     },
     {
+      "duration": "1h 8m",
       "flag": "Nejprodávanější",
+      "lecturers": "Tomáš Stöhr",
       "name": "LEAN management: průvodce principy štíhlé výroby",
       "slug": "lean-management-pruvodce-principy-stihle-vyroby",
       "url": "https://www.seduo.cz/lean-management-pruvodce-principy-stihle-vyroby"
     },
     {
+      "duration": "1h 1m",
       "flag": "Nejprodávanější",
+      "lecturers": "Zdenka Studená",
       "name": "Hybridní spolupráce: průvodce pro spolupráci odkudkoliv",
       "slug": "hybridni-spoluprace-pruvodce-pro-spolupraci-odkudkoliv",
       "url": "https://www.seduo.cz/hybridni-spoluprace-pruvodce-pro-spolupraci-odkudkoliv"
     },
     {
+      "duration": "1h 29m",
       "flag": "Nejprodávanější",
+      "lecturers": "Míša Nofftz Skopalová",
       "name": "Německé předložky stručně a jasně",
       "slug": "nemecke-predlozky-strucne-a-jasne",
       "url": "https://www.seduo.cz/nemecke-predlozky-strucne-a-jasne"
     },
     {
+      "duration": "1h 20m",
       "flag": "Nejprodávanější",
+      "lecturers": "Oliver Jakubík",
       "name": "HR marketing v praxi: Jak na atraktívní značku zaměstnavatele",
       "slug": "hr-marketing-v-praxi",
       "url": "https://www.seduo.cz/hr-marketing-v-praxi"
     },
     {
+      "duration": "1h 19m",
       "flag": "Nejprodávanější",
+      "lecturers": "Bronislav Sobotka",
       "name": "Jak na psaní e-mailů v angličtině",
       "slug": "jak-na-psani-e-mailu-v-anglictine",
       "url": "https://www.seduo.cz/jak-na-psani-e-mailu-v-anglictine"
     },
     {
+      "duration": "45m",
       "flag": "Nejprodávanější",
+      "lecturers": "Cyril Höschl",
       "name": "Syndrom vyhoření a jak mu předcházet",
       "slug": "syndrom-vyhoreni-a-jak-mu-prechazet",
       "url": "https://www.seduo.cz/syndrom-vyhoreni-a-jak-mu-prechazet"
     },
     {
+      "duration": "38m",
       "flag": "Nejprodávanější",
+      "lecturers": "Fpohybu",
       "name": "Tělo fpohodě: v kanceláři i na home office",
       "slug": "telo-fpohode-v-kancelari-i-na-home-office",
       "url": "https://www.seduo.cz/telo-fpohode-v-kancelari-i-na-home-office"
     },
     {
+      "duration": "1h 21m",
       "flag": "Nejprodávanější",
+      "lecturers": "Míša Nofftz Skopalová",
       "name": "Každodenní pokec v němčině",
       "slug": "kazdodenni-pokec-v-nemcine",
       "url": "https://www.seduo.cz/kazdodenni-pokec-v-nemcine"
     },
     {
+      "duration": "51m",
       "flag": "Nejprodávanější",
+      "lecturers": "Simona Kubán",
       "name": "Průvodce marketingem na sociálních sítích",
       "slug": "pruvodce-marketingem-na-socialnich-sitich",
       "url": "https://www.seduo.cz/pruvodce-marketingem-na-socialnich-sitich"
     },
     {
+      "duration": "1h 57m",
       "flag": "Nejprodávanější",
+      "lecturers": "Albert Höfer",
       "name": "Jak pracovat efektivně a bez stresu",
       "slug": "jak-pracovat-efektivne-a-bez-stresu",
       "url": "https://www.seduo.cz/jak-pracovat-efektivne-a-bez-stresu"
     },
     {
-      "flag": null,
+      "duration": "1h 18m",
+      "flag": "",
+      "lecturers": "GrowJOB a Adela Plesnik Schicker",
       "name": "Diverzita a inkluze: Jak pracovat s mezikulturními rozdíly?",
       "slug": "diverzita-a-inkluze",
       "url": "https://www.seduo.cz/diverzita-a-inkluze"
     },
     {
-      "flag": null,
+      "duration": "31m",
+      "flag": "",
+      "lecturers": "Míša Nofftz Skopalová",
       "name": "Nejčastější chyby v němčině",
       "slug": "nejcastejsi-chyby-v-nemcine",
       "url": "https://www.seduo.cz/nejcastejsi-chyby-v-nemcine"
     },
     {
+      "duration": "1h 6m",
       "flag": "Nejprodávanější",
+      "lecturers": "Brano Frk",
       "name": "Firemní vzdělávání: efektivní rozvoj zaměstnanců",
       "slug": "firemni-vzdelavani",
       "url": "https://www.seduo.cz/firemni-vzdelavani"
     },
     {
+      "duration": "1h 13m",
       "flag": "Nejprodávanější",
+      "lecturers": "Ján Uriga",
       "name": "Praktická cesta k inovacím",
       "slug": "prakticka-cesta-k-inovacim",
       "url": "https://www.seduo.cz/prakticka-cesta-k-inovacim"
     },
     {
+      "duration": "2h 5m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jan Ženatý",
       "name": "Anatomie lži: jak poznat lháře",
       "slug": "anatomie-lzi",
       "url": "https://www.seduo.cz/anatomie-lzi"
     },
     {
+      "duration": "1h 16m",
       "flag": "Nejprodávanější",
+      "lecturers": "Iveta Clarke",
       "name": "Umění rozhovoru",
       "slug": "umeni-rozhovoru",
       "url": "https://www.seduo.cz/umeni-rozhovoru"
     },
     {
+      "duration": "1h 5m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Wieser",
       "name": "Profíkem na online porady: jak na virtuální meetingy",
       "slug": "profikem-na-online-porady",
       "url": "https://www.seduo.cz/profikem-na-online-porady"
     },
     {
+      "duration": "46m",
       "flag": "Nejprodávanější",
+      "lecturers": "Cyril Höschl",
       "name": "Anatomie správného rozhodování",
       "slug": "anatomie-spravneho-rozhodovani",
       "url": "https://www.seduo.cz/anatomie-spravneho-rozhodovani"
     },
     {
+      "duration": "1h 54m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Lasák",
       "name": "Microsoft Power BI: praktický úvod",
       "slug": "power-bi-chytra-vizualizace-dat",
       "url": "https://www.seduo.cz/power-bi-chytra-vizualizace-dat"
     },
     {
+      "duration": "1h 2m",
       "flag": "Nejprodávanější",
+      "lecturers": "Katarína Kovalčíková",
       "name": "Lektorské dovednosti: Jak udělat z dobrého školení skvělé",
       "slug": "lektorske-dovednosti-jak-udelat-z-dobreho-skoleni-skvele",
       "url": "https://www.seduo.cz/lektorske-dovednosti-jak-udelat-z-dobreho-skoleni-skvele"
     },
     {
+      "duration": "1h 7m",
       "flag": "Nejprodávanější",
+      "lecturers": "Martina Georgievová",
       "name": "Jak na náročné rozhovory s podřízenými",
       "slug": "jak-na-narocne-rozhovory-s-podrizenymi",
       "url": "https://www.seduo.cz/jak-na-narocne-rozhovory-s-podrizenymi"
     },
     {
+      "duration": "52m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jakub Oliva",
       "name": "Jak se nespálit při propouštění",
       "slug": "jak-se-nespalit-pri-propousteni",
       "url": "https://www.seduo.cz/jak-se-nespalit-pri-propousteni"
     },
     {
-      "flag": null,
+      "duration": "1h 7m",
+      "flag": "",
+      "lecturers": "Tomáš Etzler",
       "name": "Odvaha vystoupit z komfortní zóny s Tomášem Etzlerem",
       "slug": "odvaha-vystoupit-z-komfortni-zony",
       "url": "https://www.seduo.cz/odvaha-vystoupit-z-komfortni-zony"
     },
     {
-      "flag": null,
+      "duration": "42m",
+      "flag": "",
+      "lecturers": "Lukáš Bakoš",
       "name": "Zvládání ega: jak si udržet zdravé sebevědomí",
       "slug": "zvladani-ega",
       "url": "https://www.seduo.cz/zvladani-ega"
     },
     {
-      "flag": null,
+      "duration": "48m",
+      "flag": "",
+      "lecturers": "Stanislav Vojtíšek",
       "name": "Veďte tým jako kapitán dopravního letadla",
       "slug": "vedte-tym-jako-kapitan-dopravniho-letadla",
       "url": "https://www.seduo.cz/vedte-tym-jako-kapitan-dopravniho-letadla"
     },
     {
-      "flag": null,
+      "duration": "52m",
+      "flag": "",
+      "lecturers": "Ivana Molnárová",
       "name": "Leadership pohledem vrcholové manažerky",
       "slug": "leadership-pohledem-vrcholove-manazerky",
       "url": "https://www.seduo.cz/leadership-pohledem-vrcholove-manazerky"
     },
     {
+      "duration": "41m",
       "flag": "Nejprodávanější",
+      "lecturers": "Renata Novotná",
       "name": "Staňte se mistrem zadávání úkolů",
       "slug": "stante-se-mistrem-zadavani-ukolu",
       "url": "https://www.seduo.cz/stante-se-mistrem-zadavani-ukolu"
     },
     {
+      "duration": "56m",
       "flag": "Nejprodávanější",
+      "lecturers": "Tomáš Rektor",
       "name": "Průvodce duševním zdravím: být v pohodě v práci i na home office",
       "slug": "pruvodce-dusevnim-zdravim-byt-v-pohode-v-praci-i-na-home-office",
       "url": "https://www.seduo.cz/pruvodce-dusevnim-zdravim-byt-v-pohode-v-praci-i-na-home-office"
     },
     {
+      "duration": "1h 18m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jiří Kula",
       "name": "Krizové řízení bez servítek očima globálního manažera",
       "slug": "krizove-rizeni-bez-servitek-ocima-globalniho-manazera",
       "url": "https://www.seduo.cz/krizove-rizeni-bez-servitek-ocima-globalniho-manazera"
     },
     {
+      "duration": "1h 5m",
       "flag": "Nejprodávanější",
+      "lecturers": "Daniel Gamrot",
       "name": "Organizace práce s Microsoft To Do",
       "slug": "organizace-prace-s-microsoft-to-do",
       "url": "https://www.seduo.cz/organizace-prace-s-microsoft-to-do"
     },
     {
-      "flag": null,
+      "duration": "58m",
+      "flag": "",
+      "lecturers": "Oliver Šimko",
       "name": "Gamifikace: Jak využít hru a herní prvky v byznysu",
       "slug": "gamifikace-jak-vyuzit-hru-a-herni-prvky-v-byznysu",
       "url": "https://www.seduo.cz/gamifikace-jak-vyuzit-hru-a-herni-prvky-v-byznysu"
     },
     {
+      "duration": "34m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jaroslav Mydlo",
       "name": "Rychlá orientace ve firemních financích",
       "slug": "rychla-orientace-ve-firemnich-financich",
       "url": "https://www.seduo.cz/rychla-orientace-ve-firemnich-financich"
     },
     {
-      "flag": null,
+      "duration": "1h 5m",
+      "flag": "",
+      "lecturers": "Patrik Pauko",
       "name": "Tajemství motivace: Jak zvyšovat spokojenost pracovníků",
       "slug": "tajemstvi-motivace-jak-zvysovat-spokojenost-pracovniku",
       "url": "https://www.seduo.cz/tajemstvi-motivace-jak-zvysovat-spokojenost-pracovniku"
     },
     {
+      "duration": "1h 17m",
       "flag": "Nejprodávanější",
+      "lecturers": "Filip Kahoun",
       "name": "Change Management: Jak úspěšně řídit a zvládat změny",
       "slug": "change-management-jak-uspesne-ridit-a-zvladat-zmeny",
       "url": "https://www.seduo.cz/change-management-jak-uspesne-ridit-a-zvladat-zmeny"
     },
     {
+      "duration": "56m",
       "flag": "Nejprodávanější",
+      "lecturers": "Eva Marková",
       "name": "Zvládání manipulace a strachu v komunikaci",
       "slug": "zvladani-manipulace-a-strachu-v-komunikaci",
       "url": "https://www.seduo.cz/zvladani-manipulace-a-strachu-v-komunikaci"
     },
     {
+      "duration": "47m",
       "flag": "Nejprodávanější",
+      "lecturers": "Ján Košturiak",
       "name": "Zjednodušování (nejen) ve výrobě",
       "slug": "zjednodusovani-ve-vyrobe",
       "url": "https://www.seduo.cz/zjednodusovani-ve-vyrobe"
     },
     {
+      "duration": "50m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Lasák",
       "name": "Jak na Power Query pro Excel",
       "slug": "jak-na-power-query-pro-excel",
       "url": "https://www.seduo.cz/jak-na-power-query-pro-excel"
     },
     {
+      "duration": "1h 26m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Moric",
       "name": "Alchymie změny",
       "slug": "alchymie-zmeny",
       "url": "https://www.seduo.cz/alchymie-zmeny"
     },
     {
+      "duration": "1h 8m",
       "flag": "Nejprodávanější",
+      "lecturers": "Brano Frk",
       "name": "Jak se efektivně učit online",
       "slug": "jak-se-efektivne-ucit-online",
       "url": "https://www.seduo.cz/jak-se-efektivne-ucit-online"
     },
     {
+      "duration": "58m",
       "flag": "Nejprodávanější",
+      "lecturers": "Adela Vinczeová (Banášová)",
       "name": "Autenticita jako cesta k úspěchu s Adelou Vinczeovou",
       "slug": "autenticita-jako-cesta-k-uspechu-s-adelou-vinczeovou",
       "url": "https://www.seduo.cz/autenticita-jako-cesta-k-uspechu-s-adelou-vinczeovou"
     },
     {
-      "flag": null,
+      "duration": "56m",
+      "flag": "",
+      "lecturers": "Ján Markoš",
       "name": "Rozhodujte se jako šachový velmistr",
       "slug": "rozhodujte-se-jako-sachovy-velmistr",
       "url": "https://www.seduo.cz/rozhodujte-se-jako-sachovy-velmistr"
     },
     {
-      "flag": null,
+      "duration": "1h 10m",
+      "flag": "",
+      "lecturers": "Dominika Cibulková",
       "name": "V mysli tenisové bojovnice: otevřeně s vítězkou Turnaje mistryň",
       "slug": "v-mysli-tenisove-bojovnice-otevrene-s-vitezkou-turnaje-mistryn",
       "url": "https://www.seduo.cz/v-mysli-tenisove-bojovnice-otevrene-s-vitezkou-turnaje-mistryn"
     },
     {
+      "duration": "40m",
       "flag": "Nejprodávanější",
+      "lecturers": "Olga Lošťáková",
       "name": "Jak zvládnout strach z odmítání?",
       "slug": "jak-zvladnout-strach-z-odmitani",
       "url": "https://www.seduo.cz/jak-zvladnout-strach-z-odmitani"
     },
     {
+      "duration": "52m",
       "flag": "Nejprodávanější",
+      "lecturers": "Karol Suchánek",
       "name": "Digitální bezpečnost: naučte se chodit v online světě bezpečně",
       "slug": "digitalni-bezpecnost-naucte-se-chodit-v-online-svete-bezpecne",
       "url": "https://www.seduo.cz/digitalni-bezpecnost-naucte-se-chodit-v-online-svete-bezpecne"
     },
     {
-      "flag": null,
+      "duration": "56m",
+      "flag": "",
+      "lecturers": "Ján Dubnička",
       "name": "Umění naslouchat: staňte se dobrým posluchačem",
       "slug": "efektivni-naslouchani-stante-se-dobrym-posluchacem",
       "url": "https://www.seduo.cz/efektivni-naslouchani-stante-se-dobrym-posluchacem"
     },
     {
+      "duration": "46m",
       "flag": "Nejprodávanější",
+      "lecturers": "Rastislav Duriš",
       "name": "Efektivní delegování: jak posilovat pravomoci pracovníků",
       "slug": "efektivni-delegovani-jak-posilovat-pravomoci-pracovniku",
       "url": "https://www.seduo.cz/efektivni-delegovani-jak-posilovat-pravomoci-pracovniku"
     },
     {
+      "duration": "35m",
       "flag": "Nejprodávanější",
+      "lecturers": "Olga Lošťáková",
       "name": "Jak na emoční upíry",
       "slug": "jak-na-emocni-upiry",
       "url": "https://www.seduo.cz/jak-na-emocni-upiry"
     },
     {
+      "duration": "46m",
       "flag": "Nejprodávanější",
+      "lecturers": "Linda Martišková (Nezhybová)",
       "name": "Adobe Photoshop: základní práce s fotografií",
       "slug": "adobe-photoshop-zakladni-prace-s-fotografii",
       "url": "https://www.seduo.cz/adobe-photoshop-zakladni-prace-s-fotografii"
     },
     {
-      "flag": null,
+      "duration": "1h 8m",
+      "flag": "",
+      "lecturers": "Marek Hrkal",
       "name": "Odprezentuj: Jak vizualizovat data v prezentacích",
       "slug": "odprezentuj-jak-vizualizovat-data-v-prezentacich",
       "url": "https://www.seduo.cz/odprezentuj-jak-vizualizovat-data-v-prezentacich"
     },
     {
+      "duration": "1h 3m",
       "flag": "Nejprodávanější",
+      "lecturers": "Denisa Dědičová a GrowJOB",
       "name": "Motivace a smysl: Jak hledat smysl v práci i v osobním životě?",
       "slug": "motivace-a-smysl-jak-hledat-smysl-v-osobnim-zivote-i-v-praci",
       "url": "https://www.seduo.cz/motivace-a-smysl-jak-hledat-smysl-v-osobnim-zivote-i-v-praci"
     },
     {
-      "flag": null,
+      "duration": "50m",
+      "flag": "",
+      "lecturers": "David Svoboda",
       "name": "Myšlení vítězů s olympijským šampionem v moderním pětiboji",
       "slug": "mysleni-vitezu-olympijskym-sampionem-v-modernim-petiboji",
       "url": "https://www.seduo.cz/mysleni-vitezu-olympijskym-sampionem-v-modernim-petiboji"
     },
     {
+      "duration": "53m",
       "flag": "Nejprodávanější",
+      "lecturers": "Michaela Holišová",
       "name": "Komunikační dovednosti pro modré límečky",
       "slug": "komunikacni-dovednosti-pro-modre-limecky",
       "url": "https://www.seduo.cz/komunikacni-dovednosti-pro-modre-limecky"
     },
     {
-      "flag": null,
+      "duration": "1h 10m",
+      "flag": "",
+      "lecturers": "Zdenka Studená",
       "name": "Home Office pro zaměstnance: praktické rady a tipy",
       "slug": "home-office-pro-zamestnance-prakticke-rady-a-tipy",
       "url": "https://www.seduo.cz/home-office-pro-zamestnance-prakticke-rady-a-tipy"
     },
     {
+      "duration": "59m",
       "flag": "Nejprodávanější",
+      "lecturers": "Martin Konečný",
       "name": "Situační leadership jako nástroj pro efektivní vedení lidí",
       "slug": "situacni-leadership-jako-nastroj-pro-efektivni-vedeni-lidi",
       "url": "https://www.seduo.cz/situacni-leadership-jako-nastroj-pro-efektivni-vedeni-lidi"
     },
     {
+      "duration": "46m",
       "flag": "Nejprodávanější",
+      "lecturers": "Gen. Ing. Andor Šándor",
       "name": "Zkušenosti generála tajné služby: Práce s informacemi",
       "slug": "zkusenosti-generala-tajne-sluzby-prace-s-informacemi",
       "url": "https://www.seduo.cz/zkusenosti-generala-tajne-sluzby-prace-s-informacemi"
     },
     {
-      "flag": null,
+      "duration": "46m",
+      "flag": "",
+      "lecturers": "Vojtěch Zíka",
       "name": "Jak se rozhodujeme?",
       "slug": "jak-se-rozhodujeme",
       "url": "https://www.seduo.cz/jak-se-rozhodujeme"
     },
     {
+      "duration": "48m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Wieser",
       "name": "Profíkem na videohovory: praktický průvodce online komunikací",
       "slug": "profikem-na-videohovory-prakticky-pruvodce",
       "url": "https://www.seduo.cz/profikem-na-videohovory-prakticky-pruvodce"
     },
     {
+      "duration": "1h 13m",
       "flag": "Nejprodávanější",
+      "lecturers": "Margit Slimáková",
       "name": "Jak zdravě jíst v práci",
       "slug": "jak-zdrave-jist-v-praci",
       "url": "https://www.seduo.cz/jak-zdrave-jist-v-praci"
     },
     {
+      "duration": "56m",
       "flag": "Nejprodávanější",
+      "lecturers": "Denisa Dědičová a GrowJOB",
       "name": "Osobní hrdost a asertivita: jak si vážit sám sebe?",
       "slug": "osobni-hrdost-a-asertivita-jak-si-vazit-sam-sebe",
       "url": "https://www.seduo.cz/osobni-hrdost-a-asertivita-jak-si-vazit-sam-sebe"
     },
     {
-      "flag": null,
+      "duration": "52m",
+      "flag": "",
+      "lecturers": "Šimon Pánek",
       "name": "Hodnotový leadership očima spoluzakladatele humanitární organizace",
       "slug": "hodnotovy-leadership",
       "url": "https://www.seduo.cz/hodnotovy-leadership"
     },
     {
+      "duration": "1h 12m",
       "flag": "Nejprodávanější",
+      "lecturers": "Bronislav Sobotka",
       "name": "Ovládněte každodenní pokec v angličtině",
       "slug": "ovladnete-kazdodenni-pokec-v-anglictine",
       "url": "https://www.seduo.cz/ovladnete-kazdodenni-pokec-v-anglictine"
     },
     {
+      "duration": "47m",
       "flag": "Nejprodávanější",
+      "lecturers": "Petr Pavel",
       "name": "Leadership v první linii",
       "slug": "leadership-v-prvni-linii",
       "url": "https://www.seduo.cz/leadership-v-prvni-linii"
     },
     {
-      "flag": null,
+      "duration": "54m",
+      "flag": "",
+      "lecturers": "Lenka Zelenohorská",
       "name": "Průvodce módou a stylem úspěšné ženy",
       "slug": "pruvodce-modou-a-stylem-uspesne-zeny",
       "url": "https://www.seduo.cz/pruvodce-modou-a-stylem-uspesne-zeny"
     },
     {
+      "duration": "57m",
       "flag": "Nejprodávanější",
+      "lecturers": "GrowJOB a Lukáš Havránek",
       "name": "Doba digitální: jak pracovat soustředěně a bez vyrušení?",
       "slug": "doba-digitalni-jak-pracovat-soustredene-a-bez-vyruseni",
       "url": "https://www.seduo.cz/doba-digitalni-jak-pracovat-soustredene-a-bez-vyruseni"
     },
     {
+      "duration": "46m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jan Ženatý",
       "name": "Anatomie emocí: jak je číst z výrazu tváře druhých",
       "slug": "anatomie-emoci-jak-je-cist-z-vyrazu-tvare-druhych",
       "url": "https://www.seduo.cz/anatomie-emoci-jak-je-cist-z-vyrazu-tvare-druhych"
     },
     {
-      "flag": null,
+      "duration": "1h 22m",
+      "flag": "",
+      "lecturers": "GrowJOB a Barbora Vacková",
       "name": "Radikální otevřenost: Jak dávat účinnou zpětnou vazbu?",
       "slug": "radikalni-otevrenost-jak-davat-ucinnou-zpetnou-vazbu",
       "url": "https://www.seduo.cz/radikalni-otevrenost-jak-davat-ucinnou-zpetnou-vazbu"
     },
     {
-      "flag": null,
+      "duration": "37m",
+      "flag": "",
+      "lecturers": "Jana Horáková",
       "name": "Barevná osobnostní typologie pro obchodníky",
       "slug": "barevna-osobnostni-typologie-pro-obchodniky",
       "url": "https://www.seduo.cz/barevna-osobnostni-typologie-pro-obchodniky"
     },
     {
-      "flag": null,
+      "duration": "1h 22m",
+      "flag": "",
+      "lecturers": "Jana Horáková",
       "name": "Barevná osobnostní typologie pro leadery",
       "slug": "barevna-osobnostni-typologie-pro-leadery",
       "url": "https://www.seduo.cz/barevna-osobnostni-typologie-pro-leadery"
     },
     {
-      "flag": null,
+      "duration": "1h 5m",
+      "flag": "",
+      "lecturers": "GrowJOB a Barbora Vacková",
       "name": "Home Office 2.0: jak být efektivní při práci na dálku?",
       "slug": "home-office-2-0-jak-byt-efektivni-pri-praci-na-dalku",
       "url": "https://www.seduo.cz/home-office-2-0-jak-byt-efektivni-pri-praci-na-dalku"
     },
     {
+      "duration": "2h 24m",
       "flag": "Nejprodávanější",
+      "lecturers": "Bronislav Sobotka",
       "name": "Rozmluvte se anglicky!",
       "slug": "rozmluvte-se-anglicky",
       "url": "https://www.seduo.cz/rozmluvte-se-anglicky"
     },
     {
+      "duration": "48m",
       "flag": "Nejprodávanější",
+      "lecturers": "Renata Novotná",
       "name": "Motivující zpětná vazba",
       "slug": "motivujici-zpetna-vazba-aneb-zapomente-na-sendvic",
       "url": "https://www.seduo.cz/motivujici-zpetna-vazba-aneb-zapomente-na-sendvic"
     },
     {
-      "flag": null,
+      "duration": "50m",
+      "flag": "",
+      "lecturers": "Tomáš Bušek",
       "name": "Manažerské archetypy: Jakou roli hrajete?",
       "slug": "manazerske-archetypy-jakou-manazerskou-roli-hrajete",
       "url": "https://www.seduo.cz/manazerske-archetypy-jakou-manazerskou-roli-hrajete"
     },
     {
+      "duration": "44m",
       "flag": "Nejprodávanější",
+      "lecturers": "Marek Hrkal",
       "name": "Odprezentuj: 10 chyb při tvorbě prezentací a jak se jim vyhnout",
       "slug": "odprezentuj-10-chyb-pri-tvorbe-prezentaci-a-jak-se-jim-vyhnout",
       "url": "https://www.seduo.cz/odprezentuj-10-chyb-pri-tvorbe-prezentaci-a-jak-se-jim-vyhnout"
     },
     {
+      "duration": "57m",
       "flag": "Nejprodávanější",
+      "lecturers": "Tereza Hodycová",
       "name": "„Tahák na zdraví“ aneb psychosomatika ve zdravotní prevenci",
       "slug": "tahak-na-zdravi-aneb-psychosomatika-ve-zdravotni-prevenci",
       "url": "https://www.seduo.cz/tahak-na-zdravi-aneb-psychosomatika-ve-zdravotni-prevenci"
     },
     {
+      "duration": "1h 21m",
       "flag": "Nejprodávanější",
+      "lecturers": "GrowJOB a Petr Ludwig",
       "name": "NASTAVENÍ MYSLI: Jak změnit svoje myšlení?",
       "slug": "nastaveni-mysli-jak-zmenit-svoje-mysleni",
       "url": "https://www.seduo.cz/nastaveni-mysli-jak-zmenit-svoje-mysleni"
     },
     {
+      "duration": "52m",
       "flag": "Nejprodávanější",
+      "lecturers": "Radek Viktor Haštaba",
       "name": "Efektivní vedení akvizičního jednání s cílem uzavřít obchod",
       "slug": "efektivni-vedeni-akvizicniho-jednani-s-cilem-uzavrit-obchod",
       "url": "https://www.seduo.cz/efektivni-vedeni-akvizicniho-jednani-s-cilem-uzavrit-obchod"
     },
     {
-      "flag": null,
+      "duration": "1h 19m",
+      "flag": "",
+      "lecturers": "Bronislav Sobotka",
       "name": "Zákeřnosti anglického slovosledu",
       "slug": "zakernosti-anglickeho-slovosledu",
       "url": "https://www.seduo.cz/zakernosti-anglickeho-slovosledu"
     },
     {
+      "duration": "8h 55m",
       "flag": "Nejprodávanější",
+      "lecturers": "Lukáš Hána a GrowJOB",
       "name": "Akademie KRITICKÉ MYŠLENÍ",
       "slug": "akademie-kriticke-mysleni",
       "url": "https://www.seduo.cz/akademie-kriticke-mysleni"
     },
     {
+      "duration": "24m",
       "flag": "Nejprodávanější",
+      "lecturers": "Daniel Gamrot",
       "name": "Kalendář na maximum",
       "slug": "ms-kalendar-na-maximum",
       "url": "https://www.seduo.cz/ms-kalendar-na-maximum"
     },
     {
+      "duration": "40m",
       "flag": "Nejprodávanější",
+      "lecturers": "Daniel Gamrot",
       "name": "Microsoft One Note",
       "slug": "ms-one-note",
       "url": "https://www.seduo.cz/ms-one-note"
     },
     {
-      "flag": null,
+      "duration": "1h 9m",
+      "flag": "",
+      "lecturers": "Zdenka Studená",
       "name": "Home office a vedení týmu na dálku: praktické tipy pro manažery",
       "slug": "home-office-a-vedeni-tymu-na-dalku-prakticke-tipy-pro-manazery",
       "url": "https://www.seduo.cz/home-office-a-vedeni-tymu-na-dalku-prakticke-tipy-pro-manazery"
     },
     {
-      "flag": null,
+      "duration": "1h 12m",
+      "flag": "",
+      "lecturers": "Lukáš Hána a GrowJOB",
       "name": "Kritické myšlení 8 - Racionální komunikace a argumentace",
       "slug": "racionalni-komunikace-a-argumentace",
       "url": "https://www.seduo.cz/racionalni-komunikace-a-argumentace"
     },
     {
-      "flag": null,
+      "duration": "1h 10m",
+      "flag": "",
+      "lecturers": "Lukáš Hána a GrowJOB",
       "name": "Kritické myšlení 7 - Rozhodování na základě důkazů",
       "slug": "rozhodovani-na-zaklade-dukazu",
       "url": "https://www.seduo.cz/rozhodovani-na-zaklade-dukazu"
     },
     {
-      "flag": null,
+      "duration": "36m",
+      "flag": "",
+      "lecturers": "Jana Horáková",
       "name": "Základy barevné osobnostní typologie",
       "slug": "zaklady-barevne-osobnostni-typologie",
       "url": "https://www.seduo.cz/zaklady-barevne-osobnostni-typologie"
     },
     {
-      "flag": null,
+      "duration": "31m",
+      "flag": "",
+      "lecturers": "Pavel Wieser",
       "name": "Storytelling 2: Prodávejte příběhem a zaujměte",
       "slug": "storytelling-2-prodavejte-pribehem-a-zaujmete",
       "url": "https://www.seduo.cz/storytelling-2-prodavejte-pribehem-a-zaujmete"
     },
     {
+      "duration": "31m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Wieser",
       "name": "Storytelling 1: Prezentace a business storytelling",
       "slug": "storytelling-1-prezentace-a-business-storytelling",
       "url": "https://www.seduo.cz/storytelling-1-prezentace-a-business-storytelling"
     },
     {
+      "duration": "50m",
       "flag": "Nejprodávanější",
+      "lecturers": "Eva Marková",
       "name": "Řešení konfliktů - taktiky a strategie",
       "slug": "reseni-konfliktu-taktiky-a-strategie",
       "url": "https://www.seduo.cz/reseni-konfliktu-taktiky-a-strategie"
     },
     {
+      "duration": "32m",
       "flag": "Nejprodávanější",
+      "lecturers": "Radek Viktor Haštaba",
       "name": "Jak se dostat na schůzku pomocí telefonátu 2 - mentální příprava",
       "slug": "jak-se-dostat-na-schuzku-pomoci-telefonatu-2-mentalni-priprava",
       "url": "https://www.seduo.cz/jak-se-dostat-na-schuzku-pomoci-telefonatu-2-mentalni-priprava"
     },
     {
-      "flag": null,
+      "duration": "1h 14m",
+      "flag": "",
+      "lecturers": "Bronislav Sobotka",
       "name": "Jak na členy v angličtině",
       "slug": "jak-na-cleny-v-anglictine",
       "url": "https://www.seduo.cz/jak-na-cleny-v-anglictine"
     },
     {
+      "duration": "46m",
       "flag": "Nejprodávanější",
+      "lecturers": "Michelle Losekoot",
       "name": "Jak (se) prodat textem",
       "slug": "jak-se-prodat-textem",
       "url": "https://www.seduo.cz/jak-se-prodat-textem"
     },
     {
+      "duration": "34m",
       "flag": "Nejprodávanější",
+      "lecturers": "Radek Viktor Haštaba",
       "name": "Jak získávat nové zákazníky navoláváním 1 - praktická příprava",
       "slug": "jak-ziskavat-nove-zakazniky-navolavanim-1-prakticka-priprava",
       "url": "https://www.seduo.cz/jak-ziskavat-nove-zakazniky-navolavanim-1-prakticka-priprava"
     },
     {
+      "duration": "44m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Wieser",
       "name": "Prezentační dovednosti a veřejný projev",
       "slug": "prezentacni-dovednosti-a-verejny-projev",
       "url": "https://www.seduo.cz/prezentacni-dovednosti-a-verejny-projev"
     },
     {
-      "flag": null,
+      "duration": "47m",
+      "flag": "",
+      "lecturers": "Margareta Křížová",
       "name": "Co se v mládí naučíš, v byznysu zapomeň",
       "slug": "co-se-v-mladi-naucis-v-dospelosti-zapomen",
       "url": "https://www.seduo.cz/co-se-v-mladi-naucis-v-dospelosti-zapomen"
     },
     {
-      "flag": null,
+      "duration": "1h 14m",
+      "flag": "",
+      "lecturers": "Tomáš Bušek",
       "name": "Firma a rodina jako kmen",
       "slug": "firma-a-rodina-jako-kmen",
       "url": "https://www.seduo.cz/firma-a-rodina-jako-kmen"
     },
     {
-      "flag": null,
+      "duration": "4h 31m",
+      "flag": "",
+      "lecturers": "Bronislav Sobotka",
       "name": "Maxikurz anglických předložek",
       "slug": "maxikurz-anglickych-predlozek",
       "url": "https://www.seduo.cz/maxikurz-anglickych-predlozek"
     },
     {
-      "flag": null,
+      "duration": "1h 5m",
+      "flag": "",
+      "lecturers": "Lukáš Hána a GrowJOB",
       "name": "Kritické myšlení 6 - Mediální gramotnost a fact-checking",
       "slug": "medialni-gramotnost-a-fact-checking",
       "url": "https://www.seduo.cz/medialni-gramotnost-a-fact-checking"
     },
     {
-      "flag": null,
+      "duration": "15m",
+      "flag": "",
+      "lecturers": "Seduo.cz",
       "name": "Základní technologický slovník",
       "slug": "zakladni-technologicky-slovnik",
       "url": "https://www.seduo.cz/zakladni-technologicky-slovnik"
     },
     {
+      "duration": "43m",
       "flag": "Nejprodávanější",
+      "lecturers": "Olga Lošťáková",
       "name": "Obtížné komunikační situace",
       "slug": "obtizne-komunikacni-situace",
       "url": "https://www.seduo.cz/obtizne-komunikacni-situace"
     },
     {
+      "duration": "14m",
       "flag": "Nejprodávanější",
+      "lecturers": "Seduo.cz",
       "name": "Nastavte si konečně bezpečné heslo",
       "slug": "nastavte-si-konecne-bezpecne-heslo",
       "url": "https://www.seduo.cz/nastavte-si-konecne-bezpecne-heslo"
     },
     {
-      "flag": null,
+      "duration": "58m",
+      "flag": "",
+      "lecturers": "GrowJOB a Lukáš Hána",
       "name": "Kritické myšlení 5 - Teorie her a jak okolnosti ovlivňují rozhodování",
       "slug": "teorie-her-a-jak-okolnosti-ovlivnuji-rozhodovani",
       "url": "https://www.seduo.cz/teorie-her-a-jak-okolnosti-ovlivnuji-rozhodovani"
     },
     {
-      "flag": null,
+      "duration": "48m",
+      "flag": "",
+      "lecturers": "Tereza Hodycová",
       "name": "Jak se ubránit syndromu vyhoření – svépomocný manuál",
       "slug": "jak-se-ubranit-syndromu-vyhoreni-svepomocny-manual",
       "url": "https://www.seduo.cz/jak-se-ubranit-syndromu-vyhoreni-svepomocny-manual"
     },
     {
+      "duration": "14m",
       "flag": "Nejprodávanější",
+      "lecturers": "Seduo.cz",
       "name": "Odhalte finanční zdraví podniku",
       "slug": "odhalte-financni-zdravi-podniku",
       "url": "https://www.seduo.cz/odhalte-financni-zdravi-podniku"
     },
     {
+      "duration": "22m",
       "flag": "Nejprodávanější",
+      "lecturers": "Luděk Salamánek",
       "name": "Začínáme s makry v MS Excel",
       "slug": "zaciname-s-makry-v-ms-excel",
       "url": "https://www.seduo.cz/zaciname-s-makry-v-ms-excel"
     },
     {
+      "duration": "38m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Moric",
       "name": "Autenticky a po svém",
       "slug": "autenticky-a-po-svem",
       "url": "https://www.seduo.cz/autenticky-a-po-svem"
     },
     {
-      "flag": null,
+      "duration": "43m",
+      "flag": "",
+      "lecturers": "Josef Lhotský",
       "name": "Agilní (r)evoluce: Jak ustát agilní transformaci",
       "slug": "agilni-r-evoluce-jak-ustat-agilni-transformaci",
       "url": "https://www.seduo.cz/agilni-r-evoluce-jak-ustat-agilni-transformaci"
     },
     {
-      "flag": null,
+      "duration": "1h 16m",
+      "flag": "",
+      "lecturers": "GrowJOB a Lukáš Hána",
       "name": "Kritické myšlení 4 - Rozhodování za nejistoty",
       "slug": "rozhodovani-za-nejistoty",
       "url": "https://www.seduo.cz/rozhodovani-za-nejistoty"
     },
     {
+      "duration": "15m",
       "flag": "Nejprodávanější",
+      "lecturers": "Seduo.cz",
       "name": "Vychytávky v Excelu",
       "slug": "vychytavky-v-excelu",
       "url": "https://www.seduo.cz/vychytavky-v-excelu"
     },
     {
-      "flag": null,
+      "duration": "10m",
+      "flag": "",
+      "lecturers": "Seduo.cz",
       "name": "Zkratky v online komunikaci",
       "slug": "internetove-zkratky",
       "url": "https://www.seduo.cz/internetove-zkratky"
     },
     {
-      "flag": null,
+      "duration": "36m",
+      "flag": "",
+      "lecturers": "Daniel Šmíd",
       "name": "Zkrácená historie etikety a proč se jí zabývat",
       "slug": "zkracena-historie-etikety-a-proc-se-ji-zabyvat",
       "url": "https://www.seduo.cz/zkracena-historie-etikety-a-proc-se-ji-zabyvat"
     },
     {
+      "duration": "26m",
       "flag": "Nejprodávanější",
+      "lecturers": "Seduo.cz",
       "name": "Excel - expresní úvod",
       "slug": "excel-expresni-uvod",
       "url": "https://www.seduo.cz/excel-expresni-uvod"
     },
     {
+      "duration": "1h 0m",
       "flag": "Nejprodávanější",
+      "lecturers": "Olga Lošťáková",
       "name": "Jak zvládnout trému a jiné obtíže při prezentaci",
       "slug": "jak-zvladnout-tremu-a-jine-obtize-pri-prezentaci",
       "url": "https://www.seduo.cz/jak-zvladnout-tremu-a-jine-obtize-pri-prezentaci"
     },
     {
+      "duration": "1h 3m",
       "flag": "Nejprodávanější",
+      "lecturers": "Zita Henselová",
       "name": "Sebekoučování",
       "slug": "sebekoucovani",
       "url": "https://www.seduo.cz/sebekoucovani"
     },
     {
-      "flag": null,
+      "duration": "56m",
+      "flag": "",
+      "lecturers": "GrowJOB a Lukáš Hána",
       "name": "Kritické myšlení 3 - Ekonomické myšlení",
       "slug": "ekonomicke-mysleni",
       "url": "https://www.seduo.cz/ekonomicke-mysleni"
     },
     {
-      "flag": null,
+      "duration": "1h 20m",
+      "flag": "",
+      "lecturers": "Filip Kahoun",
       "name": "Osobní marketing II.: Jak se chytře prodat v práci",
       "slug": "osobni-marketing-ii-jak-se-uspesne-prodat-v-praci",
       "url": "https://www.seduo.cz/osobni-marketing-ii-jak-se-uspesne-prodat-v-praci"
     },
     {
+      "duration": "56m",
       "flag": "Nejprodávanější",
+      "lecturers": "Gen. Ing. Andor Šándor",
       "name": "Zkušenosti generála tajné služby: Práce s lidmi",
       "slug": "prace-s-lidmi",
       "url": "https://www.seduo.cz/prace-s-lidmi"
     },
     {
-      "flag": null,
+      "duration": "42m",
+      "flag": "",
+      "lecturers": "Vít Benešovský",
       "name": "Start Speaking Czech Now! - The Final Course in Essential Czech",
       "slug": "start-speaking-czech-now-the-final-course-in-essential-czech",
       "url": "https://www.seduo.cz/start-speaking-czech-now-the-final-course-in-essential-czech"
     },
     {
-      "flag": null,
+      "duration": "54m",
+      "flag": "",
+      "lecturers": "Lukáš Hána a GrowJOB",
       "name": "Kritické myšlení 2 - Jak hacknout rozhodování - intuice vs. algoritmy",
       "slug": "jak-hacknout-rozhodovani-intuice-vs-algoritmy",
       "url": "https://www.seduo.cz/jak-hacknout-rozhodovani-intuice-vs-algoritmy"
     },
     {
-      "flag": null,
+      "duration": "42m",
+      "flag": "",
+      "lecturers": "Vít Benešovský",
       "name": "Start Speaking Czech Now! - More Essentials",
       "slug": "start-speaking-czech-now-more-essentials",
       "url": "https://www.seduo.cz/start-speaking-czech-now-more-essentials"
     },
     {
+      "duration": "50m",
       "flag": "Nejprodávanější",
+      "lecturers": "Zbyněk Rozbořil",
       "name": "Péče o síť kontaktů a základní principy prorůstání do organizace",
       "slug": "pece-o-sit-kontaktu-a-zakladni-principy-prorustani-do-organizace",
       "url": "https://www.seduo.cz/pece-o-sit-kontaktu-a-zakladni-principy-prorustani-do-organizace"
     },
     {
-      "flag": null,
+      "duration": "47m",
+      "flag": "",
+      "lecturers": "Vít Benešovský",
       "name": "Start Speaking Czech Now! - The Essentials",
       "slug": "start-speaking-czech-now-the-essentials",
       "url": "https://www.seduo.cz/start-speaking-czech-now-the-essentials"
     },
     {
-      "flag": null,
+      "duration": "1h 13m",
+      "flag": "",
+      "lecturers": "Filip Kahoun",
       "name": "Osobní marketing I.: Jak si vybudovat pozitivní image",
       "slug": "osobni-marketing-i-jak-si-vybudovat-pozitivni-image",
       "url": "https://www.seduo.cz/osobni-marketing-i-jak-si-vybudovat-pozitivni-image"
     },
     {
+      "duration": "55m",
       "flag": "Nejprodávanější",
+      "lecturers": "GrowJOB a Lukáš Hána",
       "name": "Úvod do kritického myšlení",
       "slug": "uvod-do-kritickeho-mysleni",
       "url": "https://www.seduo.cz/uvod-do-kritickeho-mysleni"
     },
     {
+      "duration": "1h 35m",
       "flag": "Nejprodávanější",
+      "lecturers": "Miloslav Chlan",
       "name": "Úvod do řízení kvality",
       "slug": "uvod-do-rizeni-kvality",
       "url": "https://www.seduo.cz/uvod-do-rizeni-kvality"
     },
     {
+      "duration": "15m",
       "flag": "Nejprodávanější",
+      "lecturers": "Seduo.cz",
       "name": "Organizujte své poznámky s Evernote",
       "slug": "organizujte-sve-poznamky-s-evernote",
       "url": "https://www.seduo.cz/organizujte-sve-poznamky-s-evernote"
     },
     {
+      "duration": "56m",
       "flag": "Nejprodávanější",
+      "lecturers": "Olga Lošťáková",
       "name": "Tři pilíře úspěšné prezentace",
       "slug": "tri-pilire-uspesne-prezentace",
       "url": "https://www.seduo.cz/tri-pilire-uspesne-prezentace"
     },
     {
+      "duration": "7m",
       "flag": "Nejprodávanější",
+      "lecturers": "Seduo.cz",
       "name": "Rozšíření pro Chrome",
       "slug": "rozsireni-pro-chrome",
       "url": "https://www.seduo.cz/rozsireni-pro-chrome"
     },
     {
+      "duration": "11m",
       "flag": "Nejprodávanější",
+      "lecturers": "Seduo.cz",
       "name": "Naučte se používat klávesové zkratky II.",
       "slug": "naucte-se-pouzivat-klavesove-zkratky-ii",
       "url": "https://www.seduo.cz/naucte-se-pouzivat-klavesove-zkratky-ii"
     },
     {
+      "duration": "14m",
       "flag": "Nejprodávanější",
+      "lecturers": "Seduo.cz",
       "name": "Etiketa mailování",
       "slug": "etiketa-mailovani",
       "url": "https://www.seduo.cz/etiketa-mailovani"
     },
     {
+      "duration": "6m",
       "flag": "Nejprodávanější",
+      "lecturers": "Seduo.cz",
       "name": "Naučte se používat klávesové zkratky",
       "slug": "naucte-se-pouzivat-klavesove-zkratky",
       "url": "https://www.seduo.cz/naucte-se-pouzivat-klavesove-zkratky"
     },
     {
+      "duration": "17m",
       "flag": "Nejprodávanější",
+      "lecturers": "Seduo.cz",
       "name": "Kancelářské fígle s obrázky",
       "slug": "kancelarske-figle-s-obrazky",
       "url": "https://www.seduo.cz/kancelarske-figle-s-obrazky"
     },
     {
+      "duration": "7m",
       "flag": "Nejprodávanější",
+      "lecturers": "Seduo.cz",
       "name": "Pokročilé vyhledávání na Google",
       "slug": "pokrocile-vyhledavani-na-google",
       "url": "https://www.seduo.cz/pokrocile-vyhledavani-na-google"
     },
     {
-      "flag": null,
+      "duration": "11m",
+      "flag": "",
+      "lecturers": "Seduo.cz",
       "name": "Trello II – Pokročilé funkce",
       "slug": "trello-ii-pokrocile-funkce",
       "url": "https://www.seduo.cz/trello-ii-pokrocile-funkce"
     },
     {
-      "flag": null,
+      "duration": "8m",
+      "flag": "",
+      "lecturers": "Seduo.cz",
       "name": "Trello I - Rychlý start do organizace projektů",
       "slug": "trello-i-rychly-start-do-organizace-projektu",
       "url": "https://www.seduo.cz/trello-i-rychly-start-do-organizace-projektu"
     },
     {
-      "flag": null,
+      "duration": "46m",
+      "flag": "",
+      "lecturers": "Eva Marková",
       "name": "Jak se stát autoritou",
       "slug": "jak-se-stat-autoritou",
       "url": "https://www.seduo.cz/jak-se-stat-autoritou"
     },
     {
+      "duration": "25m",
       "flag": "Nejprodávanější",
+      "lecturers": "Seduo.cz",
       "name": "Todoist - zorganizujte si život",
       "slug": "todoist-planujte-efektivne",
       "url": "https://www.seduo.cz/todoist-planujte-efektivne"
     },
     {
+      "duration": "37m",
       "flag": "Nejprodávanější",
+      "lecturers": "Zbyněk Rozbořil",
       "name": "Kouzlo elegantního uzavření obchodu",
       "slug": "kouzlo-elegantniho-uzavreni-obchodu",
       "url": "https://www.seduo.cz/kouzlo-elegantniho-uzavreni-obchodu"
     },
     {
+      "duration": "1h 29m",
       "flag": "Nejprodávanější",
+      "lecturers": "Margit Slimáková",
       "name": "Zdravé jídlo a život jako základ prospívání v práci i soukromí",
       "slug": "zdrave-jidlo-a-zivot-jako-zaklad-prospivani-v-praci-i-soukromi",
       "url": "https://www.seduo.cz/zdrave-jidlo-a-zivot-jako-zaklad-prospivani-v-praci-i-soukromi"
     },
     {
+      "duration": "3h 11m",
       "flag": "Nejprodávanější",
+      "lecturers": "Mgr. Daniela Kalvodová",
       "name": "NLP koučink - kompletní kurz",
       "slug": "nlp-koucink-kompletni-kurz",
       "url": "https://www.seduo.cz/nlp-koucink-kompletni-kurz"
     },
     {
-      "flag": null,
+      "duration": "1h 0m",
+      "flag": "",
+      "lecturers": "Mgr. Daniela Kalvodová",
       "name": "NLP koučink III. - Dosahování cílů, které baví",
       "slug": "nlp-koucink-iii-dosahovani-cilu-ktere-bavi",
       "url": "https://www.seduo.cz/nlp-koucink-iii-dosahovani-cilu-ktere-bavi"
     },
     {
+      "duration": "56m",
       "flag": "Nejprodávanější",
+      "lecturers": "Mgr. Daniela Kalvodová",
       "name": "NLP koučink II. - Praktické techniky pro život",
       "slug": "nlp-koucink-ii-prakticke-techniky-pro-zivot",
       "url": "https://www.seduo.cz/nlp-koucink-ii-prakticke-techniky-pro-zivot"
     },
     {
+      "duration": "1h 15m",
       "flag": "Nejprodávanější",
+      "lecturers": "Mgr. Daniela Kalvodová",
       "name": "NLP koučink I. - Naučte se myslet jinak",
       "slug": "nlp-koucink-i-naucte-se-myslet-jinak",
       "url": "https://www.seduo.cz/nlp-koucink-i-naucte-se-myslet-jinak"
     },
     {
-      "flag": null,
+      "duration": "44m",
+      "flag": "",
+      "lecturers": "Zbyněk Rozbořil",
       "name": "Námitka ze strany klienta? Výborně, parádní příležitost udělat dojem!",
       "slug": "namitka-ze-strany-klienta-vyborne-paradni-prilezitost-udelat-dojem",
       "url": "https://www.seduo.cz/namitka-ze-strany-klienta-vyborne-paradni-prilezitost-udelat-dojem"
     },
     {
+      "duration": "1h 16m",
       "flag": "Nejprodávanější",
+      "lecturers": "Radka Loja",
       "name": "Emoce pod kontrolou II – 5 kroků ke zvládání emocí",
       "slug": "emoce-pod-kontrolou-ii-5-kroku-ke-zvladani-emoci",
       "url": "https://www.seduo.cz/emoce-pod-kontrolou-ii-5-kroku-ke-zvladani-emoci"
     },
     {
+      "duration": "1h 0m",
       "flag": "Nejprodávanější",
+      "lecturers": "Radka Loja",
       "name": "Emoce pod kontrolou I – Emoční inteligence a sebeuvědomění",
       "slug": "emoce-pod-kontrolou-i-emocni-inteligence-a-sebeuvedomeni",
       "url": "https://www.seduo.cz/emoce-pod-kontrolou-i-emocni-inteligence-a-sebeuvedomeni"
     },
     {
-      "flag": null,
+      "duration": "31m",
+      "flag": "",
+      "lecturers": "Zbyněk Rozbořil",
       "name": "Neprodávejte! Buďte skvělí ve vyvolání NÁKUPU",
       "slug": "neprodavejte-budte-skveli-ve-vyvolani-nakupu",
       "url": "https://www.seduo.cz/neprodavejte-budte-skveli-ve-vyvolani-nakupu"
     },
     {
+      "duration": "2h 20m",
       "flag": "Nejprodávanější",
+      "lecturers": "GrowJOB a Petr Ludwig",
       "name": "Co ví věda o spokojenosti?",
       "slug": "co-vi-veda-o-spokojenosti",
       "url": "https://www.seduo.cz/co-vi-veda-o-spokojenosti"
     },
     {
+      "duration": "1h 56m",
       "flag": "Nejprodávanější",
+      "lecturers": "Filip Kahoun",
       "name": "Manažerské tipy pro každý den: jak řešit nábor, výkon i konflikty",
       "slug": "manazerske-tipy-pro-kazdy-den",
       "url": "https://www.seduo.cz/manazerske-tipy-pro-kazdy-den"
     },
     {
+      "duration": "58m",
       "flag": "Nejprodávanější",
+      "lecturers": "Zdeněk Pecka",
       "name": "Prezentování v němčině",
       "slug": "prezentovani-v-nemcine",
       "url": "https://www.seduo.cz/prezentovani-v-nemcine"
     },
     {
+      "duration": "47m",
       "flag": "Nejprodávanější",
+      "lecturers": "Eva Marková",
       "name": "Jak úspěšně prezentovat a vést porady",
       "slug": "jak-uspesne-prezentovat-a-vest-porady",
       "url": "https://www.seduo.cz/jak-uspesne-prezentovat-a-vest-porady"
     },
     {
+      "duration": "44m",
       "flag": "Nejprodávanější",
+      "lecturers": "Eva Marková",
       "name": "Sebevědomá a asertivní komunikace",
       "slug": "sebevedoma-komunikace",
       "url": "https://www.seduo.cz/sebevedoma-komunikace"
     },
     {
-      "flag": null,
+      "duration": "1h 50m",
+      "flag": "",
+      "lecturers": "Petr Koukal",
       "name": "Cesta ke skvělému výkonu",
       "slug": "cesta-ke-skvelemu-vykonu",
       "url": "https://www.seduo.cz/cesta-ke-skvelemu-vykonu"
     },
     {
-      "flag": null,
+      "duration": "51m",
+      "flag": "",
+      "lecturers": "Kateřina Černostová a CloudForce",
       "name": "PowerPoint – Práce s texty a obrazci",
       "slug": "powerpoint-prace-s-texty-a-obrazci",
       "url": "https://www.seduo.cz/powerpoint-prace-s-texty-a-obrazci"
     },
     {
+      "duration": "1h 59m",
       "flag": "Nejprodávanější",
+      "lecturers": "Gen. Ing. Andor Šándor",
       "name": "Zkušenosti generála tajné služby: Leadership",
       "slug": "zkusenosti-generala-tajne-sluzby",
       "url": "https://www.seduo.cz/zkusenosti-generala-tajne-sluzby"
     },
     {
+      "duration": "1h 3m",
       "flag": "Nejprodávanější",
+      "lecturers": "Katarzyna Korda Jedzoková",
       "name": "Mindfulness - Jak se zbavit stresu a napětí, i když nestíháte",
       "slug": "mindfulness-jak-se-zbavit-stresu-a-napeti-i-kdyz-nestihate",
       "url": "https://www.seduo.cz/mindfulness-jak-se-zbavit-stresu-a-napeti-i-kdyz-nestihate"
     },
     {
+      "duration": "46m",
       "flag": "Nejprodávanější",
+      "lecturers": "Martin Světlík",
       "name": "iCloud a bezpečnost na Macu",
       "slug": "icloud-a-bezpecnost-na-macu",
       "url": "https://www.seduo.cz/icloud-a-bezpecnost-na-macu"
     },
     {
+      "duration": "1h 49m",
       "flag": "Nejprodávanější",
+      "lecturers": "Martin Světlík",
       "name": "Používáme Mac efektivně",
       "slug": "mac-efektivne",
       "url": "https://www.seduo.cz/mac-efektivne"
     },
     {
-      "flag": null,
+      "duration": "1h 12m",
+      "flag": "",
+      "lecturers": "Jiří Březina a KP2 Czech Republic s.r.o.",
       "name": "Jak vybrat dobrého obchodníka",
       "slug": "jak-vybrat-dobreho-obchodnika",
       "url": "https://www.seduo.cz/jak-vybrat-dobreho-obchodnika"
     },
     {
+      "duration": "33m",
       "flag": "Nejprodávanější",
+      "lecturers": "Ryan Viguerie",
       "name": "Secret Dictionary of Native Speakers",
       "slug": "secret-dictionary-of-native-speakers",
       "url": "https://www.seduo.cz/secret-dictionary-of-native-speakers"
     },
     {
+      "duration": "38m",
       "flag": "Nejprodávanější",
+      "lecturers": "Zdeněk Pecka",
       "name": "Firemní telefonování v němčině",
       "slug": "firemni-telefonovani-v-nemcine",
       "url": "https://www.seduo.cz/firemni-telefonovani-v-nemcine"
     },
     {
+      "duration": "42m",
       "flag": "Nejprodávanější",
+      "lecturers": "Martin Světlík",
       "name": "Přecházíme na Mac",
       "slug": "prechazime-na-mac",
       "url": "https://www.seduo.cz/prechazime-na-mac"
     },
     {
-      "flag": null,
+      "duration": "50m",
+      "flag": "",
+      "lecturers": "Zdeněk Pecka",
       "name": "Firemní korespondence v němčině",
       "slug": "firemni-korespondence-v-nemcine",
       "url": "https://www.seduo.cz/firemni-korespondence-v-nemcine"
     },
     {
+      "duration": "44m",
       "flag": "Nejprodávanější",
+      "lecturers": "Ryan Viguerie",
       "name": "Proper English Without Boring Grammar",
       "slug": "proper-english-without-boring-grammar",
       "url": "https://www.seduo.cz/proper-english-without-boring-grammar"
     },
     {
+      "duration": "58m",
       "flag": "Nejprodávanější",
+      "lecturers": "Daniel Gamrot",
       "name": "Jak šetřit čas při práci s e-maily",
       "slug": "jak-setrit-cas-pri-praci-s-emaily",
       "url": "https://www.seduo.cz/jak-setrit-cas-pri-praci-s-emaily"
     },
     {
-      "flag": null,
+      "duration": "47m",
+      "flag": "",
+      "lecturers": "Bronislav Sobotka",
       "name": "Cool fráze a obraty pro každou situaci",
       "slug": "cool-fraze-a-obraty-pro-kazdou-situaci",
       "url": "https://www.seduo.cz/cool-fraze-a-obraty-pro-kazdou-situaci"
     },
     {
-      "flag": null,
+      "duration": "56m",
+      "flag": "",
+      "lecturers": "Bronislav Sobotka",
       "name": "Slova a fráze, co vás ve škole nenaučili",
       "slug": "slova-a-fraze-co-vas-ve-skole-nenaucili",
       "url": "https://www.seduo.cz/slova-a-fraze-co-vas-ve-skole-nenaucili"
     },
     {
-      "flag": null,
+      "duration": "46m",
+      "flag": "",
+      "lecturers": "Bronislav Sobotka",
       "name": "Anglické idiomy II",
       "slug": "anglicke-idiomy-ii",
       "url": "https://www.seduo.cz/anglicke-idiomy-ii"
     },
     {
+      "duration": "46m",
       "flag": "Nejprodávanější",
+      "lecturers": "Bronislav Sobotka",
       "name": "Anglické idiomy I",
       "slug": "anglicke-idiomy-i",
       "url": "https://www.seduo.cz/anglicke-idiomy-i"
     },
     {
-      "flag": null,
+      "duration": "51m",
+      "flag": "",
+      "lecturers": "Bronislav Sobotka",
       "name": "Anglická frázová slovesa II",
       "slug": "anglicka-frazova-slovesa-ii",
       "url": "https://www.seduo.cz/anglicka-frazova-slovesa-ii"
     },
     {
+      "duration": "50m",
       "flag": "Nejprodávanější",
+      "lecturers": "Bronislav Sobotka",
       "name": "Anglická frázová slovesa I",
       "slug": "anglicka-frazova-slovesa-i",
       "url": "https://www.seduo.cz/anglicka-frazova-slovesa-i"
     },
     {
-      "flag": null,
+      "duration": "2h 36m",
+      "flag": "",
+      "lecturers": "Adela Plesnik Schicker",
       "name": "The End of Procrastination",
       "slug": "end-procrastination",
       "url": "https://www.seduo.cz/end-procrastination"
     },
     {
+      "duration": "32m",
       "flag": "Nejprodávanější",
+      "lecturers": "Anna Knotková, Alma Career a Jaroslav Franta",
       "name": "Jak správně napsat pracovní inzerát",
       "slug": "jak-spravne-napsat-pracovni-inzerat",
       "url": "https://www.seduo.cz/jak-spravne-napsat-pracovni-inzerat"
     },
     {
-      "flag": null,
+      "duration": "48m",
+      "flag": "",
+      "lecturers": "Bea Brosková",
       "name": "Zvizualizuj si své sny",
       "slug": "zvizualizuj-si-sve-sny",
       "url": "https://www.seduo.cz/zvizualizuj-si-sve-sny"
     },
     {
-      "flag": null,
+      "duration": "56m",
+      "flag": "",
+      "lecturers": "Bea Brosková",
       "name": "Jak na skečnouting aneb čmárej si (i) na poradě",
       "slug": "jak-na-skecnouting-aneb-cmarej-si-i-na-porade",
       "url": "https://www.seduo.cz/jak-na-skecnouting-aneb-cmarej-si-i-na-porade"
     },
     {
+      "duration": "47m",
       "flag": "Nejprodávanější",
+      "lecturers": "Bea Brosková",
       "name": "Myšlenkové mapy pro byznys i osobní život",
       "slug": "myslenkove-mapy-pro-byznys-i-osobni-zivot",
       "url": "https://www.seduo.cz/myslenkove-mapy-pro-byznys-i-osobni-zivot"
     },
     {
-      "flag": null,
+      "duration": "3h 54m",
+      "flag": "",
+      "lecturers": "Bea Brosková",
       "name": "Vizuální myšlení",
       "slug": "vizualni-mysleni",
       "url": "https://www.seduo.cz/vizualni-mysleni"
     },
     {
+      "duration": "1h 56m",
       "flag": "Nejprodávanější",
+      "lecturers": "WPP Media Czech Republic a Pavel Pajkrt",
       "name": "Analýza klíčových slov",
       "slug": "analyza-klicovych-slov",
       "url": "https://www.seduo.cz/analyza-klicovych-slov"
     },
     {
-      "flag": null,
+      "duration": "25m",
+      "flag": "",
+      "lecturers": "WPP Media Czech Republic a Martin Matějka",
       "name": "Nastavení PPC kampaní s analýzou klíčových slov",
       "slug": "nastaveni-ppc-kampani-s-analyzou-klicovych-slov",
       "url": "https://www.seduo.cz/nastaveni-ppc-kampani-s-analyzou-klicovych-slov"
     },
     {
-      "flag": null,
+      "duration": "18m",
+      "flag": "",
+      "lecturers": "Jan Táborský",
       "name": "Cesta k dobrému jazykovému stylu II",
       "slug": "cesta-k-dobremu-jazykovemu-stylu-ii",
       "url": "https://www.seduo.cz/cesta-k-dobremu-jazykovemu-stylu-ii"
     },
     {
-      "flag": null,
+      "duration": "25m",
+      "flag": "",
+      "lecturers": "Jan Táborský",
       "name": "Úprava moderního dopisu",
       "slug": "uprava-moderniho-dopisu",
       "url": "https://www.seduo.cz/uprava-moderniho-dopisu"
     },
     {
-      "flag": null,
+      "duration": "21m",
+      "flag": "",
+      "lecturers": "Jan Táborský",
       "name": "Psaní e-mailů snadněji a rychleji",
       "slug": "psani-e-mailu-snadneji-a-rychleji",
       "url": "https://www.seduo.cz/psani-e-mailu-snadneji-a-rychleji"
     },
     {
+      "duration": "44m",
       "flag": "Nejprodávanější",
+      "lecturers": "Lucie Hrdinová a WPP Media Czech Republic",
       "name": "Jak na texty, díky kterým vás najdou",
       "slug": "jak-na-texty-diky-kterym-vas-najdou",
       "url": "https://www.seduo.cz/jak-na-texty-diky-kterym-vas-najdou"
     },
     {
-      "flag": null,
+      "duration": "1h 2m",
+      "flag": "",
+      "lecturers": "Daniel Šmíd",
       "name": "Osobní styl muže jako brána k úspěchu",
       "slug": "osobni-styl-muze-jako-brana-k-uspechu",
       "url": "https://www.seduo.cz/osobni-styl-muze-jako-brana-k-uspechu"
     },
     {
+      "duration": "36m",
       "flag": "Nejprodávanější",
+      "lecturers": "Vectispro",
       "name": "Zbavte se bolesti zad jednou provždycky",
       "slug": "zbavte-se-bolesti-zad-jednou-provzdycky",
       "url": "https://www.seduo.cz/zbavte-se-bolesti-zad-jednou-provzdycky"
     },
     {
+      "duration": "1h 58m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Lasák",
       "name": "Tabulky Google",
       "slug": "tabulky-google",
       "url": "https://www.seduo.cz/tabulky-google"
     },
     {
+      "duration": "6h 24m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Lasák",
       "name": "Profíkem v Excelu za 7 hodin",
       "slug": "kurz-microsoft-excel",
       "url": "https://www.seduo.cz/kurz-microsoft-excel"
     },
     {
-      "flag": null,
+      "duration": "59m",
+      "flag": "",
+      "lecturers": "CloudForce a Kateřina Černostová",
       "name": "PowerPoint 2016: Nejen pro začátečníky",
       "slug": "powerpoint-2016-nejen-pro-zacatecniky",
       "url": "https://www.seduo.cz/powerpoint-2016-nejen-pro-zacatecniky"
     },
     {
-      "flag": null,
+      "duration": "53m",
+      "flag": "",
+      "lecturers": "Bronislav Sobotka",
       "name": "Vše, co jste kdy chtěli vědět o anglických časech II",
       "slug": "vse-co-jste-kdy-chteli-vedet-o-anglickych-casech-ii",
       "url": "https://www.seduo.cz/vse-co-jste-kdy-chteli-vedet-o-anglickych-casech-ii"
     },
     {
-      "flag": null,
+      "duration": "1h 2m",
+      "flag": "",
+      "lecturers": "Bronislav Sobotka",
       "name": "Vše, co jste kdy chtěli vědět o anglických časech I",
       "slug": "vse-co-jste-kdy-chteli-vedet-o-anglickych-casech-i",
       "url": "https://www.seduo.cz/vse-co-jste-kdy-chteli-vedet-o-anglickych-casech-i"
     },
     {
-      "flag": null,
+      "duration": "44m",
+      "flag": "",
+      "lecturers": "Bronislav Sobotka",
       "name": "76 nejčastěji zaměňovaných slov v angličtině",
       "slug": "76-nejcasteji-zamenovanych-slov-v-anglictine",
       "url": "https://www.seduo.cz/76-nejcasteji-zamenovanych-slov-v-anglictine"
     },
     {
-      "flag": null,
+      "duration": "44m",
+      "flag": "",
+      "lecturers": "Bronislav Sobotka",
       "name": "No More Czenglish II",
       "slug": "no-more-czenglish-II",
       "url": "https://www.seduo.cz/no-more-czenglish-II"
     },
     {
-      "flag": null,
+      "duration": "55m",
+      "flag": "",
+      "lecturers": "Bronislav Sobotka",
       "name": "No More Czenglish I",
       "slug": "no-more-czenglish-I",
       "url": "https://www.seduo.cz/no-more-czenglish-I"
     },
     {
-      "flag": null,
+      "duration": "43m",
+      "flag": "",
+      "lecturers": "Petr Novák a Matouš Vinš",
       "name": "Pracujte na dálku a svobodně",
       "slug": "pracujte-na-dalku-a-svobodne",
       "url": "https://www.seduo.cz/pracujte-na-dalku-a-svobodne"
     },
     {
-      "flag": null,
+      "duration": "22m",
+      "flag": "",
+      "lecturers": "Jan Táborský",
       "name": "Cesta k dobrému jazykovému stylu",
       "slug": "cesta-k-dobremu-jazykovemu-stylu",
       "url": "https://www.seduo.cz/cesta-k-dobremu-jazykovemu-stylu"
     },
     {
+      "duration": "21m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jan Táborský",
       "name": "Jak na český pravopis",
       "slug": "jak-na-cesky-pravopis",
       "url": "https://www.seduo.cz/jak-na-cesky-pravopis"
     },
     {
-      "flag": null,
+      "duration": "19m",
+      "flag": "",
+      "lecturers": "Jan Táborský",
       "name": "Psaní velkých písmen jako pravopisná hrůza hrůz?",
       "slug": "psani-velkych-pismen-jako-pravopisna-hruza-hruz",
       "url": "https://www.seduo.cz/psani-velkych-pismen-jako-pravopisna-hruza-hruz"
     },
     {
+      "duration": "19m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jan Táborský",
       "name": "Jak na čárky ve větách a souvětích",
       "slug": "jak-na-carky-ve-vetach-a-souvetich",
       "url": "https://www.seduo.cz/jak-na-carky-ve-vetach-a-souvetich"
     },
     {
-      "flag": null,
+      "duration": "20m",
+      "flag": "",
+      "lecturers": "Skřivánek",
       "name": "Mailujte jako profík: věcně, přehledně a v angličtině!",
       "slug": "mailujte-jako-profik-vecne-prehledne-a-v-anglictine",
       "url": "https://www.seduo.cz/mailujte-jako-profik-vecne-prehledne-a-v-anglictine"
     },
     {
+      "duration": "18m",
       "flag": "Nejprodávanější",
+      "lecturers": "Skřivánek",
       "name": "Zvedněte telefon a domluvte se",
       "slug": "zvednete-telefon-a-domluvte-se",
       "url": "https://www.seduo.cz/zvednete-telefon-a-domluvte-se"
     },
     {
+      "duration": "18m",
       "flag": "Nejprodávanější",
+      "lecturers": "Skřivánek",
       "name": "Uspějte u přijímacího pohovoru a získejte práci snů!",
       "slug": "uspejte-u-prijimaciho-pohovoru-a-ziskejte-praci-snu",
       "url": "https://www.seduo.cz/uspejte-u-prijimaciho-pohovoru-a-ziskejte-praci-snu"
     },
     {
+      "duration": "18m",
       "flag": "Nejprodávanější",
+      "lecturers": "Skřivánek",
       "name": "Přesvědčte a dohodněte se!",
       "slug": "presvedcte-a-dohodnete-se",
       "url": "https://www.seduo.cz/presvedcte-a-dohodnete-se"
     },
     {
+      "duration": "17m",
       "flag": "Nejprodávanější",
+      "lecturers": "Skřivánek",
       "name": "Kujte pikle formálně i neformálně",
       "slug": "kujte-pikle-formalne-i-neformalne",
       "url": "https://www.seduo.cz/kujte-pikle-formalne-i-neformalne"
     },
     {
+      "duration": "19m",
       "flag": "Nejprodávanější",
+      "lecturers": "Skřivánek",
       "name": "Prezentujte v angličtině!",
       "slug": "prezentujte-v-anglictine",
       "url": "https://www.seduo.cz/prezentujte-v-anglictine"
     },
     {
-      "flag": null,
+      "duration": "49m",
+      "flag": "",
+      "lecturers": "Pavel Lasák",
       "name": "Tipy a triky pro Excel",
       "slug": "tipy-a-triky-pro-excel",
       "url": "https://www.seduo.cz/tipy-a-triky-pro-excel"
     },
     {
+      "duration": "54m",
       "flag": "Nejprodávanější",
+      "lecturers": "Pavel Lasák",
       "name": "Kontingenční tabulky v Excelu",
       "slug": "kontingencni-tabulky-v-excel",
       "url": "https://www.seduo.cz/kontingencni-tabulky-v-excel"
     },
     {
-      "flag": null,
+      "duration": "1h 25m",
+      "flag": "",
+      "lecturers": "Dobrý web",
       "name": "Jak úspěšně připravit vaši první online kampaň",
       "slug": "jak-uspesne-pripravit-vasi-prvni-online-kampan",
       "url": "https://www.seduo.cz/jak-uspesne-pripravit-vasi-prvni-online-kampan"
     },
     {
-      "flag": null,
+      "duration": "1h 16m",
+      "flag": "",
+      "lecturers": "Bea Brosková",
       "name": "Jak si pomocí čmárání ulehčit práci",
       "slug": "jak-si-pomoci-cmarani-ulehcit-praci",
       "url": "https://www.seduo.cz/jak-si-pomoci-cmarani-ulehcit-praci"
     },
     {
+      "duration": "1h 9m",
       "flag": "Nejprodávanější",
+      "lecturers": "Hana Holá",
       "name": "Zbavte se stresu z hodnotících rozhovorů",
       "slug": "zbavte-se-stresu-z-hodnoticich-rozhovoru",
       "url": "https://www.seduo.cz/zbavte-se-stresu-z-hodnoticich-rozhovoru"
     },
     {
+      "duration": "26m",
       "flag": "Nejprodávanější",
+      "lecturers": "Hana Holá",
       "name": "Strategie získání TOP kandidáta",
       "slug": "strategie-ziskani-top-kandidata",
       "url": "https://www.seduo.cz/strategie-ziskani-top-kandidata"
     },
     {
-      "flag": null,
+      "duration": "1h 9m",
+      "flag": "",
+      "lecturers": "Seduo.cz",
       "name": "Jak úspěšně najít práci",
       "slug": "jak-uspesne-najit-praci",
       "url": "https://www.seduo.cz/jak-uspesne-najit-praci"
     },
     {
-      "flag": null,
+      "duration": "1h 27m",
+      "flag": "",
+      "lecturers": "Age Management, z.s.",
       "name": "Budujte úspěšnou kariéru v jakémkoli věku!",
       "slug": "budujte-uspesnou-karieru-v-jakemkoli-veku",
       "url": "https://www.seduo.cz/budujte-uspesnou-karieru-v-jakemkoli-veku"
     },
     {
-      "flag": null,
+      "duration": "48m",
+      "flag": "",
+      "lecturers": "Sylvie Formánková a Provozně ekonomická fakulta MENDELU",
       "name": "Společenská odpovědnost a etika v podnikání",
       "slug": "spolecenska-odpovednost-a-etika-v-podnikani",
       "url": "https://www.seduo.cz/spolecenska-odpovednost-a-etika-v-podnikani"
     },
     {
-      "flag": null,
+      "duration": "8m",
+      "flag": "",
+      "lecturers": "Espresso English",
       "name": "English for Meetings",
       "slug": "english-for-meetings",
       "url": "https://www.seduo.cz/english-for-meetings"
     },
     {
-      "flag": null,
+      "duration": "1h 55m",
+      "flag": "",
+      "lecturers": "Bronislav Sobotka",
       "name": "Naučte se konečně opravdu anglicky",
       "slug": "naucte-se-konecne-opravdu-anglicky",
       "url": "https://www.seduo.cz/naucte-se-konecne-opravdu-anglicky"
     },
     {
-      "flag": null,
+      "duration": "14m",
+      "flag": "",
+      "lecturers": "David Krupička",
       "name": "Vytvořte si web pomocí WordPressu za 20 min.",
       "slug": "vytvorte-si-web-pomoci-wordpressu-za-20-min",
       "url": "https://www.seduo.cz/vytvorte-si-web-pomoci-wordpressu-za-20-min"
     },
     {
+      "duration": "2h 14m",
       "flag": "Nejprodávanější",
+      "lecturers": "Tomáš Hruda",
       "name": "Vzdělávání jako součást života",
       "slug": "vzdelavani-jako-soucast-zivota",
       "url": "https://www.seduo.cz/vzdelavani-jako-soucast-zivota"
     },
     {
-      "flag": null,
+      "duration": "1h 25m",
+      "flag": "",
+      "lecturers": "Petr Kosnar a Jiří Sekera",
       "name": "Human-Centered Design: Uživatelské testování",
       "slug": "human-centered-design-uzivatelske-testovani",
       "url": "https://www.seduo.cz/human-centered-design-uzivatelske-testovani"
     },
     {
-      "flag": null,
+      "duration": "1h 1m",
+      "flag": "",
+      "lecturers": "Michal Krutiš",
       "name": "Chytrá marketingová strategie",
       "slug": "chytra-marketingova-strategie",
       "url": "https://www.seduo.cz/chytra-marketingova-strategie"
     },
     {
+      "duration": "2h 5m",
       "flag": "Nejprodávanější",
+      "lecturers": "GrowJOB a Petr Ludwig",
       "name": "Konec prokrastinace",
       "slug": "konec-prokrastinace",
       "url": "https://www.seduo.cz/konec-prokrastinace"
     },
     {
+      "duration": "37m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jan Laibl",
       "name": "Vedení a koučink obchodního týmu",
       "slug": "vedeni-a-koucink-obchodniho-tymu",
       "url": "https://www.seduo.cz/vedeni-a-koucink-obchodniho-tymu"
     },
     {
+      "duration": "1h 37m",
       "flag": "Nejprodávanější",
+      "lecturers": "Jan Tichý",
       "name": "Úvod do webové analytiky",
       "slug": "uvod-do-webove-analytiky",
       "url": "https://www.seduo.cz/uvod-do-webove-analytiky"
     },
     {
-      "flag": null,
+      "duration": "1h 7m",
+      "flag": "",
+      "lecturers": "Gabriela Potočková",
       "name": "Talent management generace Y",
       "slug": "talent-management-generace-y",
       "url": "https://www.seduo.cz/talent-management-generace-y"
     },
     {
-      "flag": null,
+      "duration": "47m",
+      "flag": "",
+      "lecturers": "Michal Dubec a Západočeská univerzita",
       "name": "Komunikace s lidmi v souladu s fungováním mozku",
       "slug": "komunikace-s-lidmi-v-souladu-s-fungovanim-mozku",
       "url": "https://www.seduo.cz/komunikace-s-lidmi-v-souladu-s-fungovanim-mozku"
     },
     {
-      "flag": null,
+      "duration": "1h 20m",
+      "flag": "",
+      "lecturers": "Petr Pouchlý",
       "name": "Networking: profesionální přístup k budování B2B vztahů",
       "slug": "networking-profesionalni-pristup-k-budovani-b2b-vztahu",
       "url": "https://www.seduo.cz/networking-profesionalni-pristup-k-budovani-b2b-vztahu"
     },
     {
-      "flag": null,
+      "duration": "59m",
+      "flag": "",
+      "lecturers": "Tomáš Hrivnák",
       "name": "Základy řízení značky",
       "slug": "zaklady-rizeni-znacky",
       "url": "https://www.seduo.cz/zaklady-rizeni-znacky"
     },
     {
-      "flag": null,
+      "duration": "21m",
+      "flag": "",
+      "lecturers": "Jan Laibl",
       "name": "Obchodní myšlení",
       "slug": "obchodni-mysleni",
       "url": "https://www.seduo.cz/obchodni-mysleni"
     },
     {
+      "duration": "44m",
       "flag": "Nejprodávanější",
+      "lecturers": "Petr Pouchlý",
       "name": "Networking: přirozená cesta k profesní spolupráci",
       "slug": "networking-prirozena-cesta-k-profesni-spolupraci",
       "url": "https://www.seduo.cz/networking-prirozena-cesta-k-profesni-spolupraci"
     },
     {
-      "flag": null,
+      "duration": "52m",
+      "flag": "",
+      "lecturers": "Petr Kosnar a Jiří Sekera",
       "name": "Human-Centered Design: Design zaměřený na člověka",
       "slug": "human-centered-design",
       "url": "https://www.seduo.cz/human-centered-design"

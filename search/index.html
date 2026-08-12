@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Seduo Search | Najděte správný kurz</title>
+  <meta name="description" content="Rychlé a relevantní vyhledávání ve veřejném katalogu videokurzů Seduo.cz.">
+  <meta property="og:title" content="Seduo Search | Najděte správný kurz">
+  <meta property="og:description" content="Hledejte bez diakritiky, podle témat a relevance ve veřejném katalogu Seduo.cz.">
+  <meta property="og:image" content="https://jannehasil.github.io/education-radar-cz-sk/search/og.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<main id="top">
+  <header class="topbar">
+    <a class="brand" href="#top"><span class="brandMark">s</span><span>Seduo Search</span></a>
+    <a class="catalogLink" href="https://www.seduo.cz/kategorie/vsechny-kurzy/videokurzy" target="_blank" rel="noreferrer">Otevřít Seduo.cz <span>↗</span></a>
+  </header>
+
+  <section class="hero">
+    <div class="orb orbOne"></div><div class="orb orbTwo"></div>
+    <div class="heroCopy">
+      <p class="eyebrow"><span></span> Vyhledávání ve veřejném katalogu Seduo.cz</p>
+      <h1>Najděte kurz,<br><em>který se hodí právě teď.</em></h1>
+      <p class="lede">Hledá i bez diakritiky, chápe příbuzná témata a nejlepší shody řadí nahoru.</p>
+      <div class="searchShell">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"></path></svg>
+        <input id="search" placeholder="Zkuste třeba vedení týmu nebo AI…" aria-label="Hledat kurzy" autocomplete="off">
+        <button id="clear" class="clear" aria-label="Vymazat hledání" hidden>×</button><kbd id="shortcut">/</kbd>
+      </div>
+      <div class="quickRow"><span>Zkuste:</span><button>AI</button><button>leadership</button><button>Excel</button><button>komunikace</button><button>angličtina</button></div>
+    </div>
+    <aside class="heroCard"><span class="spark">✦</span><strong id="total">—</strong><p>videokurzů v indexu</p><div></div><small id="updated">Index se načítá…</small></aside>
+  </section>
+
+  <section class="results">
+    <div class="resultsTop"><div><p class="kicker" id="mode">Procházet katalog</p><h2 id="heading">Aktuální kurzy na Seduo</h2></div><p class="resultCount"><strong id="count">0</strong> <span id="countLabel">výsledků</span></p></div>
+    <div class="filters" role="group" aria-label="Filtrovat výsledky"><button class="active">Vše</button><button>Novinky</button><button>Podcasty</button><button>Naživo</button></div>
+    <div id="empty" class="empty" hidden><span>?</span><h3>Tady jsme nic přesného nenašli.</h3><p>Zkuste kratší nebo obecnější výraz — třeba „AI“, „manažer“ nebo „komunikace“.</p><button id="reset">Zobrazit celý katalog</button></div>
+    <div id="courseGrid" class="courseGrid"></div>
+    <button id="loadMore" class="loadMore">Načíst další kurzy <span>↓</span></button>
+  </section>
+
+  <section class="how"><div><p class="kicker">Jak hledání funguje</p><h2>Rychlejší cesta ke správnému kurzu.</h2></div><div class="steps"><article><span>01</span><h3>Bez diakritiky</h3><p>„vyjednavani“ najde stejné kurzy jako „vyjednávání“.</p></article><article><span>02</span><h3>Chytřejší shoda</h3><p>Přesná témata a výrazy na začátku názvu dostanou vyšší relevanci.</p></article><article><span>03</span><h3>Příbuzná témata</h3><p>Dotaz „AI“ zahrne i ChatGPT, Copilot, prompting nebo vibecoding.</p></article></div></section>
+  <footer><p><strong>Seduo Search</strong> je neoficiální vyhledávání nad veřejně dostupnými názvy kurzů.</p><p>Obsah a cílové stránky patří <a href="https://www.seduo.cz" target="_blank" rel="noreferrer">Seduo.cz ↗</a></p></footer>
+</main>
+</body>
+</html>

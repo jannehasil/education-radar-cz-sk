@@ -45,7 +45,7 @@ const $=selector=>document.querySelector(selector),grid=$("#courseGrid"),input=$
 function buildIndex(courses){
   const df=new Map();
   courses.forEach((course,index)=>{
-    course._index=index;course._type=courseType(course);course._title=normalize(course.name);course._lecturers=normalize(course.lecturers||"");course._words=tokenize(`${course.name} ${course.lecturers||""}`);course._titleWords=tokenize(course.name);course._lecturerWords=tokenize(course.lecturers||"");course._stems=course._words.map(stem);
+    course._index=index;course._type=courseType(course);course._title=normalize(course.name);course._lecturers=normalize(course.lecturers||"");course._description=normalize(course.description||"");course._titleWords=tokenize(course.name);course._lecturerWords=tokenize(course.lecturers||"");course._descriptionWords=tokenize(course.description||"");course._words=[...course._titleWords,...course._lecturerWords,...course._descriptionWords];course._stems=course._words.map(stem);
     new Set(course._words).forEach(word=>df.set(word,(df.get(word)||0)+1));
   });
   state.df=df;
@@ -70,15 +70,20 @@ function evaluate(course,rawQuery){
   else if(course._title.includes(query)){score+=650;matched.push("celá fráze v názvu");}
   if(course._lecturers===query){score+=1350;matched.push("přesný lektor");}
   else if(course._lecturers.includes(query)){score+=850;matched.push("lektor");}
+  const descriptionPhrase=course._description.includes(query);
+  if(descriptionPhrase)score+=260;
 
-  let covered=0;
+  let covered=0,descriptionMatches=0;
   tokens.forEach(token=>{
     const idf=Math.log((state.catalog.courses.length+1)/((state.df.get(token)||0)+1))+1;
     const tokenStem=stem(token);
     if(course._titleWords.includes(token)){score+=150*idf;covered++;matched.push(token);return;}
     if(course._lecturerWords.includes(token)){score+=135*idf;covered++;matched.push(token);return;}
-    if(course._stems.includes(tokenStem)){score+=115*idf;covered++;matched.push(token);return;}
-    if(course._words.some(word=>word.startsWith(token)||token.startsWith(word))){score+=85*idf;covered++;matched.push(token);return;}
+    if(course._descriptionWords.includes(token)){score+=42*idf;covered++;descriptionMatches++;matched.push(token);return;}
+    if(course._titleWords.map(stem).includes(tokenStem)||course._lecturerWords.map(stem).includes(tokenStem)){score+=115*idf;covered++;matched.push(token);return;}
+    if(course._descriptionWords.map(stem).includes(tokenStem)){score+=32*idf;covered++;descriptionMatches++;matched.push(token);return;}
+    if([...course._titleWords,...course._lecturerWords].some(word=>word.startsWith(token)||token.startsWith(word))){score+=85*idf;covered++;matched.push(token);return;}
+    if(course._descriptionWords.some(word=>word.startsWith(token)||token.startsWith(word))){score+=25*idf;covered++;descriptionMatches++;matched.push(token);return;}
     const similar=course._words.find(word=>token.length>=4&&distance(word,token)<=1);
     if(similar){score+=48*idf;covered++;fuzzy.push(similar);}
   });
@@ -95,7 +100,7 @@ function evaluate(course,rawQuery){
   if(asksLive&&course._type==="Seduo naživo")score+=420;
   if(asksCourse&&course._type==="Videokurz")score+=180;
 
-  const exactPhrase=course._title.includes(query)||course._lecturers.includes(query);
+  const exactPhrase=course._title.includes(query)||course._lecturers.includes(query)||descriptionPhrase;
   const eligible=tokens.length<=1
     ? covered===1||synonymHits>0||exactPhrase
     : covered===tokens.length||exactPhrase;
@@ -104,6 +109,7 @@ function evaluate(course,rawQuery){
   if(matched.includes("přesný lektor")||matched.includes("lektor"))reason=`Lektor: ${course.lecturers}`;
   else if(matched.includes("přesný název"))reason="Přesná shoda názvu";
   else if(matched.includes("celá fráze v názvu")||matched.includes("začátek názvu"))reason="Silná shoda v názvu";
+  else if(descriptionPhrase||descriptionMatches===tokens.length)reason="Shoda v popisu kurzu";
   else if(covered===tokens.length&&tokens.length)reason=`Odpovídá ${tokens.length===1?"hledanému výrazu":"všem slovům dotazu"}`;
   else if(fuzzy.length)reason=`Podobný výraz: ${fuzzy[0]}`;
   else if(synonymHit)reason=`Příbuzné téma: ${synonymHit}`;
@@ -188,7 +194,7 @@ $("#loadMore").addEventListener("click",()=>{state.limit+=18;render()});
 window.addEventListener("keydown",event=>{if(event.key==="/"&&document.activeElement!==input){event.preventDefault();input.focus()}if(event.key==="Escape"){state.query="";input.value="";render();input.blur()}});
 window.addEventListener("popstate",()=>{const params=new URLSearchParams(location.search);state.query=params.get("q")||"";state.filter=params.get("typ")||"Vše";input.value=state.query;render({sync:false})});
 
-fetch("courses.json?v=20260812-2",{cache:"no-store"}).then(response=>response.json()).then(data=>{
+fetch("courses.json?v=20260812-3",{cache:"no-store"}).then(response=>response.json()).then(data=>{
   state.catalog=data;buildIndex(data.courses);
   const params=new URLSearchParams(location.search);state.query=params.get("q")||"";state.filter=params.get("typ")||"Vše";input.value=state.query;
   $("#total").textContent=data.total_count;$("#updated").textContent=`Index aktualizován ${new Intl.DateTimeFormat("cs-CZ",{day:"numeric",month:"long",year:"numeric",timeZone:"Europe/Prague"}).format(new Date(data.observed_at))}`;render({sync:false});

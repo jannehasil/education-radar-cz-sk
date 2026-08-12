@@ -1,11 +1,11 @@
 {
-  "observed_at": "2026-08-12T08:39:15.388Z",
+  "observed_at": "2026-08-12T11:57:37.370Z",
   "timezone": "Europe/Prague",
   "source_url": "https://www.seduo.cz/kategorie/vsechny-kurzy/videokurzy?sort=newest",
   "total_count": 449,
   "marketing_new_count": 6,
-  "new_since_previous": null,
-  "removed_since_previous": null,
+  "new_since_previous": 0,
+  "removed_since_previous": 0,
   "courses": [
     {
       "flag": "Novinka",
@@ -74,7 +74,7 @@
       "url": "https://www.seduo.cz/seduo-podcast-dejte-vasemu-telu-aspon-11-minut-denne"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Microsoft Access: spravujte data jako profík",
       "slug": "microsoft-access-spravujte-data-jako-profik",
       "url": "https://www.seduo.cz/microsoft-access-spravujte-data-jako-profik"
@@ -110,13 +110,13 @@
       "url": "https://www.seduo.cz/maxikurz-prace-s-macem"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "GDPR pro firmy: prakticky, srozumitelně a bez strašení",
       "slug": "gdpr-pro-firmy-prakticky-srozumitelne-a-bez-straseni",
       "url": "https://www.seduo.cz/gdpr-pro-firmy-prakticky-srozumitelne-a-bez-straseni"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Seduo podcast: Najít smysluplnou práci je bingo",
       "slug": "seduo-podcast-delat-smysluplnou-praci-je-bingo",
       "url": "https://www.seduo.cz/seduo-podcast-delat-smysluplnou-praci-je-bingo"
@@ -152,7 +152,7 @@
       "url": "https://www.seduo.cz/vodopad-agile-hybrid-zvolte-spravny-pristup-pro-vas-projekt"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "GDPR pro každého: mějte své osobní údaje pod kontrolou",
       "slug": "gdpr-pro-kazdeho",
       "url": "https://www.seduo.cz/gdpr-pro-kazdeho"
@@ -176,13 +176,13 @@
       "url": "https://www.seduo.cz/naucte-se-ucit"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Prezentační minimum: rychlá nalejvárna pro každého",
       "slug": "prezentacni-minimum-rychla-nalejvarna-pro-kazdeho",
       "url": "https://www.seduo.cz/prezentacni-minimum-rychla-nalejvarna-pro-kazdeho"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Finance 2026: přehled aktuálních změn v kostce",
       "slug": "finance-2026-prehled-aktualnich-zmen-v-kostce",
       "url": "https://www.seduo.cz/finance-2026-prehled-aktualnich-zmen-v-kostce"
@@ -206,7 +206,7 @@
       "url": "https://www.seduo.cz/seduo-podcast-nezijte-podle-druhych"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "ESG: praktický checklist pro HR",
       "slug": "esg-prakticky-checklist-pro-hr",
       "url": "https://www.seduo.cz/esg-prakticky-checklist-pro-hr"
@@ -254,7 +254,7 @@
       "url": "https://www.seduo.cz/talent-management-jak-si-udrzet-ty-nejlepsi"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Diverzita prakticky: jak zvládat odlišnosti a líp si rozumět",
       "slug": "diverzita-prakticky-jak-zvladat-odlisnosti-a-lip-si-rozumet",
       "url": "https://www.seduo.cz/diverzita-prakticky-jak-zvladat-odlisnosti-a-lip-si-rozumet"
@@ -476,7 +476,7 @@
       "url": "https://www.seduo.cz/prakticky-pruvodce-promptovanim-jak-efektivne-komunikovat-s-ai"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Leadership II: jak efektivně motivovat tým",
       "slug": "leadership-ii-jak-efektivne-motivovat-tym",
       "url": "https://www.seduo.cz/leadership-ii-jak-efektivne-motivovat-tym"
@@ -500,7 +500,7 @@
       "url": "https://www.seduo.cz/microsoft-teams-kompletni-pruvodce-pro-efektivni-praci-v-tymu"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Google Kalendář: efektivní organizace času a plánování",
       "slug": "google-kalendar-efektivni-organizace-casu-a-planovani",
       "url": "https://www.seduo.cz/google-kalendar-efektivni-organizace-casu-a-planovani"
@@ -512,7 +512,7 @@
       "url": "https://www.seduo.cz/mistr-ve-vyrobe-jak-vest-pracovniky-a-ziskat-respekt"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Leadership III: jak postavit a vést silný tým",
       "slug": "leadership-iii-jak-postavit-silny-tym",
       "url": "https://www.seduo.cz/leadership-iii-jak-postavit-silny-tym"
@@ -524,7 +524,7 @@
       "url": "https://www.seduo.cz/seduo-podcast-domluvte-se-jako-profesionalni-vyjednavac"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Gmail: buďte pánem své pošty",
       "slug": "gmail-budte-panem-sve--posty",
       "url": "https://www.seduo.cz/gmail-budte-panem-sve--posty"
@@ -554,8 +554,8 @@
       "url": "https://www.seduo.cz/hubnete-s-rozumem-jak-jist-a-zit-zdraveji"
     },
     {
-      "flag": null,
-      "name": "Google Workspace:  kancelář vždy po ruce – bezpečně a odkudkoliv",
+      "flag": "",
+      "name": "Google Workspace: kancelář vždy po ruce – bezpečně a odkudkoliv",
       "slug": "google-workspace-kancelar-vzdy-po-ruce-bezpecne-a-odkudkoliv",
       "url": "https://www.seduo.cz/google-workspace-kancelar-vzdy-po-ruce-bezpecne-a-odkudkoliv"
     },
@@ -596,7 +596,7 @@
       "url": "https://www.seduo.cz/autocad-zaklady-technickeho-kresleni-a-projektovani"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Mezigenerační spolupráce: jak zvládnout věkové rozdíly v práci",
       "slug": "mezigeneracni-spoluprace-jak-zvladnout-vekove-rozdily-v-praci",
       "url": "https://www.seduo.cz/mezigeneracni-spoluprace-jak-zvladnout-vekove-rozdily-v-praci"
@@ -782,7 +782,7 @@
       "url": "https://www.seduo.cz/seduo-podcast-piste-si-poznamky-vlastnimi-slovy"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Manažer donaha: tabu a klišé, o kterých se nemluví",
       "slug": "manazer-donaha-tabu-a-klise-o-kterych-se-nemluvi",
       "url": "https://www.seduo.cz/manazer-donaha-tabu-a-klise-o-kterych-se-nemluvi"
@@ -854,7 +854,7 @@
       "url": "https://www.seduo.cz/maxikurz--osobni-produktivity"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Lepší soustředění: jak řídit svou pozornost",
       "slug": "lepsi-soustredeni-jak-ridit-svou-pozornost",
       "url": "https://www.seduo.cz/lepsi-soustredeni-jak-ridit-svou-pozornost"
@@ -914,7 +914,7 @@
       "url": "https://www.seduo.cz/ukoly-pod-kontrolou-jak-na-nic-nezapomenout"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Základy osobní produktivity: jak se soustředit na to důležité",
       "slug": "zaklady-osobni-produktivity-jak-se-soustredit-na-to-dulezite",
       "url": "https://www.seduo.cz/zaklady-osobni-produktivity-jak-se-soustredit-na-to-dulezite"
@@ -932,7 +932,7 @@
       "url": "https://www.seduo.cz/jak-na-whistleblowing-prakticky-navod-nejen-pro-zamestnavatele"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Dobrá práce! Tipy na spokojenost a lepší pracovní výsledky",
       "slug": "dobra-prace-tipy-na-spokojenost-a-lepsi-pracovni-vysledky",
       "url": "https://www.seduo.cz/dobra-prace-tipy-na-spokojenost-a-lepsi-pracovni-vysledky"
@@ -962,7 +962,7 @@
       "url": "https://www.seduo.cz/pasti-ve-vztazich-a-jak-do-nich-nespadnout"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Průvodce manažera týmovým rozvojem",
       "slug": "pruvodce-manazera-tymovym-rozvojem",
       "url": "https://www.seduo.cz/pruvodce-manazera-tymovym-rozvojem"
@@ -998,7 +998,7 @@
       "url": "https://www.seduo.cz/dokonala-pamet-jak-si-zapamatovat-cokoliv-rychle-a-naporad"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Nešvary v prezentaci a jak se jich zbavit",
       "slug": "nesvary-v-prezentaci-a-jak-se-jich-zbavit",
       "url": "https://www.seduo.cz/nesvary-v-prezentaci-a-jak-se-jich-zbavit"
@@ -1010,7 +1010,7 @@
       "url": "https://www.seduo.cz/ipad-jako-vsestranny-pracovni-nastroj"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "U mě dobrý: hledání životního optimismu",
       "slug": "u-me-dobry-hledani-zivotniho-optimismu",
       "url": "https://www.seduo.cz/u-me-dobry-hledani-zivotniho-optimismu"
@@ -1046,13 +1046,13 @@
       "url": "https://www.seduo.cz/pracujte-v-powerpointu-jako-profik"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Cesta za úspěchem trojnásobné olympijské vítězky",
       "slug": "cesta-za-uspechem-trojnasobne-olympijske-vitezky",
       "url": "https://www.seduo.cz/cesta-za-uspechem-trojnasobne-olympijske-vitezky"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Biohacking: Zdravé návyky pro každý den",
       "slug": "biohacking-zdrave-navyky-pro-kazdyden",
       "url": "https://www.seduo.cz/biohacking-zdrave-navyky-pro-kazdyden"
@@ -1088,7 +1088,7 @@
       "url": "https://www.seduo.cz/profesionalni-zakaznicka-pece-jak-na-telefonni-komunikaci-s-klientem"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Zatočte s fake news",
       "slug": "zatocte-s-fake-news",
       "url": "https://www.seduo.cz/zatocte-s-fake-news"
@@ -1112,7 +1112,7 @@
       "url": "https://www.seduo.cz/nejcastejsi-chyby-v-anglictine-a-jak-se-jim-vyhnout"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "První pomoc: jak zachránit život",
       "slug": "prvni-pomoc-jak-zachranit-zivot",
       "url": "https://www.seduo.cz/prvni-pomoc-jak-zachranit-zivot"
@@ -1124,7 +1124,7 @@
       "url": "https://www.seduo.cz/osobni-marketing-3-v-1"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Agilní řízení: Jak řídit tým v měnícím se světě",
       "slug": "agilni-rizeni-jak-ridit-tym-v-menicim-se-svete",
       "url": "https://www.seduo.cz/agilni-rizeni-jak-ridit-tym-v-menicim-se-svete"
@@ -1262,7 +1262,7 @@
       "url": "https://www.seduo.cz/optimalizace-ppc-kampani"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Umění zranitelnosti: posilovna emoční odvahy",
       "slug": "umeni-zranitelnosti-posilovna-emocni-odvahy",
       "url": "https://www.seduo.cz/umeni-zranitelnosti-posilovna-emocni-odvahy"
@@ -1274,7 +1274,7 @@
       "url": "https://www.seduo.cz/zaklady-ppc-reklamy"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Hackněte svou hlavu!",
       "slug": "hacknete-svoji-hlavu",
       "url": "https://www.seduo.cz/hacknete-svoji-hlavu"
@@ -1292,7 +1292,7 @@
       "url": "https://www.seduo.cz/umeni-zit-aneb-tvurce-vlastniho-zivota"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Praktická typologie osobnosti: Jak úspěšně komunikovat s různými typy lidí",
       "slug": "prakticka-typologie-osobnosti-jak-uspesne-komunikovat-s-ruznymi-typy-lidi",
       "url": "https://www.seduo.cz/prakticka-typologie-osobnosti-jak-uspesne-komunikovat-s-ruznymi-typy-lidi"
@@ -1400,13 +1400,13 @@
       "url": "https://www.seduo.cz/jak-pracovat-efektivne-a-bez-stresu"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Diverzita a inkluze: Jak pracovat s mezikulturními rozdíly?",
       "slug": "diverzita-a-inkluze",
       "url": "https://www.seduo.cz/diverzita-a-inkluze"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Nejčastější chyby v němčině",
       "slug": "nejcastejsi-chyby-v-nemcine",
       "url": "https://www.seduo.cz/nejcastejsi-chyby-v-nemcine"
@@ -1472,25 +1472,25 @@
       "url": "https://www.seduo.cz/jak-se-nespalit-pri-propousteni"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Odvaha vystoupit z komfortní zóny s Tomášem Etzlerem",
       "slug": "odvaha-vystoupit-z-komfortni-zony",
       "url": "https://www.seduo.cz/odvaha-vystoupit-z-komfortni-zony"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Zvládání ega: jak si udržet zdravé sebevědomí",
       "slug": "zvladani-ega",
       "url": "https://www.seduo.cz/zvladani-ega"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Veďte tým jako kapitán dopravního letadla",
       "slug": "vedte-tym-jako-kapitan-dopravniho-letadla",
       "url": "https://www.seduo.cz/vedte-tym-jako-kapitan-dopravniho-letadla"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Leadership pohledem vrcholové manažerky",
       "slug": "leadership-pohledem-vrcholove-manazerky",
       "url": "https://www.seduo.cz/leadership-pohledem-vrcholove-manazerky"
@@ -1520,7 +1520,7 @@
       "url": "https://www.seduo.cz/organizace-prace-s-microsoft-to-do"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Gamifikace: Jak využít hru a herní prvky v byznysu",
       "slug": "gamifikace-jak-vyuzit-hru-a-herni-prvky-v-byznysu",
       "url": "https://www.seduo.cz/gamifikace-jak-vyuzit-hru-a-herni-prvky-v-byznysu"
@@ -1532,7 +1532,7 @@
       "url": "https://www.seduo.cz/rychla-orientace-ve-firemnich-financich"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Tajemství motivace: Jak zvyšovat spokojenost pracovníků",
       "slug": "tajemstvi-motivace-jak-zvysovat-spokojenost-pracovniku",
       "url": "https://www.seduo.cz/tajemstvi-motivace-jak-zvysovat-spokojenost-pracovniku"
@@ -1580,13 +1580,13 @@
       "url": "https://www.seduo.cz/autenticita-jako-cesta-k-uspechu-s-adelou-vinczeovou"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Rozhodujte se jako šachový velmistr",
       "slug": "rozhodujte-se-jako-sachovy-velmistr",
       "url": "https://www.seduo.cz/rozhodujte-se-jako-sachovy-velmistr"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "V mysli tenisové bojovnice: otevřeně s vítězkou Turnaje mistryň",
       "slug": "v-mysli-tenisove-bojovnice-otevrene-s-vitezkou-turnaje-mistryn",
       "url": "https://www.seduo.cz/v-mysli-tenisove-bojovnice-otevrene-s-vitezkou-turnaje-mistryn"
@@ -1604,7 +1604,7 @@
       "url": "https://www.seduo.cz/digitalni-bezpecnost-naucte-se-chodit-v-online-svete-bezpecne"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Umění naslouchat: staňte se dobrým posluchačem",
       "slug": "efektivni-naslouchani-stante-se-dobrym-posluchacem",
       "url": "https://www.seduo.cz/efektivni-naslouchani-stante-se-dobrym-posluchacem"
@@ -1628,7 +1628,7 @@
       "url": "https://www.seduo.cz/adobe-photoshop-zakladni-prace-s-fotografii"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Odprezentuj: Jak vizualizovat data v prezentacích",
       "slug": "odprezentuj-jak-vizualizovat-data-v-prezentacich",
       "url": "https://www.seduo.cz/odprezentuj-jak-vizualizovat-data-v-prezentacich"
@@ -1640,7 +1640,7 @@
       "url": "https://www.seduo.cz/motivace-a-smysl-jak-hledat-smysl-v-osobnim-zivote-i-v-praci"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Myšlení vítězů s olympijským šampionem v moderním pětiboji",
       "slug": "mysleni-vitezu-olympijskym-sampionem-v-modernim-petiboji",
       "url": "https://www.seduo.cz/mysleni-vitezu-olympijskym-sampionem-v-modernim-petiboji"
@@ -1652,7 +1652,7 @@
       "url": "https://www.seduo.cz/komunikacni-dovednosti-pro-modre-limecky"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Home Office pro zaměstnance: praktické rady a tipy",
       "slug": "home-office-pro-zamestnance-prakticke-rady-a-tipy",
       "url": "https://www.seduo.cz/home-office-pro-zamestnance-prakticke-rady-a-tipy"
@@ -1670,7 +1670,7 @@
       "url": "https://www.seduo.cz/zkusenosti-generala-tajne-sluzby-prace-s-informacemi"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Jak se rozhodujeme?",
       "slug": "jak-se-rozhodujeme",
       "url": "https://www.seduo.cz/jak-se-rozhodujeme"
@@ -1694,7 +1694,7 @@
       "url": "https://www.seduo.cz/osobni-hrdost-a-asertivita-jak-si-vazit-sam-sebe"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Hodnotový leadership očima spoluzakladatele humanitární organizace",
       "slug": "hodnotovy-leadership",
       "url": "https://www.seduo.cz/hodnotovy-leadership"
@@ -1712,7 +1712,7 @@
       "url": "https://www.seduo.cz/leadership-v-prvni-linii"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Průvodce módou a stylem úspěšné ženy",
       "slug": "pruvodce-modou-a-stylem-uspesne-zeny",
       "url": "https://www.seduo.cz/pruvodce-modou-a-stylem-uspesne-zeny"
@@ -1730,25 +1730,25 @@
       "url": "https://www.seduo.cz/anatomie-emoci-jak-je-cist-z-vyrazu-tvare-druhych"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Radikální otevřenost: Jak dávat účinnou zpětnou vazbu?",
       "slug": "radikalni-otevrenost-jak-davat-ucinnou-zpetnou-vazbu",
       "url": "https://www.seduo.cz/radikalni-otevrenost-jak-davat-ucinnou-zpetnou-vazbu"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Barevná osobnostní typologie pro obchodníky",
       "slug": "barevna-osobnostni-typologie-pro-obchodniky",
       "url": "https://www.seduo.cz/barevna-osobnostni-typologie-pro-obchodniky"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Barevná osobnostní typologie pro leadery",
       "slug": "barevna-osobnostni-typologie-pro-leadery",
       "url": "https://www.seduo.cz/barevna-osobnostni-typologie-pro-leadery"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Home Office 2.0: jak být efektivní při práci na dálku?",
       "slug": "home-office-2-0-jak-byt-efektivni-pri-praci-na-dalku",
       "url": "https://www.seduo.cz/home-office-2-0-jak-byt-efektivni-pri-praci-na-dalku"
@@ -1766,7 +1766,7 @@
       "url": "https://www.seduo.cz/motivujici-zpetna-vazba-aneb-zapomente-na-sendvic"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Manažerské archetypy: Jakou roli hrajete?",
       "slug": "manazerske-archetypy-jakou-manazerskou-roli-hrajete",
       "url": "https://www.seduo.cz/manazerske-archetypy-jakou-manazerskou-roli-hrajete"
@@ -1796,7 +1796,7 @@
       "url": "https://www.seduo.cz/efektivni-vedeni-akvizicniho-jednani-s-cilem-uzavrit-obchod"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Zákeřnosti anglického slovosledu",
       "slug": "zakernosti-anglickeho-slovosledu",
       "url": "https://www.seduo.cz/zakernosti-anglickeho-slovosledu"
@@ -1820,31 +1820,31 @@
       "url": "https://www.seduo.cz/ms-one-note"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Home office a vedení týmu na dálku: praktické tipy pro manažery",
       "slug": "home-office-a-vedeni-tymu-na-dalku-prakticke-tipy-pro-manazery",
       "url": "https://www.seduo.cz/home-office-a-vedeni-tymu-na-dalku-prakticke-tipy-pro-manazery"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Kritické myšlení 8 - Racionální komunikace a argumentace",
       "slug": "racionalni-komunikace-a-argumentace",
       "url": "https://www.seduo.cz/racionalni-komunikace-a-argumentace"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Kritické myšlení 7 - Rozhodování na základě důkazů",
       "slug": "rozhodovani-na-zaklade-dukazu",
       "url": "https://www.seduo.cz/rozhodovani-na-zaklade-dukazu"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Základy barevné osobnostní typologie",
       "slug": "zaklady-barevne-osobnostni-typologie",
       "url": "https://www.seduo.cz/zaklady-barevne-osobnostni-typologie"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Storytelling 2: Prodávejte příběhem a zaujměte",
       "slug": "storytelling-2-prodavejte-pribehem-a-zaujmete",
       "url": "https://www.seduo.cz/storytelling-2-prodavejte-pribehem-a-zaujmete"
@@ -1868,7 +1868,7 @@
       "url": "https://www.seduo.cz/jak-se-dostat-na-schuzku-pomoci-telefonatu-2-mentalni-priprava"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Jak na členy v angličtině",
       "slug": "jak-na-cleny-v-anglictine",
       "url": "https://www.seduo.cz/jak-na-cleny-v-anglictine"
@@ -1892,31 +1892,31 @@
       "url": "https://www.seduo.cz/prezentacni-dovednosti-a-verejny-projev"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Co se v mládí naučíš, v byznysu zapomeň",
       "slug": "co-se-v-mladi-naucis-v-dospelosti-zapomen",
       "url": "https://www.seduo.cz/co-se-v-mladi-naucis-v-dospelosti-zapomen"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Firma a rodina jako kmen",
       "slug": "firma-a-rodina-jako-kmen",
       "url": "https://www.seduo.cz/firma-a-rodina-jako-kmen"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Maxikurz anglických předložek",
       "slug": "maxikurz-anglickych-predlozek",
       "url": "https://www.seduo.cz/maxikurz-anglickych-predlozek"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Kritické myšlení 6 - Mediální gramotnost a fact-checking",
       "slug": "medialni-gramotnost-a-fact-checking",
       "url": "https://www.seduo.cz/medialni-gramotnost-a-fact-checking"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Základní technologický slovník",
       "slug": "zakladni-technologicky-slovnik",
       "url": "https://www.seduo.cz/zakladni-technologicky-slovnik"
@@ -1934,13 +1934,13 @@
       "url": "https://www.seduo.cz/nastavte-si-konecne-bezpecne-heslo"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Kritické myšlení 5 - Teorie her a jak okolnosti ovlivňují rozhodování",
       "slug": "teorie-her-a-jak-okolnosti-ovlivnuji-rozhodovani",
       "url": "https://www.seduo.cz/teorie-her-a-jak-okolnosti-ovlivnuji-rozhodovani"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Jak se ubránit syndromu vyhoření – svépomocný manuál",
       "slug": "jak-se-ubranit-syndromu-vyhoreni-svepomocny-manual",
       "url": "https://www.seduo.cz/jak-se-ubranit-syndromu-vyhoreni-svepomocny-manual"
@@ -1964,13 +1964,13 @@
       "url": "https://www.seduo.cz/autenticky-a-po-svem"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Agilní (r)evoluce: Jak ustát agilní transformaci",
       "slug": "agilni-r-evoluce-jak-ustat-agilni-transformaci",
       "url": "https://www.seduo.cz/agilni-r-evoluce-jak-ustat-agilni-transformaci"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Kritické myšlení 4 - Rozhodování za nejistoty",
       "slug": "rozhodovani-za-nejistoty",
       "url": "https://www.seduo.cz/rozhodovani-za-nejistoty"
@@ -1982,13 +1982,13 @@
       "url": "https://www.seduo.cz/vychytavky-v-excelu"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Zkratky v online komunikaci",
       "slug": "internetove-zkratky",
       "url": "https://www.seduo.cz/internetove-zkratky"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Zkrácená historie etikety a proč se jí zabývat",
       "slug": "zkracena-historie-etikety-a-proc-se-ji-zabyvat",
       "url": "https://www.seduo.cz/zkracena-historie-etikety-a-proc-se-ji-zabyvat"
@@ -2012,13 +2012,13 @@
       "url": "https://www.seduo.cz/sebekoucovani"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Kritické myšlení 3 - Ekonomické myšlení",
       "slug": "ekonomicke-mysleni",
       "url": "https://www.seduo.cz/ekonomicke-mysleni"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Osobní marketing II.: Jak se chytře prodat v práci",
       "slug": "osobni-marketing-ii-jak-se-uspesne-prodat-v-praci",
       "url": "https://www.seduo.cz/osobni-marketing-ii-jak-se-uspesne-prodat-v-praci"
@@ -2030,19 +2030,19 @@
       "url": "https://www.seduo.cz/prace-s-lidmi"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Start Speaking Czech Now! - The Final Course in Essential Czech",
       "slug": "start-speaking-czech-now-the-final-course-in-essential-czech",
       "url": "https://www.seduo.cz/start-speaking-czech-now-the-final-course-in-essential-czech"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Kritické myšlení 2 - Jak hacknout rozhodování - intuice vs. algoritmy",
       "slug": "jak-hacknout-rozhodovani-intuice-vs-algoritmy",
       "url": "https://www.seduo.cz/jak-hacknout-rozhodovani-intuice-vs-algoritmy"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Start Speaking Czech Now! - More Essentials",
       "slug": "start-speaking-czech-now-more-essentials",
       "url": "https://www.seduo.cz/start-speaking-czech-now-more-essentials"
@@ -2054,13 +2054,13 @@
       "url": "https://www.seduo.cz/pece-o-sit-kontaktu-a-zakladni-principy-prorustani-do-organizace"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Start Speaking Czech Now! - The Essentials",
       "slug": "start-speaking-czech-now-the-essentials",
       "url": "https://www.seduo.cz/start-speaking-czech-now-the-essentials"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Osobní marketing I.: Jak si vybudovat pozitivní image",
       "slug": "osobni-marketing-i-jak-si-vybudovat-pozitivni-image",
       "url": "https://www.seduo.cz/osobni-marketing-i-jak-si-vybudovat-pozitivni-image"
@@ -2126,19 +2126,19 @@
       "url": "https://www.seduo.cz/pokrocile-vyhledavani-na-google"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Trello II – Pokročilé funkce",
       "slug": "trello-ii-pokrocile-funkce",
       "url": "https://www.seduo.cz/trello-ii-pokrocile-funkce"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Trello I - Rychlý start do organizace projektů",
       "slug": "trello-i-rychly-start-do-organizace-projektu",
       "url": "https://www.seduo.cz/trello-i-rychly-start-do-organizace-projektu"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Jak se stát autoritou",
       "slug": "jak-se-stat-autoritou",
       "url": "https://www.seduo.cz/jak-se-stat-autoritou"
@@ -2168,7 +2168,7 @@
       "url": "https://www.seduo.cz/nlp-koucink-kompletni-kurz"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "NLP koučink III. - Dosahování cílů, které baví",
       "slug": "nlp-koucink-iii-dosahovani-cilu-ktere-bavi",
       "url": "https://www.seduo.cz/nlp-koucink-iii-dosahovani-cilu-ktere-bavi"
@@ -2186,7 +2186,7 @@
       "url": "https://www.seduo.cz/nlp-koucink-i-naucte-se-myslet-jinak"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Námitka ze strany klienta? Výborně, parádní příležitost udělat dojem!",
       "slug": "namitka-ze-strany-klienta-vyborne-paradni-prilezitost-udelat-dojem",
       "url": "https://www.seduo.cz/namitka-ze-strany-klienta-vyborne-paradni-prilezitost-udelat-dojem"
@@ -2204,7 +2204,7 @@
       "url": "https://www.seduo.cz/emoce-pod-kontrolou-i-emocni-inteligence-a-sebeuvedomeni"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Neprodávejte! Buďte skvělí ve vyvolání NÁKUPU",
       "slug": "neprodavejte-budte-skveli-ve-vyvolani-nakupu",
       "url": "https://www.seduo.cz/neprodavejte-budte-skveli-ve-vyvolani-nakupu"
@@ -2240,13 +2240,13 @@
       "url": "https://www.seduo.cz/sebevedoma-komunikace"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Cesta ke skvělému výkonu",
       "slug": "cesta-ke-skvelemu-vykonu",
       "url": "https://www.seduo.cz/cesta-ke-skvelemu-vykonu"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "PowerPoint – Práce s texty a obrazci",
       "slug": "powerpoint-prace-s-texty-a-obrazci",
       "url": "https://www.seduo.cz/powerpoint-prace-s-texty-a-obrazci"
@@ -2276,7 +2276,7 @@
       "url": "https://www.seduo.cz/mac-efektivne"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Jak vybrat dobrého obchodníka",
       "slug": "jak-vybrat-dobreho-obchodnika",
       "url": "https://www.seduo.cz/jak-vybrat-dobreho-obchodnika"
@@ -2300,7 +2300,7 @@
       "url": "https://www.seduo.cz/prechazime-na-mac"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Firemní korespondence v němčině",
       "slug": "firemni-korespondence-v-nemcine",
       "url": "https://www.seduo.cz/firemni-korespondence-v-nemcine"
@@ -2318,19 +2318,19 @@
       "url": "https://www.seduo.cz/jak-setrit-cas-pri-praci-s-emaily"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Cool fráze a obraty pro každou situaci",
       "slug": "cool-fraze-a-obraty-pro-kazdou-situaci",
       "url": "https://www.seduo.cz/cool-fraze-a-obraty-pro-kazdou-situaci"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Slova a fráze, co vás ve škole nenaučili",
       "slug": "slova-a-fraze-co-vas-ve-skole-nenaucili",
       "url": "https://www.seduo.cz/slova-a-fraze-co-vas-ve-skole-nenaucili"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Anglické idiomy II",
       "slug": "anglicke-idiomy-ii",
       "url": "https://www.seduo.cz/anglicke-idiomy-ii"
@@ -2342,7 +2342,7 @@
       "url": "https://www.seduo.cz/anglicke-idiomy-i"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Anglická frázová slovesa II",
       "slug": "anglicka-frazova-slovesa-ii",
       "url": "https://www.seduo.cz/anglicka-frazova-slovesa-ii"
@@ -2354,7 +2354,7 @@
       "url": "https://www.seduo.cz/anglicka-frazova-slovesa-i"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "The End of Procrastination",
       "slug": "end-procrastination",
       "url": "https://www.seduo.cz/end-procrastination"
@@ -2366,13 +2366,13 @@
       "url": "https://www.seduo.cz/jak-spravne-napsat-pracovni-inzerat"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Zvizualizuj si své sny",
       "slug": "zvizualizuj-si-sve-sny",
       "url": "https://www.seduo.cz/zvizualizuj-si-sve-sny"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Jak na skečnouting aneb čmárej si (i) na poradě",
       "slug": "jak-na-skecnouting-aneb-cmarej-si-i-na-porade",
       "url": "https://www.seduo.cz/jak-na-skecnouting-aneb-cmarej-si-i-na-porade"
@@ -2384,7 +2384,7 @@
       "url": "https://www.seduo.cz/myslenkove-mapy-pro-byznys-i-osobni-zivot"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Vizuální myšlení",
       "slug": "vizualni-mysleni",
       "url": "https://www.seduo.cz/vizualni-mysleni"
@@ -2396,25 +2396,25 @@
       "url": "https://www.seduo.cz/analyza-klicovych-slov"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Nastavení PPC kampaní s analýzou klíčových slov",
       "slug": "nastaveni-ppc-kampani-s-analyzou-klicovych-slov",
       "url": "https://www.seduo.cz/nastaveni-ppc-kampani-s-analyzou-klicovych-slov"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Cesta k dobrému jazykovému stylu II",
       "slug": "cesta-k-dobremu-jazykovemu-stylu-ii",
       "url": "https://www.seduo.cz/cesta-k-dobremu-jazykovemu-stylu-ii"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Úprava moderního dopisu",
       "slug": "uprava-moderniho-dopisu",
       "url": "https://www.seduo.cz/uprava-moderniho-dopisu"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Psaní e-mailů snadněji a rychleji",
       "slug": "psani-e-mailu-snadneji-a-rychleji",
       "url": "https://www.seduo.cz/psani-e-mailu-snadneji-a-rychleji"
@@ -2426,7 +2426,7 @@
       "url": "https://www.seduo.cz/jak-na-texty-diky-kterym-vas-najdou"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Osobní styl muže jako brána k úspěchu",
       "slug": "osobni-styl-muze-jako-brana-k-uspechu",
       "url": "https://www.seduo.cz/osobni-styl-muze-jako-brana-k-uspechu"
@@ -2450,49 +2450,49 @@
       "url": "https://www.seduo.cz/kurz-microsoft-excel"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "PowerPoint 2016: Nejen pro začátečníky",
       "slug": "powerpoint-2016-nejen-pro-zacatecniky",
       "url": "https://www.seduo.cz/powerpoint-2016-nejen-pro-zacatecniky"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Vše, co jste kdy chtěli vědět o anglických časech II",
       "slug": "vse-co-jste-kdy-chteli-vedet-o-anglickych-casech-ii",
       "url": "https://www.seduo.cz/vse-co-jste-kdy-chteli-vedet-o-anglickych-casech-ii"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Vše, co jste kdy chtěli vědět o anglických časech I",
       "slug": "vse-co-jste-kdy-chteli-vedet-o-anglickych-casech-i",
       "url": "https://www.seduo.cz/vse-co-jste-kdy-chteli-vedet-o-anglickych-casech-i"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "76 nejčastěji zaměňovaných slov v angličtině",
       "slug": "76-nejcasteji-zamenovanych-slov-v-anglictine",
       "url": "https://www.seduo.cz/76-nejcasteji-zamenovanych-slov-v-anglictine"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "No More Czenglish II",
       "slug": "no-more-czenglish-II",
       "url": "https://www.seduo.cz/no-more-czenglish-II"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "No More Czenglish I",
       "slug": "no-more-czenglish-I",
       "url": "https://www.seduo.cz/no-more-czenglish-I"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Pracujte na dálku a svobodně",
       "slug": "pracujte-na-dalku-a-svobodne",
       "url": "https://www.seduo.cz/pracujte-na-dalku-a-svobodne"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Cesta k dobrému jazykovému stylu",
       "slug": "cesta-k-dobremu-jazykovemu-stylu",
       "url": "https://www.seduo.cz/cesta-k-dobremu-jazykovemu-stylu"
@@ -2504,7 +2504,7 @@
       "url": "https://www.seduo.cz/jak-na-cesky-pravopis"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Psaní velkých písmen jako pravopisná hrůza hrůz?",
       "slug": "psani-velkych-pismen-jako-pravopisna-hruza-hruz",
       "url": "https://www.seduo.cz/psani-velkych-pismen-jako-pravopisna-hruza-hruz"
@@ -2516,7 +2516,7 @@
       "url": "https://www.seduo.cz/jak-na-carky-ve-vetach-a-souvetich"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Mailujte jako profík: věcně, přehledně a v angličtině!",
       "slug": "mailujte-jako-profik-vecne-prehledne-a-v-anglictine",
       "url": "https://www.seduo.cz/mailujte-jako-profik-vecne-prehledne-a-v-anglictine"
@@ -2552,7 +2552,7 @@
       "url": "https://www.seduo.cz/prezentujte-v-anglictine"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Tipy a triky pro Excel",
       "slug": "tipy-a-triky-pro-excel",
       "url": "https://www.seduo.cz/tipy-a-triky-pro-excel"
@@ -2564,13 +2564,13 @@
       "url": "https://www.seduo.cz/kontingencni-tabulky-v-excel"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Jak úspěšně připravit vaši první online kampaň",
       "slug": "jak-uspesne-pripravit-vasi-prvni-online-kampan",
       "url": "https://www.seduo.cz/jak-uspesne-pripravit-vasi-prvni-online-kampan"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Jak si pomocí čmárání ulehčit práci",
       "slug": "jak-si-pomoci-cmarani-ulehcit-praci",
       "url": "https://www.seduo.cz/jak-si-pomoci-cmarani-ulehcit-praci"
@@ -2588,37 +2588,37 @@
       "url": "https://www.seduo.cz/strategie-ziskani-top-kandidata"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Jak úspěšně najít práci",
       "slug": "jak-uspesne-najit-praci",
       "url": "https://www.seduo.cz/jak-uspesne-najit-praci"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Budujte úspěšnou kariéru v jakémkoli věku!",
       "slug": "budujte-uspesnou-karieru-v-jakemkoli-veku",
       "url": "https://www.seduo.cz/budujte-uspesnou-karieru-v-jakemkoli-veku"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Společenská odpovědnost a etika v podnikání",
       "slug": "spolecenska-odpovednost-a-etika-v-podnikani",
       "url": "https://www.seduo.cz/spolecenska-odpovednost-a-etika-v-podnikani"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "English for Meetings",
       "slug": "english-for-meetings",
       "url": "https://www.seduo.cz/english-for-meetings"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Naučte se konečně opravdu anglicky",
       "slug": "naucte-se-konecne-opravdu-anglicky",
       "url": "https://www.seduo.cz/naucte-se-konecne-opravdu-anglicky"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Vytvořte si web pomocí WordPressu za 20 min.",
       "slug": "vytvorte-si-web-pomoci-wordpressu-za-20-min",
       "url": "https://www.seduo.cz/vytvorte-si-web-pomoci-wordpressu-za-20-min"
@@ -2630,13 +2630,13 @@
       "url": "https://www.seduo.cz/vzdelavani-jako-soucast-zivota"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Human-Centered Design: Uživatelské testování",
       "slug": "human-centered-design-uzivatelske-testovani",
       "url": "https://www.seduo.cz/human-centered-design-uzivatelske-testovani"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Chytrá marketingová strategie",
       "slug": "chytra-marketingova-strategie",
       "url": "https://www.seduo.cz/chytra-marketingova-strategie"
@@ -2660,31 +2660,31 @@
       "url": "https://www.seduo.cz/uvod-do-webove-analytiky"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Talent management generace Y",
       "slug": "talent-management-generace-y",
       "url": "https://www.seduo.cz/talent-management-generace-y"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Komunikace s lidmi v souladu s fungováním mozku",
       "slug": "komunikace-s-lidmi-v-souladu-s-fungovanim-mozku",
       "url": "https://www.seduo.cz/komunikace-s-lidmi-v-souladu-s-fungovanim-mozku"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Networking: profesionální přístup k budování B2B vztahů",
       "slug": "networking-profesionalni-pristup-k-budovani-b2b-vztahu",
       "url": "https://www.seduo.cz/networking-profesionalni-pristup-k-budovani-b2b-vztahu"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Základy řízení značky",
       "slug": "zaklady-rizeni-znacky",
       "url": "https://www.seduo.cz/zaklady-rizeni-znacky"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Obchodní myšlení",
       "slug": "obchodni-mysleni",
       "url": "https://www.seduo.cz/obchodni-mysleni"
@@ -2696,7 +2696,7 @@
       "url": "https://www.seduo.cz/networking-prirozena-cesta-k-profesni-spolupraci"
     },
     {
-      "flag": null,
+      "flag": "",
       "name": "Human-Centered Design: Design zaměřený na člověka",
       "slug": "human-centered-design",
       "url": "https://www.seduo.cz/human-centered-design"

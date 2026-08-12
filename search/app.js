@@ -188,7 +188,7 @@ $("#loadMore").addEventListener("click",()=>{state.limit+=18;render()});
 window.addEventListener("keydown",event=>{if(event.key==="/"&&document.activeElement!==input){event.preventDefault();input.focus()}if(event.key==="Escape"){state.query="";input.value="";render();input.blur()}});
 window.addEventListener("popstate",()=>{const params=new URLSearchParams(location.search);state.query=params.get("q")||"";state.filter=params.get("typ")||"Vše";input.value=state.query;render({sync:false})});
 
-fetch("courses.json").then(response=>response.json()).then(data=>{
+fetch("courses.json?v=20260812-2",{cache:"no-store"}).then(response=>response.json()).then(data=>{
   state.catalog=data;buildIndex(data.courses);
   const params=new URLSearchParams(location.search);state.query=params.get("q")||"";state.filter=params.get("typ")||"Vše";input.value=state.query;
   $("#total").textContent=data.total_count;$("#updated").textContent=`Index aktualizován ${new Intl.DateTimeFormat("cs-CZ",{day:"numeric",month:"long",year:"numeric",timeZone:"Europe/Prague"}).format(new Date(data.observed_at))}`;render({sync:false});

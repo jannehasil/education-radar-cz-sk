@@ -64,9 +64,14 @@ kbd, .clear { min-width: 30px; height: 30px; border: 1px solid #dce0dd; border-r
 .results h2, .how h2 { margin-bottom: 0; font-size: clamp(32px, 4vw, 52px); line-height: 1.08; letter-spacing: -.04em; }
 .resultCount { flex: 0 0 auto; margin-bottom: 7px; color: var(--muted); }
 .resultCount strong { color: var(--purple); font-size: 24px; }
-.filters { margin: 33px 0 34px; display: flex; flex-wrap: wrap; gap: 9px; }
+.resultTools { margin: 33px 0 34px; display: flex; justify-content: space-between; gap: 24px; align-items: center; }
+.filters { display: flex; flex-wrap: wrap; gap: 9px; }
 .filters button { padding: 10px 17px; border: 1px solid var(--line); border-radius: 99px; background: transparent; color: var(--ink); font-weight: 700; cursor: pointer; }
 .filters button.active { background: var(--ink); color: white; border-color: var(--ink); }
+.filters button span { display: inline-grid; place-items: center; min-width: 21px; height: 21px; margin-left: 6px; padding: 0 6px; border-radius: 99px; background: rgba(91,63,214,.1); color: var(--purple); font-size: 11px; }
+.filters button.active span { color: var(--ink); background: var(--mint); }
+.sortLabel { display: flex; flex: 0 0 auto; align-items: center; gap: 9px; color: var(--muted); font-size: 13px; font-weight: 700; }
+.sortLabel select { padding: 10px 34px 10px 12px; border: 1px solid var(--line); border-radius: 10px; color: var(--ink); background: white; font-weight: 700; }
 
 .courseGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
 .courseCard { display: flex; flex-direction: column; min-width: 0; min-height: 285px; overflow: hidden; border: 1px solid var(--line); border-radius: 22px; background: white; text-decoration: none; box-shadow: 0 8px 25px rgba(25, 29, 27, .04); transition: transform .2s ease, box-shadow .2s ease; }
@@ -80,6 +85,22 @@ kbd, .clear { min-width: 30px; height: 30px; border: 1px solid #dce0dd; border-r
 .courseBody { padding: 22px; display: flex; flex: 1; flex-direction: column; justify-content: space-between; gap: 25px; }
 .courseBody p { margin: 0; font: 700 19px/1.34 "Manrope", sans-serif; letter-spacing: -.02em; }
 .courseBody span { color: var(--purple); font-size: 13px; font-weight: 800; }
+.courseVisual .typePill { background: rgba(255,255,255,.88); }
+.cardMeta { min-height: 25px; display: flex; align-items: center; gap: 7px; flex-wrap: wrap; }
+.courseBody .relevancePill, .courseBody .flagPill { display: inline-flex; width: fit-content; padding: 5px 8px; border-radius: 99px; font-size: 10px; line-height: 1; text-transform: uppercase; letter-spacing: .06em; }
+.courseBody .relevancePill { color: #2b187f; background: #e8e2ff; }
+.courseBody .flagPill { color: #26533b; background: var(--mint); }
+.courseBody .courseName { margin: 0; font: 700 19px/1.34 "Manrope", sans-serif; letter-spacing: -.02em; }
+.courseBody .matchReason { margin: -10px 0 0; color: var(--muted); font-size: 13px; line-height: 1.45; }
+.courseBody .courseLink { margin-top: auto; }
+.courseGrid.isSearch { grid-template-columns: 1fr; gap: 12px; }
+.courseGrid.isSearch .resultCard { min-height: 0; display: grid; grid-template-columns: 180px 1fr; }
+.courseGrid.isSearch .courseVisual { height: 100%; min-height: 168px; }
+.courseGrid.isSearch .courseBody { min-height: 168px; padding: 22px 25px; display: grid; grid-template-columns: 1fr auto; grid-template-areas: "meta link" "name link" "reason link"; align-content: center; column-gap: 28px; row-gap: 7px; }
+.courseGrid.isSearch .cardMeta { grid-area: meta; }
+.courseGrid.isSearch .courseName { grid-area: name; font-size: 21px; }
+.courseGrid.isSearch .matchReason { grid-area: reason; margin: 0; }
+.courseGrid.isSearch .courseLink { grid-area: link; align-self: center; white-space: nowrap; }
 .loadMore, .empty button { display: block; margin: 40px auto 0; padding: 14px 22px; border: 0; border-radius: 12px; background: var(--purple); color: white; font-weight: 800; cursor: pointer; }
 .loadMore span { margin-left: 8px; }
 .empty { padding: 70px 25px; text-align: center; border: 1px dashed #c9cec9; border-radius: 24px; background: white; }
@@ -101,6 +122,7 @@ footer p { margin: 0; } footer a { color: var(--purple); font-weight: 700; }
   .heroCard { max-width: 330px; }
   .courseGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .steps { grid-template-columns: 1fr; }
+  .resultTools { align-items: flex-start; flex-direction: column; }
 }
 
 @media (max-width: 620px) {
@@ -109,6 +131,10 @@ footer p { margin: 0; } footer a { color: var(--purple); font-weight: 700; }
   h1 { font-size: 43px; }.lede { font-size: 16px; }.searchShell { height: 62px; padding-inline: 15px; }.searchShell input { font-size: 16px; } kbd { display: none; }
   .heroCard { transform: none; box-shadow: 8px 9px 0 rgba(31,18,93,.34); }
   .results { padding: 68px 18px 80px; }.resultsTop { align-items: start; flex-direction: column; gap: 15px; }.courseGrid { grid-template-columns: 1fr; }
+  .courseGrid.isSearch .resultCard { grid-template-columns: 105px 1fr; }
+  .courseGrid.isSearch .courseVisual { min-height: 190px; }
+  .courseGrid.isSearch .courseBody { min-height: 190px; display: flex; padding: 18px; }
+  .courseGrid.isSearch .courseLink { align-self: flex-start; }
   .how { padding: 70px 18px; } footer { padding: 28px 18px; flex-direction: column; }
 }
 

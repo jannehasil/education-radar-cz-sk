@@ -36,7 +36,18 @@
 
   <section class="results">
     <div class="resultsTop"><div><p class="kicker" id="mode">Procházet katalog</p><h2 id="heading">Aktuální kurzy na Seduo</h2></div><p class="resultCount"><strong id="count">0</strong> <span id="countLabel">výsledků</span></p></div>
-    <div class="filters" role="group" aria-label="Filtrovat výsledky"><button class="active">Vše</button><button>Novinky</button><button>Podcasty</button><button>Naživo</button></div>
+    <div class="resultTools">
+      <div class="filters" role="group" aria-label="Filtrovat výsledky">
+        <button class="active" data-filter="Vše">Vše <span>0</span></button>
+        <button data-filter="Videokurzy">Videokurzy <span>0</span></button>
+        <button data-filter="Podcasty">Podcasty <span>0</span></button>
+        <button data-filter="Naživo">Seduo naživo <span>0</span></button>
+        <button data-filter="Novinky">Novinky <span>0</span></button>
+      </div>
+      <label class="sortLabel">Řazení
+        <select id="sort"><option value="relevance">Nejrelevantnější</option><option value="newest">Nejnovější</option><option value="az">A–Z</option></select>
+      </label>
+    </div>
     <div id="empty" class="empty" hidden><span>?</span><h3>Tady jsme nic přesného nenašli.</h3><p>Zkuste kratší nebo obecnější výraz — třeba „AI“, „manažer“ nebo „komunikace“.</p><button id="reset">Zobrazit celý katalog</button></div>
     <div id="courseGrid" class="courseGrid"></div>
     <button id="loadMore" class="loadMore">Načíst další kurzy <span>↓</span></button>

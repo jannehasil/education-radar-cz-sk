@@ -1,6 +1,8 @@
 import fs from "node:fs/promises";
 import { dedupe, isRecent, matchesWatchlist, parseRss, updateIndex } from "./radar-lib.mjs";
 
+const AUTOMATION_VERSION = "1.0.0";
+
 const WATCHLISTS = {
   global: ["Coursera", "Udemy", "edX", "LinkedIn Learning", "Skillshare", "MasterClass", "Pluralsight", "DataCamp", "Codecademy", "Udacity", "Khan Academy", "Brilliant", "Maven", "Reforge", "DeepLearning.AI", "Duolingo"],
   europe: ["GoStudent", "Babbel", "Kahoot", "360Learning", "Multiverse", "OpenClassrooms", "Preply", "LearnWorlds", "TalentLMS", "Lingoda", "StudySmarter", "CoachHub", "simpleclub", "Knowunity", "sofatutor", "Seneca Learning", "CENTURY Tech", "Atom Learning", "Sparx Learning", "Twinkl", "FutureLearn", "Perlego", "FourthRev", "MyTutor", "LearnUpon", "Alison", "StuDocu", "Lepaya", "FeedbackFruits", "GoodHabitz", "Studytube", "Wooclap", "BookWidgets", "Edflex", "Didask", "Genially", "ODILO", "Innovamat", "Smartick", "Ironhack", "Domestika", "WeSchool", "Docsity", "EPICODE", "Kognity", "Sana", "Eduten", "Claned", "99math", "Turing College"],
@@ -139,7 +141,7 @@ async function main() {
   const html = await fs.readFile("index.html", "utf8");
   await fs.writeFile("index.html", updateIndex(html, result, now));
   const status = {
-    schemaVersion: 1, updatedAt: now.toISOString(), timezone: "Europe/Prague",
+    schemaVersion: 1, automationVersion: AUTOMATION_VERSION, updatedAt: now.toISOString(), timezone: "Europe/Prague",
     selectedCounts: Object.fromEntries(Object.entries(result).filter(([group]) => group !== "finance").map(([group, items]) => [group, items.length])),
     candidateCounts: Object.fromEntries(Object.entries(grouped).map(([group, items]) => [group, items.length])),
     finance: finance.map(({ ticker, date, price, changePct, currency }) => ({ ticker, date, price, changePct, currency })),

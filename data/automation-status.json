@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-13T11:24:14.754Z",
+  "updatedAt": "2026-08-13T11:39:24.026Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
@@ -29,8 +29,9 @@
       "currency": "USD"
     }
   ],
-  "modelStatus": "not-configured",
+  "modelStatus": "fallback",
   "sourceErrors": [
-    "Finance DTOL: neúplná data"
+    "Finance DTOL: neúplná data",
+    "GitHub Models: 410 {\"error\":{\"code\":\"github_models_retirement_brownout\",\"message\":\"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout.\"}}\n"
   ]
 }

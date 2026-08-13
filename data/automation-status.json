@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-13T11:39:24.026Z",
+  "automationVersion": "1.0.0",
+  "updatedAt": "2026-08-13T11:43:38.947Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,

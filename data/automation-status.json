@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "1.0.0",
-  "updatedAt": "2026-08-15T05:58:27.412Z",
+  "updatedAt": "2026-08-15T10:53:36.969Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
@@ -11,7 +11,7 @@
   },
   "candidateCounts": {
     "global": 0,
-    "europe": 0,
+    "europe": 1,
     "region": 0
   },
   "finance": [
@@ -30,8 +30,9 @@
       "currency": "USD"
     }
   ],
-  "modelStatus": "ok",
+  "modelStatus": "fallback",
   "sourceErrors": [
-    "Finance DTOL: neúplná data"
+    "Finance DTOL: neúplná data",
+    "GitHub Models: 410 {\"error\":{\"code\":\"github_models_retirement_brownout\",\"message\":\"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout.\"}}\n"
   ]
 }

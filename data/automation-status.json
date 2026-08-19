@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "1.0.0",
-  "updatedAt": "2026-08-19T06:01:42.740Z",
+  "updatedAt": "2026-08-19T11:00:50.412Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 1,
@@ -18,15 +18,15 @@
     {
       "ticker": "COUR",
       "date": "2026-08-18",
-      "price": 5.75,
-      "changePct": 1,
+      "price": 5.73,
+      "changePct": 0.7,
       "currency": "USD"
     },
     {
       "ticker": "DUOL",
       "date": "2026-08-18",
-      "price": 139.1,
-      "changePct": -0.39,
+      "price": 143.5,
+      "changePct": 2.76,
       "currency": "USD"
     }
   ],

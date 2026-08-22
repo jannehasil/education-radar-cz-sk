@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "1.0.0",
-  "updatedAt": "2026-08-21T11:02:55.318Z",
+  "updatedAt": "2026-08-22T05:59:23.618Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
@@ -17,15 +17,21 @@
   "finance": [
     {
       "ticker": "COUR",
-      "date": "2026-08-20",
-      "price": 5.85,
-      "changePct": 0,
+      "date": "2026-08-21",
+      "price": 6.01,
+      "changePct": 0.16,
+      "currency": "USD"
+    },
+    {
+      "ticker": "DUOL",
+      "date": "2026-08-21",
+      "price": 145.77,
+      "changePct": -0.25,
       "currency": "USD"
     }
   ],
   "modelStatus": "ok",
   "sourceErrors": [
-    "fetch failed",
     "Finance DTOL: neúplná data"
   ]
 }

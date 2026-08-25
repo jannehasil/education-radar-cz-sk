@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "1.0.0",
-  "updatedAt": "2026-08-24T11:15:14.241Z",
+  "updatedAt": "2026-08-25T06:04:01.261Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
@@ -11,28 +11,27 @@
   },
   "candidateCounts": {
     "global": 0,
-    "europe": 1,
+    "europe": 0,
     "region": 0
   },
   "finance": [
     {
       "ticker": "COUR",
-      "date": "2026-08-21",
-      "price": 6,
-      "changePct": 0,
+      "date": "2026-08-24",
+      "price": 6.03,
+      "changePct": 0.13,
       "currency": "USD"
     },
     {
       "ticker": "DUOL",
-      "date": "2026-08-21",
-      "price": 145.99,
-      "changePct": -0.1,
+      "date": "2026-08-24",
+      "price": 147.36,
+      "changePct": 0.35,
       "currency": "USD"
     }
   ],
-  "modelStatus": "fallback",
+  "modelStatus": "ok",
   "sourceErrors": [
-    "Finance DTOL: neúplná data",
-    "GitHub Models: 410 {\"error\":{\"code\":\"github_models_retirement_brownout\",\"message\":\"GitHub Models is temporarily unavailable as part of a scheduled retirement brownout.\"}}\n"
+    "Finance DTOL: neúplná data"
   ]
 }

@@ -1,1 +1,49 @@
-m´ÎàßΩ©bu™‡∫gß∂◊¨∂œÎi÷´µÎ-ö;±®m´ÎÄ›ÖπÓö(ß~)^¢ã≠~)^m∫ﬁjFÎy©ù y⁄.∂õ≠∫òß∂âbùÎ(~WßÇÿg∫`›uÁ(uÁ^rá^äzn∂^ñób≤ôZ ÿb≤g¨±®ä)È∫ÿß¶Î_äWùyˆÆñ◊ËÆÀ]äz(∫⁄n∂ã≠¶Î_äWùyˆÆñ◊ËÆÀ]¢Î
+import test from "node:test";
+import assert from "node:assert/strict";
+import { parseFeed, parseRss, updateIndex } from "../scripts/radar-lib.mjs";
+
+const markers = ["GLOBAL", "EUROPE", "REGION", "SEDUO"]
+  .map((name) => `<!-- AUTO:${name}:START -->\n<!-- AUTO:${name}:END -->`).join("\n");
+
+test("RSS parser zachov√° datum, zdroj a titulek", () => {
+  const xml = `<rss><channel><item><title>Novinka Coursera - Example</title><link>https://example.test/a</link><pubDate>Thu, 13 Aug 2026 08:00:00 GMT</pubDate><source>Example</source><description><![CDATA[<p>Popis zpr√°vy</p>]]></description></item></channel></rss>`;
+  const [item] = parseRss(xml, "global");
+  assert.equal(item.title, "Novinka Coursera");
+  assert.equal(item.source, "Example");
+  assert.equal(item.summary, "Popis zpr√°vy");
+  assert.equal(item.group, "global");
+});
+
+test("v√≠cejazyƒçn√Ω parser zachov√° p≈ô√≠m√Ω odkaz a jazyk", () => {
+  const xml = `<feed><entry><title>Babbel startet eine neue Funktion</title><link href="https://example.de/babbel-neu"/><updated>2026-08-27T06:00:00Z</updated><summary>Neue KI-Funktion f√ºr Lernende.</summary></entry></feed>`;
+  const [item] = parseFeed(xml, { group: "europe", language: "de", name: "Beispiel", official: true });
+  assert.equal(item.url, "https://example.de/babbel-neu");
+  assert.equal(item.language, "de");
+  assert.equal(item.source, "Beispiel");
+  assert.equal(item.official, true);
+});
+
+test("renderer aktualizuje datum, poƒçet a sekce idempotentnƒõ", () => {
+  const input = `<span class="dateBadge">star√©</span><span class="updateText">star√©</span><section class="summary"><div><strong>3</strong><span>√∫rovnƒõ trhu</span></div><div><strong>93</strong><span>sledovan√Ωch platforem</span></div><div><strong>0</strong><span>nov√Ωch zpr√°v za 24 h</span></div></section><section class="dailyStatus"><span>star√©</span></section><p class="mediaDate">star√©</p>${markers}`;
+  const article = { title: "Coursera p≈ôedstavila novinku", source: "Coursera", url: "https://example.test", summary: "Ovƒõ≈ôen√Ω popis nov√© produktov√© funkce.", publishedAt: "2026-08-13T08:00:00.000Z" };
+  const result = { global: [{ ...article, originalLanguage: "en" }], europe: [], region: [], seduo: [], sourceSummary: { succeeded: 17, configured: 19, languages: ["cs", "de", "en"] } };
+  const now = new Date("2026-08-13T10:15:00.000Z");
+  const once = updateIndex(input, result, now);
+  const twice = updateIndex(once, result, now);
+  assert.equal(once, twice);
+  assert.match(once, /Aktualizov√°no 13\. srpna 2026/);
+  assert.match(once, /v 12:15 ¬∑ Europe\/Prague/);
+  assert.match(once, /<strong>1<\/strong><span>nov√Ωch zpr√°v/);
+  assert.match(once, /Coursera p≈ôedstavila novinku/);
+  assert.match(once, /P≈Øvodn√≠ zdroj: Coursera/);
+  assert.match(once, /17 z 19 p≈ô√≠m√Ωch zdroj≈Ø/);
+});
+
+test("renderer bezpeƒçnƒõ obnov√≠ ovƒõ≈ôenou z√°vƒõreƒçnou cenu", () => {
+  const card = `<article class="stockCard cour" data-ticker="COUR"><time datetime="2026-08-11">z√°vƒõr 11. 8.</time><div class="stockPrice"><strong>5,69</strong><span>USD</span><em class="stockDown">‚àí1,22 %</em></div></article>`;
+  const input = `<span class="dateBadge">star√©</span><span class="updateText">star√©</span><section class="summary"><div><strong>3</strong><span>√∫rovnƒõ trhu</span></div><div><strong>93</strong><span>sledovan√Ωch platforem</span></div><div><strong>0</strong><span>nov√Ωch zpr√°v za 24 h</span></div></section><section class="dailyStatus"><span>star√©</span></section><p class="mediaDate">star√©</p>${markers}${card}`;
+  const result = { global: [], europe: [], region: [], seduo: [], finance: [{ ticker: "COUR", date: "2026-08-12", price: 5.58, changePct: 0.27, currency: "USD" }] };
+  const output = updateIndex(input, result, new Date("2026-08-13T10:15:00.000Z"));
+  assert.match(output, /datetime="2026-08-12">z√°vƒõr 12\. 8\./);
+  assert.match(output, /<strong>5,58<\/strong><span>USD<\/span><em class="stockUp">\+0,27 %<\/em>/);
+});

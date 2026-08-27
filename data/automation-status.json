@@ -1,1 +1,210 @@
-m«ëˆ§½©buªàºg§µÖ­kö®¶‰š¶*'²Ö­ºÈì¢u,j›jÇºà7an{¦Š)ßŠW¨¢ë_ŠW›n·š‘ºÞjG§r‡^v‹­¦ën¦)í¢X§zÊ•éà¶î˜7]yÊy×œ¡×¢ž›­†¥¥Ø¬¦V²¶¬™ë,j¢Šzn¶)éº×â•ç^}«¥µú+²×bžŠ.¶›­¢ëiº×â•ç^}«¥µú+²×hº
+{
+  "schemaVersion": 1,
+  "automationVersion": "2.0.0",
+  "updatedAt": "2026-08-27T07:14:29.458Z",
+  "timezone": "Europe/Prague",
+  "selectedCounts": {
+    "global": 0,
+    "europe": 0,
+    "region": 0,
+    "seduo": 0
+  },
+  "candidateCounts": {
+    "global": 1,
+    "europe": 2,
+    "region": 0
+  },
+  "finance": [
+    {
+      "ticker": "COUR",
+      "date": "2026-08-26",
+      "price": 6.06,
+      "changePct": 0,
+      "currency": "USD"
+    },
+    {
+      "ticker": "DUOL",
+      "date": "2026-08-26",
+      "price": 141.55,
+      "changePct": 0.48,
+      "currency": "USD"
+    }
+  ],
+  "selectionStatus": "deterministic-v2",
+  "sourceSummary": {
+    "configured": 25,
+    "succeeded": 25,
+    "failed": 0,
+    "languages": [
+      "cs",
+      "de",
+      "en",
+      "es",
+      "fr",
+      "sk"
+    ],
+    "parsedItems": 520
+  },
+  "sourceRuns": [
+    {
+      "name": "Coursera Blog",
+      "language": "en",
+      "ok": true,
+      "parsed": 10
+    },
+    {
+      "name": "Duolingo Blog",
+      "language": "en",
+      "ok": true,
+      "parsed": 15
+    },
+    {
+      "name": "Kahoot! News",
+      "language": "en",
+      "ok": true,
+      "parsed": 10
+    },
+    {
+      "name": "Preply Blog",
+      "language": "en",
+      "ok": true,
+      "parsed": 0
+    },
+    {
+      "name": "FutureLearn Blog",
+      "language": "en",
+      "ok": true,
+      "parsed": 10
+    },
+    {
+      "name": "TalentLMS Blog",
+      "language": "en",
+      "ok": true,
+      "parsed": 10
+    },
+    {
+      "name": "Lingoda Blog",
+      "language": "en",
+      "ok": true,
+      "parsed": 12
+    },
+    {
+      "name": "EdSurge",
+      "language": "en",
+      "ok": true,
+      "parsed": 50
+    },
+    {
+      "name": "Class Central Report",
+      "language": "en",
+      "ok": true,
+      "parsed": 10
+    },
+    {
+      "name": "Learning News",
+      "language": "en",
+      "ok": true,
+      "parsed": 20
+    },
+    {
+      "name": "FE News",
+      "language": "en",
+      "ok": true,
+      "parsed": 50
+    },
+    {
+      "name": "eLearning Industry",
+      "language": "en",
+      "ok": true,
+      "parsed": 25
+    },
+    {
+      "name": "The PIE News",
+      "language": "en",
+      "ok": true,
+      "parsed": 10
+    },
+    {
+      "name": "PR Newswire Education",
+      "language": "en",
+      "ok": true,
+      "parsed": 20
+    },
+    {
+      "name": "Sifted",
+      "language": "en",
+      "ok": true,
+      "parsed": 24
+    },
+    {
+      "name": "EU-Startups",
+      "language": "en",
+      "ok": true,
+      "parsed": 10
+    },
+    {
+      "name": "FRENCHWEB",
+      "language": "fr",
+      "ok": true,
+      "parsed": 100
+    },
+    {
+      "name": "Maddyness",
+      "language": "fr",
+      "ok": true,
+      "parsed": 10
+    },
+    {
+      "name": "t3n",
+      "language": "de",
+      "ok": true,
+      "parsed": 20
+    },
+    {
+      "name": "GrÃ¼nderszene",
+      "language": "de",
+      "ok": true,
+      "parsed": 20
+    },
+    {
+      "name": "Genbeta",
+      "language": "es",
+      "ok": true,
+      "parsed": 14
+    },
+    {
+      "name": "Lupa.cz",
+      "language": "cs",
+      "ok": true,
+      "parsed": 20
+    },
+    {
+      "name": "CzechCrunch",
+      "language": "cs",
+      "ok": true,
+      "parsed": 10
+    },
+    {
+      "name": "Startitup",
+      "language": "sk",
+      "ok": true,
+      "parsed": 30
+    },
+    {
+      "name": "TOUCHIT",
+      "language": "sk",
+      "ok": true,
+      "parsed": 10
+    }
+  ],
+  "translationStats": {
+    "requested": 0,
+    "succeeded": 0,
+    "failed": 0,
+    "provider": "MyMemory"
+  },
+  "consecutiveEmptyRuns": 1,
+  "sourceErrors": [
+    "Finance DTOL: neÃºplnÃ¡ data"
+  ]
+}

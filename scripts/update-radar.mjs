@@ -129,7 +129,8 @@ async function collectCandidates(now) {
 }
 
 const SIGNIFICANT = /(launch|announc|acqui|merg|funding|raises?|invest|revenue|earnings|results?|partnership|expand|appoint|layoff|restructur|product|feature|platform|lance|annonce|acqui|financement|partenariat|résultat|umsatz|übern|finanzier|partnerschaft|startet|führt.+ein|lanza|anuncia|adquier|financiación|alianza|resultados|spoušt|uvád|akviz|investic|partner|tržb|výsledk|nová funk|nova funk|prepúšť|restrukt)/i;
-const NOISE = /(guide|how to|course|certification|certificate|discount|sale|tips|webinar|podcast|best\s+\w|top\s+\d|explore why|why .+ matters|průvodce|návod|kurz|sleva|webinář|nejlepších|guía|curso|descuento|mejores|ratgeber|kurs|rabatt|besten)/i;
+const NOISE = /(guide|how to|what does|course|certification|certificate|discount|sale|tips|webinar|podcast|best\s+\w|top\s+\d|explore why|why .+ matters|průvodce|návod|co znamená|kurz|sleva|webinář|nejlepších|guía|curso|descuento|mejores|ratgeber|kurs|rabatt|besten)/i;
+const SELECTION_THRESHOLD = 2;
 
 export function candidateScore(item) {
   const text = `${item.title} ${item.summary}`;
@@ -144,7 +145,7 @@ export function candidateScore(item) {
 function selectSignificant(grouped) {
   return Object.fromEntries(Object.entries(grouped).map(([group, items]) => [group,
     items.map((item) => ({ ...item, editorialScore: candidateScore(item) }))
-      .filter((item) => item.editorialScore >= 5)
+      .filter((item) => item.editorialScore >= SELECTION_THRESHOLD)
       .sort((a, b) => b.editorialScore - a.editorialScore || b.publishedAt.localeCompare(a.publishedAt))
       .slice(0, 2),
   ]));

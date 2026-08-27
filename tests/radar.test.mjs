@@ -1,38 +1,1 @@
-import test from "node:test";
-import assert from "node:assert/strict";
-import { parseRss, updateIndex } from "../scripts/radar-lib.mjs";
-
-const markers = ["GLOBAL", "EUROPE", "REGION", "SEDUO"]
-  .map((name) => `<!-- AUTO:${name}:START -->\n<!-- AUTO:${name}:END -->`).join("\n");
-
-test("RSS parser zachovÃ¡ datum, zdroj a titulek", () => {
-  const xml = `<rss><channel><item><title>Novinka Coursera - Example</title><link>https://example.test/a</link><pubDate>Thu, 13 Aug 2026 08:00:00 GMT</pubDate><source>Example</source><description><![CDATA[<p>Popis zprÃ¡vy</p>]]></description></item></channel></rss>`;
-  const [item] = parseRss(xml, "global");
-  assert.equal(item.title, "Novinka Coursera");
-  assert.equal(item.source, "Example");
-  assert.equal(item.summary, "Popis zprÃ¡vy");
-  assert.equal(item.group, "global");
-});
-
-test("renderer aktualizuje datum, poÄet a sekce idempotentnÄ›", () => {
-  const input = `<span class="dateBadge">starÃ©</span><span class="updateText">starÃ©</span><section class="summary"><div><strong>3</strong><span>ÃºrovnÄ› trhu</span></div><div><strong>93</strong><span>sledovanÃ½ch platforem</span></div><div><strong>0</strong><span>novÃ½ch zprÃ¡v za 24 h</span></div></section><section class="dailyStatus"><span>starÃ©</span></section><p class="mediaDate">starÃ©</p>${markers}`;
-  const article = { title: "Coursera pÅ™edstavila novinku", source: "Coursera", url: "https://example.test", summary: "OvÄ›Å™enÃ½ popis novÃ© produktovÃ© funkce.", publishedAt: "2026-08-13T08:00:00.000Z" };
-  const result = { global: [article], europe: [], region: [], seduo: [] };
-  const now = new Date("2026-08-13T10:15:00.000Z");
-  const once = updateIndex(input, result, now);
-  const twice = updateIndex(once, result, now);
-  assert.equal(once, twice);
-  assert.match(once, /AktualizovÃ¡no 13\. srpna 2026/);
-  assert.match(once, /v 12:15 Â· Europe\/Prague/);
-  assert.match(once, /<strong>1<\/strong><span>novÃ½ch zprÃ¡v/);
-  assert.match(once, /Coursera pÅ™edstavila novinku/);
-});
-
-test("renderer bezpeÄnÄ› obnovÃ­ ovÄ›Å™enou zÃ¡vÄ›reÄnou cenu", () => {
-  const card = `<article class="stockCard cour" data-ticker="COUR"><time datetime="2026-08-11">zÃ¡vÄ›r 11. 8.</time><div class="stockPrice"><strong>5,69</strong><span>USD</span><em class="stockDown">âˆ’1,22 %</em></div></article>`;
-  const input = `<span class="dateBadge">starÃ©</span><span class="updateText">starÃ©</span><section class="summary"><div><strong>3</strong><span>ÃºrovnÄ› trhu</span></div><div><strong>93</strong><span>sledovanÃ½ch platforem</span></div><div><strong>0</strong><span>novÃ½ch zprÃ¡v za 24 h</span></div></section><section class="dailyStatus"><span>starÃ©</span></section><p class="mediaDate">starÃ©</p>${markers}${card}`;
-  const result = { global: [], europe: [], region: [], seduo: [], finance: [{ ticker: "COUR", date: "2026-08-12", price: 5.58, changePct: 0.27, currency: "USD" }] };
-  const output = updateIndex(input, result, new Date("2026-08-13T10:15:00.000Z"));
-  assert.match(output, /datetime="2026-08-12">zÃ¡vÄ›r 12\. 8\./);
-  assert.match(output, /<strong>5,58<\/strong><span>USD<\/span><em class="stockUp">\+0,27 %<\/em>/);
-});
+m«ëˆ§½©buªàºg§¶×¬¶ÏëiÖ«µë-š;±¨m«ë€İ…¹îš(§~)^¢‹­~)^mºŞjFëy©ÊyÚ.¶›­º˜§¶‰bë(~W§‚Øgº`İuç(uç^r‡^Šzn¶^–—b²™ZÊØb²g¬±¨Š)éºØ§¦ë_ŠWyö®–×è®Ë]Šz(ºÚn¶‹­¦ë_ŠWyö®–×è®Ë]¢ë

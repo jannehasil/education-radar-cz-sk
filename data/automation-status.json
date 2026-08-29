@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-08-28T21:56:12.174Z",
+  "updatedAt": "2026-08-29T05:09:30.759Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 1,
@@ -11,7 +11,7 @@
   },
   "candidateCounts": {
     "global": 3,
-    "europe": 2,
+    "europe": 1,
     "region": 0
   },
   "finance": [

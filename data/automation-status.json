@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-08-29T10:09:27.561Z",
+  "updatedAt": "2026-08-30T05:09:53.174Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
-    "global": 1,
-    "europe": 1,
+    "global": 0,
+    "europe": 0,
     "region": 0,
     "seduo": 0
   },
   "candidateCounts": {
-    "global": 3,
-    "europe": 1,
+    "global": 1,
+    "europe": 0,
     "region": 0
   },
   "finance": [
@@ -33,8 +33,8 @@
   "selectionStatus": "deterministic-v2",
   "sourceSummary": {
     "configured": 25,
-    "succeeded": 25,
-    "failed": 0,
+    "succeeded": 24,
+    "failed": 1,
     "languages": [
       "cs",
       "de",
@@ -43,7 +43,7 @@
       "fr",
       "sk"
     ],
-    "parsedItems": 520
+    "parsedItems": 500
   },
   "sourceRuns": [
     {
@@ -127,8 +127,8 @@
     {
       "name": "PR Newswire Education",
       "language": "en",
-      "ok": true,
-      "parsed": 20
+      "ok": false,
+      "parsed": 0
     },
     {
       "name": "Sifted",
@@ -198,13 +198,14 @@
     }
   ],
   "translationStats": {
-    "requested": 2,
-    "succeeded": 2,
+    "requested": 0,
+    "succeeded": 0,
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 0,
+  "consecutiveEmptyRuns": 1,
   "sourceErrors": [
+    "Zdroj PR Newswire Education: The operation was aborted due to timeout",
     "Finance DTOL: neúplná data"
   ]
 }

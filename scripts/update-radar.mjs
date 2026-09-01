@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import { dedupe, isRecent, matchesWatchlist, parseFeed, updateIndex } from "./radar-lib.mjs";
 
 const AUTOMATION_VERSION = "2.0.0";
-const MONITOR_HOURS = 48;
+const MONITOR_HOURS = 24;
 
 const WATCHLISTS = {
   global: ["Coursera", "Udemy", "edX", "LinkedIn Learning", "Skillshare", "MasterClass", "Pluralsight", "DataCamp", "Codecademy", "Udacity", "Khan Academy", "Brilliant", "Maven", "Reforge", "DeepLearning.AI", "Duolingo"],
@@ -48,38 +48,81 @@ async function fetchText(url) {
 }
 
 const FINANCE = [
-  { ticker: "COUR", exchange: "NYSE" },
-  { ticker: "DUOL", exchange: "NASDAQ" },
-  { ticker: "DTOL", exchange: "TSE" },
+  { ticker: "COUR", provider: "nasdaq", currency: "USD" },
+  { ticker: "DUOL", provider: "nasdaq", currency: "USD" },
+  { ticker: "DTOL", provider: "tmx", currency: "CAD" },
 ];
 
-async function fetchQuote({ ticker, exchange }, now) {
-  const url = `https://www.google.com/finance/quote/${ticker}:${exchange}?hl=en`;
+function isoDateOffset(now, days) {
+  const date = new Date(now);
+  date.setUTCDate(date.getUTCDate() + days);
+  return date.toISOString().slice(0, 10);
+}
+
+function percentChange(price, previousPrice) {
+  return Math.round(((price / previousPrice) - 1) * 10_000) / 100;
+}
+
+function parsePrice(value) {
+  return Number(String(value).replace(/[^0-9.-]/g, ""));
+}
+
+async function fetchNasdaqQuote({ ticker, currency }, now) {
+  const from = isoDateOffset(now, -10);
+  const to = isoDateOffset(now, 1);
+  const url = `https://api.nasdaq.com/api/quote/${ticker}/historical?assetclass=stocks&fromdate=${from}&todate=${to}&limit=10`;
   const response = await fetch(url, {
-    headers: { "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/125 Safari/537.36" },
-    signal: AbortSignal.timeout(10_000),
+    headers: {
+      accept: "application/json, text/plain, */*",
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/125 Safari/537.36",
+    },
+    signal: AbortSignal.timeout(12_000),
   });
   if (!response.ok) throw new Error(`Finance ${ticker}: HTTP ${response.status}`);
-  const html = await response.text();
-  const start = html.indexOf('<div class="jZZ2de">');
-  if (start < 0) throw new Error(`Finance ${ticker}: cena nebyla nalezena`);
-  const snippet = html.slice(start, start + 4000);
-  const headerMatch = snippet.match(/<div class="jZZ2de">([\s\S]*?)<\/div>/);
-  const header = (headerMatch?.[1] || "").replace(/&nbsp;/g, " ").replace(/&middot;/g, "·").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
-  const priceMatch = snippet.match(/<div class="fpRuab">[\s\S]*?<span>([^<]+)<\/span>/);
-  const textSnippet = snippet.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
-  const changeMatch = textSnippet.match(/([+−-]?\d+(?:\.\d+)?)%/);
-  const dateMatch = header.match(/(?:Closed|Previous close):?\s*([A-Z][a-z]{2})\s+(\d{1,2})/);
-  const currencyMatch = header.match(/·\s*([A-Z]{3})/);
-  if (!priceMatch || !changeMatch || !dateMatch || !currencyMatch) throw new Error(`Finance ${ticker}: neúplná data`);
-  const month = new Date(`${dateMatch[1]} 1, 2000`).getMonth();
-  let year = now.getUTCFullYear();
-  if (month > now.getUTCMonth() + 6) year -= 1;
-  const date = new Date(Date.UTC(year, month, Number(dateMatch[2]))).toISOString().slice(0, 10);
-  const price = Number(priceMatch[1].replace(/[^0-9.-]/g, ""));
-  const changePct = Number(changeMatch[1].replace("−", "-").replace(/[^0-9+.-]/g, ""));
-  if (!Number.isFinite(price) || !Number.isFinite(changePct)) throw new Error(`Finance ${ticker}: neplatné číslo`);
-  return { ticker, date, price, changePct, currency: currencyMatch[1], source: url };
+  const body = await response.json();
+  const rows = body?.data?.tradesTable?.rows || [];
+  if (rows.length < 2) throw new Error(`Finance ${ticker}: chybí dvě závěrečné ceny Nasdaq`);
+  const parsed = rows.map((row) => {
+    const [month, day, year] = row.date.split("/").map(Number);
+    return { date: `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`, price: parsePrice(row.close) };
+  }).filter((row) => Number.isFinite(row.price)).sort((a, b) => b.date.localeCompare(a.date));
+  if (parsed.length < 2) throw new Error(`Finance ${ticker}: neplatná data Nasdaq`);
+  return {
+    ticker, date: parsed[0].date, price: parsed[0].price,
+    changePct: percentChange(parsed[0].price, parsed[1].price), currency,
+    source: `https://www.nasdaq.com/market-activity/stocks/${ticker.toLowerCase()}/historical`,
+  };
+}
+
+async function fetchTmxQuote({ ticker, currency }, now) {
+  const url = "https://app-money.tmx.com/graphql";
+  const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      "content-type": "application/json", locale: "en",
+      origin: "https://money.tmx.com", "user-agent": "Mozilla/5.0",
+    },
+    body: JSON.stringify({
+      query: "query($s:String!,$start:String,$end:String){getCompanyPriceHistory(symbol:$s,start:$start,end:$end){datetime closePrice}}",
+      variables: { s: ticker, start: isoDateOffset(now, -10), end: isoDateOffset(now, 1) },
+    }),
+    signal: AbortSignal.timeout(12_000),
+  });
+  if (!response.ok) throw new Error(`Finance ${ticker}: HTTP ${response.status}`);
+  const body = await response.json();
+  const rows = (body?.data?.getCompanyPriceHistory || [])
+    .map((row) => ({ date: row.datetime.slice(0, 10), price: Number(row.closePrice) }))
+    .filter((row) => Number.isFinite(row.price)).sort((a, b) => b.date.localeCompare(a.date));
+  if (rows.length < 2) throw new Error(`Finance ${ticker}: chybí dvě závěrečné ceny TMX`);
+  return {
+    ticker, date: rows[0].date, price: rows[0].price,
+    changePct: percentChange(rows[0].price, rows[1].price), currency,
+    source: `https://money.tmx.com/quote/${ticker}`,
+  };
+}
+
+async function fetchQuote(item, now) {
+  return item.provider === "tmx" ? fetchTmxQuote(item, now) : fetchNasdaqQuote(item, now);
 }
 
 async function collectCandidates(now) {

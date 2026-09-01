@@ -130,6 +130,20 @@ export function replaceMarker(html, name, content) {
   return html.replace(pattern, `${start}\n${content}\n${end}`);
 }
 
+function replaceMarkerWithNewerItems(html, name, items, group) {
+  if (!items.length) return html;
+  const start = `<!-- AUTO:${name}:START -->`;
+  const end = `<!-- AUTO:${name}:END -->`;
+  const current = html.match(new RegExp(`${start}([\\s\\S]*?)${end}`))?.[1] || "";
+  const existingDates = [...current.matchAll(/datetime="(\d{4}-\d{2}-\d{2})"/g)].map((match) => match[1]);
+  const candidateDate = items.reduce((latest, item) => {
+    const date = item.publishedAt?.slice(0, 10) || "";
+    return date > latest ? date : latest;
+  }, "");
+  if (existingDates.length && candidateDate <= existingDates.sort().at(-1)) return html;
+  return replaceMarker(html, name, renderDailyCards(items, group));
+}
+
 const CARD_COLOR = { global: "blue", europe: "mint", region: "coral" };
 const CARD_PREFIX = { global: "D-G", europe: "D-E", region: "D-R" };
 const GROUP_LABEL = {
@@ -148,7 +162,7 @@ export function renderDailyCards(items, group) {
       ? ` · přeloženo z ${escapeHtml(item.originalLanguage.toUpperCase())}` : "";
     return `      <article class="signalCard ${CARD_COLOR[group]}"><div class="cardTop"><span class="number">${CARD_PREFIX[group]}${index + 1}</span><span class="tag">${GROUP_LABEL[group]}${languageNote}</span></div><time class="articleDate" datetime="${published.toISOString().slice(0, 10)}">${escapeHtml(czechShortDate(published))}</time><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(summary)}</p><div class="impact"><span>Proč je to důležité</span><p>Jde o nový signál z aktuálního vícejazyčného monitoringu sledovaných platforem.</p></div><a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">Původní zdroj: ${escapeHtml(item.source)} ↗</a></article>`;
   }).join("\n");
-  return `    <div class="signalGrid autoDailySignals" aria-label="Nové zprávy za posledních 48 hodin">\n${cards}\n    </div>`;
+  return `    <div class="signalGrid autoDailySignals" aria-label="Nové zprávy za posledních 24 hodin">\n${cards}\n    </div>`;
 }
 
 export function renderSeduoMentions(items) {
@@ -181,7 +195,11 @@ export function updateFinanceCards(html, quotes = []) {
 export function updateIndex(html, result, now = new Date()) {
   const p = pragueParts(now);
   const newCount = result.global.length + result.europe.length + result.region.length;
-  const statusHeadline = newCount ? `Dnes zachyceno ${newCount} nových ověřených signálů.` : "Dnes bez nového ověřeného tržního signálu.";
+  const statusHeadline = newCount === 1
+    ? "Dnes zachycen 1 nový ověřený signál."
+    : newCount > 1
+      ? `Dnes zachyceny ${newCount} nové ověřené signály.`
+      : "Dnes bez nového ověřeného tržního signálu.";
   const languageNames = { cs: "čeština", sk: "slovenština", en: "angličtina", de: "němčina", fr: "francouzština", es: "španělština" };
   const sourceText = result.sourceSummary
     ? ` Prošlo ${result.sourceSummary.succeeded} z ${result.sourceSummary.configured} přímých zdrojů v jazycích ${result.sourceSummary.languages.map((language) => languageNames[language] || language).join(", ")}.`
@@ -193,12 +211,12 @@ export function updateIndex(html, result, now = new Date()) {
   html = html.replace(/<span class="dateBadge">[\s\S]*?<\/span>/, `<span class="dateBadge">Aktualizováno ${czechLongDate(now)}</span>`);
   html = html.replace(/<span class="updateText">[\s\S]*?<\/span>/, `<span class="updateText">v ${pragueTime(now)} · Europe/Prague</span>`);
   html = html.replace(/<section class="dailyStatus"[\s\S]*?<\/section>/, `<section class="dailyStatus" aria-label="Stav dnešní aktualizace"><span>Aktualizace ${Number(p.day)}. ${Number(p.month)}.</span><div><strong>${statusHeadline}</strong><p>${statusText}</p></div></section>`);
-  html = html.replace(/(<section class="summary"[\s\S]*?<div><strong>3<\/strong>[\s\S]*?<div><strong>93<\/strong>[\s\S]*?<div><strong>)\d+(<\/strong><span>nových zpráv za (?:24|48) h<\/span><\/div>)/, `$1${newCount}$2`);
+  html = html.replace(/(<section class="summary"[\s\S]*?<div><strong>3<\/strong>[\s\S]*?<div><strong>93<\/strong>[\s\S]*?<div><strong>)\d+(<\/strong><span>)nových zpráv za (?:24|48) h(<\/span><\/div>)/, `$1${newCount}$2nových zpráv za 24 h$3`);
   const windowStart = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
   html = html.replace(/<p class="mediaDate">[\s\S]*?<\/p>/, `<p class="mediaDate">${czechShortDate(windowStart)} – ${czechShortDate(now)} · kontrolováno při aktualizaci reportu</p>`);
-  html = replaceMarker(html, "GLOBAL", renderDailyCards(result.global, "global"));
-  html = replaceMarker(html, "EUROPE", renderDailyCards(result.europe, "europe"));
-  html = replaceMarker(html, "REGION", renderDailyCards(result.region, "region"));
+  html = replaceMarkerWithNewerItems(html, "GLOBAL", result.global, "global");
+  html = replaceMarkerWithNewerItems(html, "EUROPE", result.europe, "europe");
+  html = replaceMarkerWithNewerItems(html, "REGION", result.region, "region");
   html = replaceMarker(html, "SEDUO", renderSeduoMentions(result.seduo));
   return updateFinanceCards(html, result.finance || []);
 }

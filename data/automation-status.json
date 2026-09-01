@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-09-01T10:18:26.019Z",
+  "updatedAt": "2026-09-01T10:47:54.485Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 1,
@@ -18,16 +18,23 @@
     {
       "ticker": "COUR",
       "date": "2026-08-31",
-      "price": 6.5,
-      "changePct": -0.23,
+      "price": 6.52,
+      "changePct": 0.77,
       "currency": "USD"
     },
     {
       "ticker": "DUOL",
       "date": "2026-08-31",
-      "price": 157.04,
-      "changePct": 5.85,
+      "price": 148.36,
+      "changePct": 0.94,
       "currency": "USD"
+    },
+    {
+      "ticker": "DTOL",
+      "date": "2026-08-31",
+      "price": 10.52,
+      "changePct": 2.94,
+      "currency": "CAD"
     }
   ],
   "selectionStatus": "deterministic-v2",
@@ -204,7 +211,5 @@
     "provider": "MyMemory"
   },
   "consecutiveEmptyRuns": 0,
-  "sourceErrors": [
-    "Finance DTOL: neúplná data"
-  ]
+  "sourceErrors": []
 }

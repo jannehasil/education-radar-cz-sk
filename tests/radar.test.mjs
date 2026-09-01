@@ -33,10 +33,21 @@ test("renderer aktualizuje datum, počet a sekce idempotentně", () => {
   assert.equal(once, twice);
   assert.match(once, /Aktualizováno 13\. srpna 2026/);
   assert.match(once, /v 12:15 · Europe\/Prague/);
+  assert.match(once, /Dnes zachycen 1 nový ověřený signál/);
   assert.match(once, /<strong>1<\/strong><span>nových zpráv/);
+  assert.match(once, /nových zpráv za 24 h/);
   assert.match(once, /Coursera představila novinku/);
   assert.match(once, /Původní zdroj: Coursera/);
   assert.match(once, /17 z 19 přímých zdrojů/);
+});
+
+test("renderer bez novější zprávy zachová předchozí ověřenou kartu", () => {
+  const input = `<span class="dateBadge">staré</span><span class="updateText">staré</span><section class="summary"><div><strong>3</strong><span>úrovně trhu</span></div><div><strong>93</strong><span>sledovaných platforem</span></div><div><strong>1</strong><span>nových zpráv za 24 h</span></div></section><section class="dailyStatus"><span>staré</span></section><p class="mediaDate">staré</p><!-- AUTO:GLOBAL:START --><article><time datetime="2026-08-31">31. 8.</time><h3>Ověřený signál</h3></article><!-- AUTO:GLOBAL:END --><!-- AUTO:EUROPE:START -->\n<!-- AUTO:EUROPE:END --><!-- AUTO:REGION:START -->\n<!-- AUTO:REGION:END --><!-- AUTO:SEDUO:START -->\n<!-- AUTO:SEDUO:END -->`;
+  const result = { global: [], europe: [], region: [], seduo: [], sourceSummary: { succeeded: 25, configured: 25, languages: ["cs", "en"] } };
+  const output = updateIndex(input, result, new Date("2026-09-01T10:15:00.000Z"));
+  assert.match(output, /Ověřený signál/);
+  assert.match(output, /Dnes bez nového ověřeného tržního signálu/);
+  assert.match(output, /<strong>0<\/strong><span>nových zpráv za 24 h/);
 });
 
 test("renderer bezpečně obnoví ověřenou závěrečnou cenu", () => {

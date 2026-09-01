@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-09-01T05:16:52.068Z",
+  "updatedAt": "2026-09-01T10:18:26.019Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 1,
@@ -25,8 +25,8 @@
     {
       "ticker": "DUOL",
       "date": "2026-08-31",
-      "price": 154,
-      "changePct": 3.8,
+      "price": 157.04,
+      "changePct": 5.85,
       "currency": "USD"
     }
   ],

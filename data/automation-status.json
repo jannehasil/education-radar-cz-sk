@@ -1,33 +1,40 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-08-31T10:09:39.051Z",
+  "updatedAt": "2026-09-01T05:16:52.068Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
-    "global": 0,
+    "global": 1,
     "europe": 0,
     "region": 0,
     "seduo": 0
   },
   "candidateCounts": {
-    "global": 0,
+    "global": 1,
     "europe": 0,
     "region": 0
   },
   "finance": [
     {
       "ticker": "COUR",
-      "date": "2026-08-28",
-      "price": 6.47,
-      "changePct": 0,
+      "date": "2026-08-31",
+      "price": 6.5,
+      "changePct": -0.23,
+      "currency": "USD"
+    },
+    {
+      "ticker": "DUOL",
+      "date": "2026-08-31",
+      "price": 154,
+      "changePct": 3.8,
       "currency": "USD"
     }
   ],
   "selectionStatus": "deterministic-v2",
   "sourceSummary": {
     "configured": 25,
-    "succeeded": 24,
-    "failed": 1,
+    "succeeded": 25,
+    "failed": 0,
     "languages": [
       "cs",
       "de",
@@ -36,7 +43,7 @@
       "fr",
       "sk"
     ],
-    "parsedItems": 500
+    "parsedItems": 520
   },
   "sourceRuns": [
     {
@@ -156,8 +163,8 @@
     {
       "name": "Gründerszene",
       "language": "de",
-      "ok": false,
-      "parsed": 0
+      "ok": true,
+      "parsed": 20
     },
     {
       "name": "Genbeta",
@@ -191,15 +198,13 @@
     }
   ],
   "translationStats": {
-    "requested": 0,
-    "succeeded": 0,
+    "requested": 1,
+    "succeeded": 1,
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 2,
+  "consecutiveEmptyRuns": 0,
   "sourceErrors": [
-    "Zdroj Gründerszene: 403 Forbidden",
-    "Finance DUOL: neúplná data",
     "Finance DTOL: neúplná data"
   ]
 }

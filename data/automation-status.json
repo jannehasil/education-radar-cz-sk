@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-09-02T10:19:11.896Z",
+  "updatedAt": "2026-09-02T10:40:40.051Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
@@ -210,6 +210,6 @@
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 2,
+  "consecutiveEmptyRuns": 3,
   "sourceErrors": []
 }

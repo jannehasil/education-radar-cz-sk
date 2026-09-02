@@ -1,47 +1,47 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-09-01T10:53:51.988Z",
+  "updatedAt": "2026-09-02T05:16:30.656Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
-    "global": 1,
+    "global": 0,
     "europe": 0,
     "region": 0,
     "seduo": 0
   },
   "candidateCounts": {
-    "global": 1,
+    "global": 2,
     "europe": 0,
     "region": 0
   },
   "finance": [
     {
       "ticker": "COUR",
-      "date": "2026-08-31",
-      "price": 6.52,
-      "changePct": 0.77,
+      "date": "2026-09-01",
+      "price": 6.18,
+      "changePct": -5.21,
       "currency": "USD"
     },
     {
       "ticker": "DUOL",
-      "date": "2026-08-31",
-      "price": 148.36,
-      "changePct": 0.94,
+      "date": "2026-09-01",
+      "price": 158.77,
+      "changePct": 7.02,
       "currency": "USD"
     },
     {
       "ticker": "DTOL",
-      "date": "2026-08-31",
-      "price": 10.52,
-      "changePct": 2.94,
+      "date": "2026-09-01",
+      "price": 10.26,
+      "changePct": -2.47,
       "currency": "CAD"
     }
   ],
   "selectionStatus": "deterministic-v2",
   "sourceSummary": {
     "configured": 25,
-    "succeeded": 25,
-    "failed": 0,
+    "succeeded": 24,
+    "failed": 1,
     "languages": [
       "cs",
       "de",
@@ -50,7 +50,7 @@
       "fr",
       "sk"
     ],
-    "parsedItems": 520
+    "parsedItems": 500
   },
   "sourceRuns": [
     {
@@ -170,8 +170,8 @@
     {
       "name": "Gründerszene",
       "language": "de",
-      "ok": true,
-      "parsed": 20
+      "ok": false,
+      "parsed": 0
     },
     {
       "name": "Genbeta",
@@ -205,11 +205,13 @@
     }
   ],
   "translationStats": {
-    "requested": 1,
-    "succeeded": 1,
+    "requested": 0,
+    "succeeded": 0,
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 0,
-  "sourceErrors": []
+  "consecutiveEmptyRuns": 1,
+  "sourceErrors": [
+    "Zdroj Gründerszene: 403 Forbidden"
+  ]
 }

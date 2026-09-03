@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { parseFeed, parseRss, updateIndex } from "../scripts/radar-lib.mjs";
+import { candidateScore, parseFeed, parseRss, updateIndex } from "../scripts/radar-lib.mjs";
 
 const markers = ["GLOBAL", "EUROPE", "REGION", "SEDUO"]
   .map((name) => `<!-- AUTO:${name}:START -->\n<!-- AUTO:${name}:END -->`).join("\n");
@@ -57,4 +57,13 @@ test("renderer bezpečně obnoví ověřenou závěrečnou cenu", () => {
   const output = updateIndex(input, result, new Date("2026-08-13T10:15:00.000Z"));
   assert.match(output, /datetime="2026-08-12">závěr 12\. 8\./);
   assert.match(output, /<strong>5,58<\/strong><span>USD<\/span><em class="stockUp">\+0,27 %<\/em>/);
+});
+
+test("výběr odmítne marketingové články typu discover how", () => {
+  const item = {
+    title: "Discover how workforce leaders can learn from teachers",
+    summary: "A general advice article about engagement strategies in people management.",
+    official: true,
+  };
+  assert.ok(candidateScore(item) < 2);
 });

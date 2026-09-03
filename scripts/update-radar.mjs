@@ -1,5 +1,5 @@
 import fs from "node:fs/promises";
-import { dedupe, isRecent, matchesWatchlist, parseFeed, updateIndex } from "./radar-lib.mjs";
+import { candidateScore, dedupe, isRecent, matchesWatchlist, parseFeed, updateIndex } from "./radar-lib.mjs";
 
 const AUTOMATION_VERSION = "2.0.0";
 const MONITOR_HOURS = 24;
@@ -171,19 +171,7 @@ async function collectCandidates(now) {
   return { grouped, seduo, errors, sourceRuns, sourceSummary };
 }
 
-const SIGNIFICANT = /(launch|announc|acqui|merg|funding|raises?|invest|revenue|earnings|results?|partnership|expand|appoint|layoff|restructur|product|feature|platform|lance|annonce|acqui|financement|partenariat|résultat|umsatz|übern|finanzier|partnerschaft|startet|führt.+ein|lanza|anuncia|adquier|financiación|alianza|resultados|spoušt|uvád|akviz|investic|partner|tržb|výsledk|nová funk|nova funk|prepúšť|restrukt)/i;
-const NOISE = /(guide|how to|what does|course|certification|certificate|discount|sale|tips|webinar|podcast|best\s+\w|top\s+\d|explore why|why .+ matters|průvodce|návod|co znamená|kurz|sleva|webinář|nejlepších|guía|curso|descuento|mejores|ratgeber|kurs|rabatt|besten)/i;
 const SELECTION_THRESHOLD = 2;
-
-export function candidateScore(item) {
-  const text = `${item.title} ${item.summary}`;
-  const significant = SIGNIFICANT.test(text);
-  let score = item.official ? 2 : 1;
-  if (significant) score += 4;
-  if (NOISE.test(item.title)) score -= 6;
-  if (significant && item.summary.length >= 80) score += 1;
-  return score;
-}
 
 function selectSignificant(grouped) {
   return Object.fromEntries(Object.entries(grouped).map(([group, items]) => [group,

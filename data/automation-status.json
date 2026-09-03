@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-09-03T05:40:13.478Z",
+  "updatedAt": "2026-09-03T06:55:43.414Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
-    "europe": 1,
+    "europe": 0,
     "region": 0,
     "seduo": 0
   },
@@ -205,11 +205,11 @@
     }
   ],
   "translationStats": {
-    "requested": 1,
-    "succeeded": 1,
+    "requested": 0,
+    "succeeded": 0,
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 0,
+  "consecutiveEmptyRuns": 4,
   "sourceErrors": []
 }

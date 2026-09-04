@@ -67,3 +67,12 @@ test("výběr odmítne marketingové články typu discover how", () => {
   };
   assert.ok(candidateScore(item) < 2);
 });
+
+test("výběr odmítne cestovní slovníčky z produktových blogů", () => {
+  const item = {
+    title: "30+ Common Spanish Phrases for Your Trip to Mexico",
+    summary: "A little Spanish goes a long way. Use these phrases on your trip.",
+    official: true,
+  };
+  assert.ok(candidateScore(item) < 2);
+});

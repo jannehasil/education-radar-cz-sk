@@ -4,7 +4,7 @@ const MONTHS = [
 ];
 
 const SIGNIFICANT = /(launch|announc|acqui|merg|funding|raises?|invest|revenue|earnings|results?|partnership|expand|appoint|layoff|restructur|product|feature|platform|lance|annonce|acqui|financement|partenariat|résultat|umsatz|übern|finanzier|partnerschaft|startet|führt.+ein|lanza|anuncia|adquier|financiación|alianza|resultados|spoušt|uvád|akviz|investic|partner|tržb|výsledk|nová funk|nova funk|prepúšť|restrukt)/i;
-const NOISE = /(guide|how to|what does|course|certification|certificate|discount|sale|tips|webinar|podcast|best\s+\w|top\s+\d|discover how|explore why|why .+ matters|průvodce|návod|co znamená|kurz|sleva|webinář|nejlepších|guía|curso|descuento|mejores|ratgeber|kurs|rabatt|besten)/i;
+const NOISE = /(guide|how to|what does|course|certification|certificate|discount|sale|tips|webinar|podcast|best\s+\w|top\s+\d|discover how|explore why|why .+ matters|common .+ phrases|phrases? for (?:your )?(?:trip|travel)|travel vocabulary|průvodce|návod|co znamená|kurz|sleva|webinář|nejlepších|guía|curso|descuento|mejores|ratgeber|kurs|rabatt|besten)/i;
 
 export function candidateScore(item) {
   const text = `${item.title} ${item.summary}`;

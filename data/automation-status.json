@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-09-05T05:15:25.318Z",
+  "updatedAt": "2026-09-05T10:16:51.846Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
@@ -40,8 +40,8 @@
   "selectionStatus": "deterministic-v2",
   "sourceSummary": {
     "configured": 25,
-    "succeeded": 25,
-    "failed": 0,
+    "succeeded": 24,
+    "failed": 1,
     "languages": [
       "cs",
       "de",
@@ -50,7 +50,7 @@
       "fr",
       "sk"
     ],
-    "parsedItems": 520
+    "parsedItems": 510
   },
   "sourceRuns": [
     {
@@ -68,8 +68,8 @@
     {
       "name": "Kahoot! News",
       "language": "en",
-      "ok": true,
-      "parsed": 10
+      "ok": false,
+      "parsed": 0
     },
     {
       "name": "Preply Blog",
@@ -210,6 +210,8 @@
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 3,
-  "sourceErrors": []
+  "consecutiveEmptyRuns": 4,
+  "sourceErrors": [
+    "Zdroj Kahoot! News: The operation was aborted due to timeout"
+  ]
 }

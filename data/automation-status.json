@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-09-05T10:16:51.846Z",
+  "updatedAt": "2026-09-06T05:15:59.204Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
@@ -50,7 +50,7 @@
       "fr",
       "sk"
     ],
-    "parsedItems": 510
+    "parsedItems": 500
   },
   "sourceRuns": [
     {
@@ -68,8 +68,8 @@
     {
       "name": "Kahoot! News",
       "language": "en",
-      "ok": false,
-      "parsed": 0
+      "ok": true,
+      "parsed": 10
     },
     {
       "name": "Preply Blog",
@@ -170,8 +170,8 @@
     {
       "name": "Gründerszene",
       "language": "de",
-      "ok": true,
-      "parsed": 20
+      "ok": false,
+      "parsed": 0
     },
     {
       "name": "Genbeta",
@@ -210,8 +210,8 @@
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 4,
+  "consecutiveEmptyRuns": 5,
   "sourceErrors": [
-    "Zdroj Kahoot! News: The operation was aborted due to timeout"
+    "Zdroj Gründerszene: 403 Forbidden"
   ]
 }

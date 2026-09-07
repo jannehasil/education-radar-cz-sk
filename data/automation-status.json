@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-09-06T10:17:10.307Z",
+  "updatedAt": "2026-09-07T05:17:10.052Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
@@ -50,7 +50,7 @@
       "fr",
       "sk"
     ],
-    "parsedItems": 490
+    "parsedItems": 500
   },
   "sourceRuns": [
     {
@@ -129,7 +129,7 @@
       "name": "The PIE News",
       "language": "en",
       "ok": true,
-      "parsed": 0
+      "parsed": 10
     },
     {
       "name": "PR Newswire Education",
@@ -210,7 +210,7 @@
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 6,
+  "consecutiveEmptyRuns": 7,
   "sourceErrors": [
     "Zdroj Gründerszene: 403 Forbidden"
   ]

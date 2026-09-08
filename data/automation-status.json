@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-09-07T10:18:47.506Z",
+  "updatedAt": "2026-09-08T05:17:37.048Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
@@ -50,7 +50,7 @@
       "fr",
       "sk"
     ],
-    "parsedItems": 520
+    "parsedItems": 510
   },
   "sourceRuns": [
     {
@@ -129,7 +129,7 @@
       "name": "The PIE News",
       "language": "en",
       "ok": true,
-      "parsed": 10
+      "parsed": 0
     },
     {
       "name": "PR Newswire Education",
@@ -210,6 +210,6 @@
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 8,
+  "consecutiveEmptyRuns": 9,
   "sourceErrors": []
 }

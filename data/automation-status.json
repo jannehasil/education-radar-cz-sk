@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-09-09T08:42:21.481Z",
+  "updatedAt": "2026-09-09T10:05:41.492Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
@@ -12,7 +12,7 @@
   "candidateCounts": {
     "global": 1,
     "europe": 0,
-    "region": 1
+    "region": 0
   },
   "finance": [
     {
@@ -210,6 +210,6 @@
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 2,
+  "consecutiveEmptyRuns": 3,
   "sourceErrors": []
 }

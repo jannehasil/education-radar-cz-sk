@@ -76,3 +76,12 @@ test("výběr odmítne cestovní slovníčky z produktových blogů", () => {
   };
   assert.ok(candidateScore(item) < 2);
 });
+
+test("výběr odmítne technický rozbor dříve spuštěné funkce", () => {
+  const item = {
+    title: "How we created Chess Game Review: What's a key moment?",
+    summary: "A behind-the-scenes engineering article about a feature launched last month.",
+    official: true,
+  };
+  assert.ok(candidateScore(item) < 2);
+});

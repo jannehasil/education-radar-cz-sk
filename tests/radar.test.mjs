@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { candidateScore, parseFeed, parseRss, updateIndex } from "../scripts/radar-lib.mjs";
+import { candidateScore, matchesWatchlist, parseFeed, parseRss, updateIndex } from "../scripts/radar-lib.mjs";
 
 const markers = ["GLOBAL", "EUROPE", "REGION", "SEDUO"]
   .map((name) => `<!-- AUTO:${name}:START -->\n<!-- AUTO:${name}:END -->`).join("\n");
@@ -84,4 +84,13 @@ test("výběr odmítne technický rozbor dříve spuštěné funkce", () => {
     official: true,
   };
   assert.ok(candidateScore(item) < 2);
+});
+
+test("watchlist nebere název platformy jako část jiného slova", () => {
+  const item = {
+    title: "Kapital raises new financing from Fasanara Capital",
+    summary: "The financial institution will expand across several markets.",
+  };
+  assert.equal(matchesWatchlist(item, ["Sana"]), false);
+  assert.equal(matchesWatchlist({ ...item, title: "Sana launches a learning product" }, ["Sana"]), true);
 });

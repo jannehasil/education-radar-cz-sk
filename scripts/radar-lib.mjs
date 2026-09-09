@@ -88,7 +88,10 @@ export function normalize(value = "") {
 
 export function matchesWatchlist(item, watchlist) {
   const haystack = normalize(`${item.title} ${item.summary}`);
-  return watchlist.some((name) => haystack.includes(normalize(name)));
+  return watchlist.some((name) => {
+    const escapedName = normalize(name).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    return new RegExp(`(?:^|[^a-z0-9])${escapedName}(?:$|[^a-z0-9])`).test(haystack);
+  });
 }
 
 export function isRecent(item, hours, now = new Date()) {

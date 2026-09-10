@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-09-10T05:17:07.304Z",
+  "updatedAt": "2026-09-10T10:18:47.616Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 1,
@@ -50,7 +50,7 @@
       "fr",
       "sk"
     ],
-    "parsedItems": 500
+    "parsedItems": 520
   },
   "sourceRuns": [
     {
@@ -165,7 +165,7 @@
       "name": "t3n",
       "language": "de",
       "ok": true,
-      "parsed": 0
+      "parsed": 20
     },
     {
       "name": "Gründerszene",

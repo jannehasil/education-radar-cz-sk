@@ -1,47 +1,47 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-09-09T11:15:28.773Z",
+  "updatedAt": "2026-09-10T05:17:07.304Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
-    "global": 0,
+    "global": 1,
     "europe": 0,
     "region": 0,
     "seduo": 0
   },
   "candidateCounts": {
-    "global": 1,
+    "global": 3,
     "europe": 0,
     "region": 0
   },
   "finance": [
     {
       "ticker": "COUR",
-      "date": "2026-09-08",
-      "price": 5.57,
-      "changePct": -3.97,
+      "date": "2026-09-09",
+      "price": 5.3,
+      "changePct": -4.85,
       "currency": "USD"
     },
     {
       "ticker": "DUOL",
-      "date": "2026-09-08",
-      "price": 146.39,
-      "changePct": -5.22,
+      "date": "2026-09-09",
+      "price": 139.24,
+      "changePct": -4.88,
       "currency": "USD"
     },
     {
       "ticker": "DTOL",
-      "date": "2026-09-08",
-      "price": 9.95,
-      "changePct": -3.49,
+      "date": "2026-09-09",
+      "price": 10.48,
+      "changePct": 5.33,
       "currency": "CAD"
     }
   ],
   "selectionStatus": "deterministic-v2",
   "sourceSummary": {
     "configured": 25,
-    "succeeded": 24,
-    "failed": 1,
+    "succeeded": 25,
+    "failed": 0,
     "languages": [
       "cs",
       "de",
@@ -165,13 +165,13 @@
       "name": "t3n",
       "language": "de",
       "ok": true,
-      "parsed": 20
+      "parsed": 0
     },
     {
       "name": "Gründerszene",
       "language": "de",
-      "ok": false,
-      "parsed": 0
+      "ok": true,
+      "parsed": 20
     },
     {
       "name": "Genbeta",
@@ -205,13 +205,11 @@
     }
   ],
   "translationStats": {
-    "requested": 0,
-    "succeeded": 0,
+    "requested": 1,
+    "succeeded": 1,
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 6,
-  "sourceErrors": [
-    "Zdroj Gründerszene: 403 Forbidden"
-  ]
+  "consecutiveEmptyRuns": 0,
+  "sourceErrors": []
 }

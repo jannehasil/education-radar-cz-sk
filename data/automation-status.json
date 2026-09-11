@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-09-11T05:16:48.513Z",
+  "updatedAt": "2026-09-11T14:16:58.843Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
-    "global": 2,
-    "europe": 1,
+    "global": 0,
+    "europe": 0,
     "region": 0,
     "seduo": 0
   },
   "candidateCounts": {
-    "global": 7,
-    "europe": 1,
+    "global": 0,
+    "europe": 0,
     "region": 0
   },
   "finance": [
@@ -31,17 +31,17 @@
     },
     {
       "ticker": "DTOL",
-      "date": "2026-09-10",
+      "date": "2026-09-11",
       "price": 10.03,
-      "changePct": -4.29,
+      "changePct": 0,
       "currency": "CAD"
     }
   ],
   "selectionStatus": "deterministic-v2",
   "sourceSummary": {
     "configured": 25,
-    "succeeded": 25,
-    "failed": 0,
+    "succeeded": 24,
+    "failed": 1,
     "languages": [
       "cs",
       "de",
@@ -50,7 +50,7 @@
       "fr",
       "sk"
     ],
-    "parsedItems": 520
+    "parsedItems": 500
   },
   "sourceRuns": [
     {
@@ -170,8 +170,8 @@
     {
       "name": "Gründerszene",
       "language": "de",
-      "ok": true,
-      "parsed": 20
+      "ok": false,
+      "parsed": 0
     },
     {
       "name": "Genbeta",
@@ -205,11 +205,13 @@
     }
   ],
   "translationStats": {
-    "requested": 3,
-    "succeeded": 3,
+    "requested": 0,
+    "succeeded": 0,
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 0,
-  "sourceErrors": []
+  "consecutiveEmptyRuns": 1,
+  "sourceErrors": [
+    "Zdroj Gründerszene: 403 Forbidden"
+  ]
 }

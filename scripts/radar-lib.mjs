@@ -4,13 +4,13 @@ const MONTHS = [
 ];
 
 const SIGNIFICANT = /(launch|announc|acqui|merg|funding|raises?|invest|revenue|earnings|results?|partnership|expand|appoint|layoff|restructur|product|feature|platform|lance|annonce|acqui|financement|partenariat|résultat|umsatz|übern|finanzier|partnerschaft|startet|führt.+ein|lanza|anuncia|adquier|financiación|alianza|resultados|spoušt|uvád|akviz|investic|partner|tržb|výsledk|nová funk|nova funk|prepúšť|restrukt)/i;
-const NOISE = /(guide|how to|how we (?:created|built|made)|what does|course|certification|certificate|discount|sale|tips|webinar|podcast|best\s+\w|top\s+\d|discover how|explore why|why .+ matters|common .+ phrases|phrases? for (?:your )?(?:trip|travel)|travel vocabulary|průvodce|návod|co znamená|kurz|sleva|webinář|nejlepších|guía|curso|descuento|mejores|ratgeber|kurs|rabatt|besten)/i;
+const NOISE = /(guide|how to|how we (?:created|built|made)|what does|course|certification|certificate|discount|sale|tips|webinar|podcast|listen to insights|best\s+\w|top\s+\d|discover how|explore why|why .+ matters|common .+ phrases|adjectives? in english|gradable (?:and )?non-gradable adjectives?|signs? (?:that )?(?:your )?training|phrases? for (?:your )?(?:trip|travel)|travel vocabulary|průvodce|návod|co znamená|kurz|sleva|webinář|nejlepších|guía|curso|descuento|mejores|ratgeber|kurs|rabatt|besten)/i;
 
 export function candidateScore(item) {
   const text = `${item.title} ${item.summary}`;
   const significant = SIGNIFICANT.test(text);
-  let score = item.official ? 2 : 1;
-  if (significant) score += 4;
+  let score = 1;
+  if (significant) score += item.official ? 5 : 4;
   if (NOISE.test(item.title)) score -= 6;
   if (significant && item.summary.length >= 80) score += 1;
   return score;
@@ -146,18 +146,49 @@ export function replaceMarker(html, name, content) {
   return html.replace(pattern, `${start}\n${content}\n${end}`);
 }
 
+const DAILY_CARD_LIMIT = 6;
+
+function extractDailyCards(content) {
+  return [...content.matchAll(/<article class="signalCard [^"]+">[\s\S]*?<\/article>/g)]
+    .map((match) => match[0]);
+}
+
+function dailyCardDate(card) {
+  return card.match(/<time class="articleDate" datetime="(\d{4}-\d{2}-\d{2})">/)?.[1] || "";
+}
+
+function dailyCardUrl(card) {
+  return card.match(/<a href="([^"]+)"/)?.[1] || "";
+}
+
+function renumberDailyCards(cards, group) {
+  const prefix = CARD_PREFIX[group];
+  return cards.map((card, index) => card.replace(
+    /(<span class="number">)[^<]+(<\/span>)/,
+    `$1${prefix}${index + 1}$2`,
+  ));
+}
+
 function replaceMarkerWithNewerItems(html, name, items, group) {
   if (!items.length) return html;
   const start = `<!-- AUTO:${name}:START -->`;
   const end = `<!-- AUTO:${name}:END -->`;
   const current = html.match(new RegExp(`${start}([\\s\\S]*?)${end}`))?.[1] || "";
-  const existingDates = [...current.matchAll(/datetime="(\d{4}-\d{2}-\d{2})"/g)].map((match) => match[1]);
-  const candidateDate = items.reduce((latest, item) => {
-    const date = item.publishedAt?.slice(0, 10) || "";
-    return date > latest ? date : latest;
-  }, "");
-  if (existingDates.length && candidateDate <= existingDates.sort().at(-1)) return html;
-  return replaceMarker(html, name, renderDailyCards(items, group));
+  const incoming = extractDailyCards(renderDailyCards(items, group));
+  const existing = extractDailyCards(current);
+  const seen = new Set();
+  // Prefer an existing card with the same URL because it may contain manually
+  // verified Czech copy and a more specific explanation of the market impact.
+  const combined = [...existing, ...incoming]
+    .filter((card) => {
+      const key = dailyCardUrl(card) || card;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .sort((a, b) => dailyCardDate(b).localeCompare(dailyCardDate(a)))
+    .slice(0, DAILY_CARD_LIMIT);
+  return replaceMarker(html, name, `<div class="signalGrid autoDailySignals" aria-label="Posledních šest automatických zpráv">\n${renumberDailyCards(combined, group).join("\n")}\n    </div>`);
 }
 
 const CARD_COLOR = { global: "blue", europe: "mint", region: "coral" };
@@ -178,7 +209,7 @@ export function renderDailyCards(items, group) {
       ? ` · přeloženo z ${escapeHtml(item.originalLanguage.toUpperCase())}` : "";
     return `      <article class="signalCard ${CARD_COLOR[group]}"><div class="cardTop"><span class="number">${CARD_PREFIX[group]}${index + 1}</span><span class="tag">${GROUP_LABEL[group]}${languageNote}</span></div><time class="articleDate" datetime="${published.toISOString().slice(0, 10)}">${escapeHtml(czechShortDate(published))}</time><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(summary)}</p><div class="impact"><span>Proč je to důležité</span><p>Jde o nový signál z aktuálního vícejazyčného monitoringu sledovaných platforem.</p></div><a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">Původní zdroj: ${escapeHtml(item.source)} ↗</a></article>`;
   }).join("\n");
-  return `    <div class="signalGrid autoDailySignals" aria-label="Nové zprávy za posledních 24 hodin">\n${cards}\n    </div>`;
+  return `    <div class="signalGrid autoDailySignals" aria-label="Posledních šest automatických zpráv">\n${cards}\n    </div>`;
 }
 
 export function renderSeduoMentions(items) {

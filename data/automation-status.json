@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-09-13T10:08:02.324Z",
+  "updatedAt": "2026-09-13T16:10:23.299Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
@@ -38,6 +38,23 @@
     }
   ],
   "selectionStatus": "deterministic-v2",
+  "supplementalVerification": {
+    "checked": 7,
+    "selected": 0,
+    "sources": [
+      "Coursera Investor Relations",
+      "Duolingo Investor Relations",
+      "D2L / CNW financial release",
+      "Kahoot press announcements",
+      "Targeted global public search",
+      "Targeted European and CZ/SK public search",
+      "External Seduo media search"
+    ],
+    "rejected": [],
+    "accessNotes": [
+      "D2L direct investor release returned an access error during supplemental verification; the company-issued CNW release confirmed Q2 FY2027 figures"
+    ]
+  },
   "sourceSummary": {
     "configured": 25,
     "succeeded": 25,
@@ -210,6 +227,6 @@
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 1,
+  "consecutiveEmptyRuns": 2,
   "sourceErrors": []
 }

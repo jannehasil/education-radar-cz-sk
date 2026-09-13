@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { candidateScore, matchesWatchlist, parseFeed, parseRss, updateIndex } from "../scripts/radar-lib.mjs";
+import { candidateScore, matchesWatchlist, parseFeed, parseRss, renderDailyCards, updateIndex } from "../scripts/radar-lib.mjs";
 
 const markers = ["GLOBAL", "EUROPE", "REGION", "SEDUO"]
   .map((name) => `<!-- AUTO:${name}:START -->\n<!-- AUTO:${name}:END -->`).join("\n");
@@ -50,6 +50,33 @@ test("renderer bez novější zprávy zachová předchozí ověřenou kartu", ()
   assert.match(output, /<strong>0<\/strong><span>nových zpráv za 24 h/);
 });
 
+test("renderer kumuluje posledních šest automatických karet", () => {
+  const existing = Array.from({ length: 6 }, (_, index) => ({
+    title: `Starší signál ${index + 1}`, source: "Example", url: `https://example.test/old-${index + 1}`,
+    summary: "Starší ověřená produktová novinka s dostatečně dlouhým popisem.", publishedAt: `2026-09-0${index + 1}T08:00:00.000Z`, originalLanguage: "cs",
+  }));
+  const input = `<span class="dateBadge">staré</span><span class="updateText">staré</span><section class="summary"><div><strong>3</strong><span>úrovně trhu</span></div><div><strong>93</strong><span>sledovaných platforem</span></div><div><strong>0</strong><span>nových zpráv za 24 h</span></div></section><section class="dailyStatus"><span>staré</span></section><p class="mediaDate">staré</p><!-- AUTO:GLOBAL:START -->${renderDailyCards(existing, "global")}<!-- AUTO:GLOBAL:END --><!-- AUTO:EUROPE:START --><!-- AUTO:EUROPE:END --><!-- AUTO:REGION:START --><!-- AUTO:REGION:END --><!-- AUTO:SEDUO:START --><!-- AUTO:SEDUO:END -->`;
+  const incoming = { title: "Nový signál", source: "Example", url: "https://example.test/new", summary: "Nová ověřená produktová novinka s dostatečně dlouhým popisem.", publishedAt: "2026-09-07T08:00:00.000Z", originalLanguage: "cs" };
+  const output = updateIndex(input, { global: [incoming], europe: [], region: [], seduo: [] }, new Date("2026-09-07T10:00:00.000Z"));
+  assert.match(output, /Nový signál/);
+  assert.match(output, /Starší signál 2/);
+  assert.doesNotMatch(output, /Starší signál 1/);
+  assert.equal((output.match(/class="signalCard blue"/g) || []).length, 6);
+});
+
+test("renderer u stejného odkazu zachová již kurátorovaný text", () => {
+  const curated = [{
+    title: "Kurátorovaný název", source: "Example", url: "https://example.test/same",
+    summary: "Kurátorovaný český souhrn s dostatečnou délkou pro vykreslení.", publishedAt: "2026-09-09T08:00:00.000Z", originalLanguage: "cs",
+  }];
+  const input = `<span class="dateBadge">staré</span><span class="updateText">staré</span><section class="summary"><div><strong>3</strong><span>úrovně trhu</span></div><div><strong>93</strong><span>sledovaných platforem</span></div><div><strong>1</strong><span>nových zpráv za 24 h</span></div></section><section class="dailyStatus"><span>staré</span></section><p class="mediaDate">staré</p><!-- AUTO:GLOBAL:START -->${renderDailyCards(curated, "global")}<!-- AUTO:GLOBAL:END --><!-- AUTO:EUROPE:START --><!-- AUTO:EUROPE:END --><!-- AUTO:REGION:START --><!-- AUTO:REGION:END --><!-- AUTO:SEDUO:START --><!-- AUTO:SEDUO:END -->`;
+  const incoming = { title: "Strojový překlad", source: "Example", url: "https://example.test/same", summary: "Automaticky přeložený souhrn s dostatečnou délkou pro vykreslení.", publishedAt: "2026-09-09T09:00:00.000Z", originalLanguage: "en" };
+  const output = updateIndex(input, { global: [incoming], europe: [], region: [], seduo: [] }, new Date("2026-09-10T10:00:00.000Z"));
+  assert.match(output, /Kurátorovaný název/);
+  assert.doesNotMatch(output, /Strojový překlad/);
+  assert.equal((output.match(/https:\/\/example\.test\/same/g) || []).length, 1);
+});
+
 test("renderer bezpečně obnoví ověřenou závěrečnou cenu", () => {
   const card = `<article class="stockCard cour" data-ticker="COUR"><time datetime="2026-08-11">závěr 11. 8.</time><div class="stockPrice"><strong>5,69</strong><span>USD</span><em class="stockDown">−1,22 %</em></div></article>`;
   const input = `<span class="dateBadge">staré</span><span class="updateText">staré</span><section class="summary"><div><strong>3</strong><span>úrovně trhu</span></div><div><strong>93</strong><span>sledovaných platforem</span></div><div><strong>0</strong><span>nových zpráv za 24 h</span></div></section><section class="dailyStatus"><span>staré</span></section><p class="mediaDate">staré</p>${markers}${card}`;
@@ -63,6 +90,15 @@ test("výběr odmítne marketingové články typu discover how", () => {
   const item = {
     title: "Discover how workforce leaders can learn from teachers",
     summary: "A general advice article about engagement strategies in people management.",
+    official: true,
+  };
+  assert.ok(candidateScore(item) < 2);
+});
+
+test("výběr odmítne pozvánku k poslechu rozhovoru", () => {
+  const item = {
+    title: "Listen to insights into the evolution of Kahoot! and the future of learning",
+    summary: "Explore how Kahoot! has grown from a classroom quiz tool to a learning and engagement platform for all ages.",
     official: true,
   };
   assert.ok(candidateScore(item) < 2);
@@ -84,6 +120,27 @@ test("výběr odmítne technický rozbor dříve spuštěné funkce", () => {
     official: true,
   };
   assert.ok(candidateScore(item) < 2);
+});
+
+test("výběr odmítne jazykové seznamy a obecné rady pro školení", () => {
+  assert.ok(candidateScore({
+    title: "80+ Most Common Adjectives in English",
+    summary: "Are you describing things in English? These are the adjectives you will use.",
+    official: true,
+  }) < 2);
+  assert.ok(candidateScore({
+    title: "7 signs your training can't keep up with your business",
+    summary: "A general advice article about learning and development.",
+    official: true,
+  }) < 2);
+});
+
+test("oficiální blog bez nové události sám o sobě nepřekročí práh", () => {
+  assert.ok(candidateScore({
+    title: "The hidden rules of English adjective order",
+    summary: "Want to stack adjectives in English? There is a set of rules and a cheat sheet.",
+    official: true,
+  }) < 2);
 });
 
 test("watchlist nebere název platformy jako část jiného slova", () => {

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-09-15T11:42:25.208Z",
+  "updatedAt": "2026-09-15T14:51:10.783Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
@@ -10,7 +10,7 @@
     "seduo": 0
   },
   "candidateCounts": {
-    "global": 0,
+    "global": 1,
     "europe": 1,
     "region": 0
   },
@@ -31,9 +31,9 @@
     },
     {
       "ticker": "DTOL",
-      "date": "2026-09-14",
+      "date": "2026-09-15",
       "price": 10.03,
-      "changePct": 0.3,
+      "changePct": 0,
       "currency": "CAD"
     }
   ],
@@ -210,6 +210,6 @@
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 8,
+  "consecutiveEmptyRuns": 9,
   "sourceErrors": []
 }

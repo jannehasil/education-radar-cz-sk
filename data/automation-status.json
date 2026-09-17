@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-09-16T14:48:14.205Z",
+  "updatedAt": "2026-09-17T07:29:29.021Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 1,
@@ -17,23 +17,23 @@
   "finance": [
     {
       "ticker": "COUR",
-      "date": "2026-09-15",
-      "price": 5.28,
-      "changePct": -2.58,
+      "date": "2026-09-16",
+      "price": 5.24,
+      "changePct": -0.76,
       "currency": "USD"
     },
     {
       "ticker": "DUOL",
-      "date": "2026-09-15",
-      "price": 153.92,
-      "changePct": 1.84,
+      "date": "2026-09-16",
+      "price": 148.17,
+      "changePct": -3.74,
       "currency": "USD"
     },
     {
       "ticker": "DTOL",
       "date": "2026-09-16",
-      "price": 10.11,
-      "changePct": 0,
+      "price": 10.02,
+      "changePct": -0.89,
       "currency": "CAD"
     }
   ],

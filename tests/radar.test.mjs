@@ -151,3 +151,12 @@ test("watchlist nebere název platformy jako část jiného slova", () => {
   assert.equal(matchesWatchlist(item, ["Sana"]), false);
   assert.equal(matchesWatchlist({ ...item, title: "Sana launches a learning product" }, ["Sana"]), true);
 });
+
+test("watchlist nezamění platformu Alison za jméno osoby", () => {
+  const item = {
+    title: "Dr. Alison Armour becomes Chief Medical Officer",
+    summary: "A clinical-stage drug company advances its therapy platform.",
+  };
+  assert.equal(matchesWatchlist(item, ["Alison"]), false);
+  assert.equal(matchesWatchlist({ ...item, title: "Alison launches a new learning platform" }, ["Alison"]), true);
+});

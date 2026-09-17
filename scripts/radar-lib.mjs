@@ -89,6 +89,7 @@ export function normalize(value = "") {
 export function matchesWatchlist(item, watchlist) {
   const haystack = normalize(`${item.title} ${item.summary}`);
   return watchlist.some((name) => {
+    if (normalize(name) === "alison" && /\b(?:dr|prof(?:essor)?)\.?\s+alison\b/i.test(`${item.title} ${item.summary}`)) return false;
     const escapedName = normalize(name).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     return new RegExp(`(?:^|[^a-z0-9])${escapedName}(?:$|[^a-z0-9])`).test(haystack);
   });

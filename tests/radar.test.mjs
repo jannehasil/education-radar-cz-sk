@@ -143,6 +143,14 @@ test("oficiální blog bez nové události sám o sobě nepřekročí práh", ()
   }) < 2);
 });
 
+test("výběr zachytí jmenování nového vedoucího pracovníka", () => {
+  assert.ok(candidateScore({
+    title: "Welcoming Karthik Chakkarapani as Coursera's new Chief Information Officer",
+    summary: "The new CIO will lead IT, information systems, and internal AI enablement.",
+    official: true,
+  }) >= 2);
+});
+
 test("watchlist nebere název platformy jako část jiného slova", () => {
   const item = {
     title: "Kapital raises new financing from Fasanara Capital",

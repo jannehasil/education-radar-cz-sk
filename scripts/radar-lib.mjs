@@ -4,7 +4,7 @@ const MONTHS = [
 ];
 
 const SIGNIFICANT = /(launch|announc|acqui|merg|funding|raises?|invest|revenue|earnings|results?|partnership|expand|appoint|new\s+(?:chief|ceo|cio|cfo|cto|coo|svp|president)|layoff|restructur|product|feature|platform|lance|annonce|acqui|financement|partenariat|résultat|umsatz|übern|finanzier|partnerschaft|startet|führt.+ein|lanza|anuncia|adquier|financiación|alianza|resultados|spoušt|uvád|akviz|investic|partner|tržb|výsledk|nová funk|nova funk|prepúšť|restrukt)/i;
-const NOISE = /(guide|how to|how we (?:created|built|made)|what does|\bcourses?\b|certification|certificate|discount|sale|tips|webinar|podcast|listen to insights|best\s+\w|top\s+\d|discover how|explore why|why .+ matters|common .+ phrases|adjectives? in english|gradable (?:and )?non-gradable adjectives?|signs? (?:that )?(?:your )?training|phrases? for (?:your )?(?:trip|travel)|travel vocabulary|průvodce|návod|co znamená|kurz|sleva|webinář|nejlepších|guía|curso|descuento|mejores|ratgeber|kurs|rabatt|besten)/i;
+const NOISE = /(guide|how to|how we (?:created|built|made)|what does|\bcourses?\b|certification|certificate|discount|sale|tips|webinar|podcast|listen to insights|features? insights?|best\s+\w|top\s+\d|discover how|explores? how|learn how|explore why|why .+ matters|common .+ phrases|adjectives? in english|gradable (?:and )?non-gradable adjectives?|signs? (?:that )?(?:your )?training|phrases? for (?:your )?(?:trip|travel)|travel vocabulary|průvodce|návod|co znamená|kurz|sleva|webinář|nejlepších|guía|curso|descuento|mejores|ratgeber|kurs|rabatt|besten)/i;
 
 export function candidateScore(item) {
   const text = `${item.title} ${item.summary}`;
@@ -243,6 +243,7 @@ export function updateFinanceCards(html, quotes = []) {
 export function updateIndex(html, result, now = new Date()) {
   const p = pragueParts(now);
   const newCount = result.global.length + result.europe.length + result.region.length;
+  const newsCountLabel = newCount === 1 ? "nová zpráva" : newCount >= 2 && newCount <= 4 ? "nové zprávy" : "nových zpráv";
   const statusHeadline = newCount === 1
     ? "Dnes zachycen 1 nový ověřený signál."
     : newCount > 1
@@ -259,7 +260,7 @@ export function updateIndex(html, result, now = new Date()) {
   html = html.replace(/<span class="dateBadge">[\s\S]*?<\/span>/, `<span class="dateBadge">Aktualizováno ${czechLongDate(now)}</span>`);
   html = html.replace(/<span class="updateText">[\s\S]*?<\/span>/, `<span class="updateText">v ${pragueTime(now)} · Europe/Prague</span>`);
   html = html.replace(/<section class="dailyStatus"[\s\S]*?<\/section>/, `<section class="dailyStatus" aria-label="Stav dnešní aktualizace"><span>Aktualizace ${Number(p.day)}. ${Number(p.month)}.</span><div><strong>${statusHeadline}</strong><p>${statusText}</p></div></section>`);
-  html = html.replace(/(<section class="summary"[\s\S]*?<div><strong>3<\/strong>[\s\S]*?<div><strong>93<\/strong>[\s\S]*?<div><strong>)\d+(<\/strong><span>)nových zpráv za (?:24|48) h(<\/span><\/div>)/, `$1${newCount}$2nových zpráv za 24 h$3`);
+  html = html.replace(/(<section class="summary"[\s\S]*?<div><strong>3<\/strong>[\s\S]*?<div><strong>93<\/strong>[\s\S]*?<div><strong>)\d+(<\/strong><span>)(?:nová zpráva|nové zprávy|nových zpráv) za (?:24|48) h(<\/span><\/div>)/, `$1${newCount}$2${newsCountLabel} za 24 h$3`);
   const windowStart = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
   html = html.replace(/<p class="mediaDate">[\s\S]*?<\/p>/, `<p class="mediaDate">${czechShortDate(windowStart)} – ${czechShortDate(now)} · kontrolováno při aktualizaci reportu</p>`);
   html = replaceMarkerWithNewerItems(html, "GLOBAL", result.global, "global");

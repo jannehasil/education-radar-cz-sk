@@ -34,8 +34,7 @@ test("renderer aktualizuje datum, počet a sekce idempotentně", () => {
   assert.match(once, /Aktualizováno 13\. srpna 2026/);
   assert.match(once, /v 12:15 · Europe\/Prague/);
   assert.match(once, /Dnes zachycen 1 nový ověřený signál/);
-  assert.match(once, /<strong>1<\/strong><span>nových zpráv/);
-  assert.match(once, /nových zpráv za 24 h/);
+  assert.match(once, /<strong>1<\/strong><span>nová zpráva za 24 h/);
   assert.match(once, /Coursera představila novinku/);
   assert.match(once, /Původní zdroj: Coursera/);
   assert.match(once, /17 z 19 přímých zdrojů/);
@@ -102,6 +101,19 @@ test("výběr odmítne pozvánku k poslechu rozhovoru", () => {
     official: true,
   };
   assert.ok(candidateScore(item) < 2);
+});
+
+test("výběr odmítne mediální přepisy bez nové události", () => {
+  assert.ok(candidateScore({
+    title: "The Telegraph features insights from Kahoot!'s Workplace Culture and Connection Report",
+    summary: "The growing trend of social disconnection is in the spotlight in Kahoot!'s latest research.",
+    official: true,
+  }) < 2);
+  assert.ok(candidateScore({
+    title: "Cinco Días explores how game-based learning platforms like Kahoot! boost active learning",
+    summary: "Research shows that game-based learning can improve students' learning outcomes.",
+    official: true,
+  }) < 2);
 });
 
 test("výběr odmítne cestovní slovníčky z produktových blogů", () => {

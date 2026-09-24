@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-09-23T14:52:42.146Z",
+  "updatedAt": "2026-09-24T06:41:16.362Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
@@ -17,23 +17,23 @@
   "finance": [
     {
       "ticker": "COUR",
-      "date": "2026-09-22",
-      "price": 5.14,
+      "date": "2026-09-23",
+      "price": 5.12,
       "changePct": -0.39,
       "currency": "USD"
     },
     {
       "ticker": "DUOL",
-      "date": "2026-09-22",
-      "price": 147.71,
-      "changePct": -1.14,
+      "date": "2026-09-23",
+      "price": 145.98,
+      "changePct": -1.17,
       "currency": "USD"
     },
     {
       "ticker": "DTOL",
       "date": "2026-09-23",
-      "price": 10.26,
-      "changePct": 0,
+      "price": 10.22,
+      "changePct": -0.39,
       "currency": "CAD"
     }
   ],
@@ -210,6 +210,6 @@
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 3,
+  "consecutiveEmptyRuns": 4,
   "sourceErrors": []
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-09-24T14:53:37.972Z",
+  "updatedAt": "2026-09-25T10:07:38.409Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
@@ -17,31 +17,31 @@
   "finance": [
     {
       "ticker": "COUR",
-      "date": "2026-09-23",
-      "price": 5.12,
-      "changePct": -0.39,
+      "date": "2026-09-24",
+      "price": 5.06,
+      "changePct": -1.17,
       "currency": "USD"
     },
     {
       "ticker": "DUOL",
-      "date": "2026-09-23",
-      "price": 145.98,
-      "changePct": -1.17,
+      "date": "2026-09-24",
+      "price": 147.75,
+      "changePct": 1.21,
       "currency": "USD"
     },
     {
       "ticker": "DTOL",
       "date": "2026-09-24",
-      "price": 10.22,
-      "changePct": 0,
+      "price": 9.93,
+      "changePct": -2.84,
       "currency": "CAD"
     }
   ],
   "selectionStatus": "deterministic-v2",
   "sourceSummary": {
     "configured": 25,
-    "succeeded": 25,
-    "failed": 0,
+    "succeeded": 24,
+    "failed": 1,
     "languages": [
       "cs",
       "de",
@@ -50,7 +50,7 @@
       "fr",
       "sk"
     ],
-    "parsedItems": 520
+    "parsedItems": 500
   },
   "sourceRuns": [
     {
@@ -134,8 +134,8 @@
     {
       "name": "PR Newswire Education",
       "language": "en",
-      "ok": true,
-      "parsed": 20
+      "ok": false,
+      "parsed": 0
     },
     {
       "name": "Sifted",
@@ -211,5 +211,7 @@
     "provider": "MyMemory"
   },
   "consecutiveEmptyRuns": 0,
-  "sourceErrors": []
+  "sourceErrors": [
+    "Zdroj PR Newswire Education: The operation was aborted due to timeout"
+  ]
 }

@@ -103,6 +103,15 @@ test("výběr odmítne pozvánku k poslechu rozhovoru", () => {
   assert.ok(candidateScore(item) < 2);
 });
 
+test("výběr odmítne návod na aktualizaci školení s checklistem", () => {
+  const item = {
+    title: "Updating Employee Training when Workflows Change & Free Checklist",
+    summary: "A practical guide for HR and L&D teams to update existing training materials when company workflows change.",
+    official: true,
+  };
+  assert.ok(candidateScore(item) < 2);
+});
+
 test("výběr odmítne mediální přepisy bez nové události", () => {
   assert.ok(candidateScore({
     title: "The Telegraph features insights from Kahoot!'s Workplace Culture and Connection Report",

@@ -1,39 +1,39 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-09-29T11:15:51.185Z",
+  "updatedAt": "2026-09-30T11:04:24.400Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
-    "europe": 0,
+    "europe": 1,
     "region": 0,
     "seduo": 0
   },
   "candidateCounts": {
     "global": 1,
-    "europe": 0,
+    "europe": 1,
     "region": 0
   },
   "finance": [
     {
       "ticker": "COUR",
-      "date": "2026-09-28",
-      "price": 4.64,
-      "changePct": -8.12,
+      "date": "2026-09-29",
+      "price": 4.67,
+      "changePct": 0.65,
       "currency": "USD"
     },
     {
       "ticker": "DUOL",
-      "date": "2026-09-28",
-      "price": 134.3,
-      "changePct": -6.42,
+      "date": "2026-09-29",
+      "price": 142.62,
+      "changePct": 6.2,
       "currency": "USD"
     },
     {
       "ticker": "DTOL",
-      "date": "2026-09-28",
-      "price": 10.18,
-      "changePct": 1.8,
+      "date": "2026-09-29",
+      "price": 10,
+      "changePct": -1.77,
       "currency": "CAD"
     }
   ],
@@ -205,11 +205,11 @@
     }
   ],
   "translationStats": {
-    "requested": 0,
-    "succeeded": 0,
+    "requested": 1,
+    "succeeded": 1,
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 10,
+  "consecutiveEmptyRuns": 0,
   "sourceErrors": []
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-10-04T11:03:15.128Z",
+  "updatedAt": "2026-10-05T07:40:19.181Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
@@ -40,8 +40,8 @@
   "selectionStatus": "deterministic-v2",
   "sourceSummary": {
     "configured": 25,
-    "succeeded": 24,
-    "failed": 1,
+    "succeeded": 25,
+    "failed": 0,
     "languages": [
       "cs",
       "de",
@@ -165,13 +165,13 @@
       "name": "t3n",
       "language": "de",
       "ok": true,
-      "parsed": 20
+      "parsed": 0
     },
     {
       "name": "Gründerszene",
       "language": "de",
-      "ok": false,
-      "parsed": 0
+      "ok": true,
+      "parsed": 20
     },
     {
       "name": "Genbeta",
@@ -210,8 +210,6 @@
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 4,
-  "sourceErrors": [
-    "Zdroj Gründerszene: 403 Forbidden"
-  ]
+  "consecutiveEmptyRuns": 5,
+  "sourceErrors": []
 }

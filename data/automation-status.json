@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-10-06T20:43:51.904Z",
+  "updatedAt": "2026-10-06T20:48:48.000Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 1,
     "europe": 1,
-    "region": 0,
+    "region": 1,
     "seduo": 0
   },
   "candidateCounts": {

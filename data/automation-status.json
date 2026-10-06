@@ -1,39 +1,39 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-10-05T12:11:43.350Z",
+  "updatedAt": "2026-10-06T11:55:49.211Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
-    "global": 0,
+    "global": 1,
     "europe": 0,
     "region": 0,
     "seduo": 0
   },
   "candidateCounts": {
-    "global": 0,
-    "europe": 1,
-    "region": 0
+    "global": 2,
+    "europe": 0,
+    "region": 1
   },
   "finance": [
     {
       "ticker": "COUR",
-      "date": "2026-10-02",
-      "price": 5.02,
-      "changePct": -1.18,
+      "date": "2026-10-05",
+      "price": 5.18,
+      "changePct": 3.19,
       "currency": "USD"
     },
     {
       "ticker": "DUOL",
-      "date": "2026-10-02",
-      "price": 144.27,
-      "changePct": -1.57,
+      "date": "2026-10-05",
+      "price": 147.1,
+      "changePct": 1.96,
       "currency": "USD"
     },
     {
       "ticker": "DTOL",
-      "date": "2026-10-02",
-      "price": 10.29,
-      "changePct": 2.39,
+      "date": "2026-10-05",
+      "price": 10.66,
+      "changePct": 3.6,
       "currency": "CAD"
     }
   ],
@@ -50,7 +50,7 @@
       "fr",
       "sk"
     ],
-    "parsedItems": 500
+    "parsedItems": 522
   },
   "sourceRuns": [
     {
@@ -165,7 +165,7 @@
       "name": "t3n",
       "language": "de",
       "ok": true,
-      "parsed": 0
+      "parsed": 20
     },
     {
       "name": "Gründerszene",
@@ -177,7 +177,7 @@
       "name": "Genbeta",
       "language": "es",
       "ok": true,
-      "parsed": 14
+      "parsed": 16
     },
     {
       "name": "Lupa.cz",
@@ -205,11 +205,11 @@
     }
   ],
   "translationStats": {
-    "requested": 0,
-    "succeeded": 0,
+    "requested": 1,
+    "succeeded": 1,
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 7,
+  "consecutiveEmptyRuns": 0,
   "sourceErrors": []
 }

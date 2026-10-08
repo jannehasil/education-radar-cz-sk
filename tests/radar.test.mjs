@@ -189,3 +189,12 @@ test("watchlist nezamění platformu Alison za jméno osoby", () => {
   assert.equal(matchesWatchlist(item, ["Alison"]), false);
   assert.equal(matchesWatchlist({ ...item, title: "Alison launches a new learning platform" }, ["Alison"]), true);
 });
+
+test("watchlist nezamění platformu Maven za marketingovou agenturu", () => {
+  const item = {
+    title: "Marketing Maven's Shayne Wells named a 40 Under Forty honoree",
+    summary: "The chamber recognizes Wells' leadership and strategic marketing work.",
+  };
+  assert.equal(matchesWatchlist(item, ["Maven"]), false);
+  assert.equal(matchesWatchlist({ ...item, title: "Maven launches a new cohort learning platform" }, ["Maven"]), true);
+});

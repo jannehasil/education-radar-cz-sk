@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-10-14T10:02:58.501Z",
+  "updatedAt": "2026-10-14T10:04:09.764Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
@@ -40,8 +40,8 @@
   "selectionStatus": "deterministic-v2",
   "sourceSummary": {
     "configured": 25,
-    "succeeded": 23,
-    "failed": 2,
+    "succeeded": 25,
+    "failed": 0,
     "languages": [
       "cs",
       "de",
@@ -50,7 +50,7 @@
       "fr",
       "sk"
     ],
-    "parsedItems": 482
+    "parsedItems": 522
   },
   "sourceRuns": [
     {
@@ -134,8 +134,8 @@
     {
       "name": "PR Newswire Education",
       "language": "en",
-      "ok": false,
-      "parsed": 0
+      "ok": true,
+      "parsed": 20
     },
     {
       "name": "Sifted",
@@ -170,8 +170,8 @@
     {
       "name": "Gründerszene",
       "language": "de",
-      "ok": false,
-      "parsed": 0
+      "ok": true,
+      "parsed": 20
     },
     {
       "name": "Genbeta",
@@ -211,8 +211,5 @@
     "provider": "MyMemory"
   },
   "consecutiveEmptyRuns": 14,
-  "sourceErrors": [
-    "Zdroj Gründerszene: 403 Forbidden",
-    "Zdroj PR Newswire Education: The operation was aborted due to timeout"
-  ]
+  "sourceErrors": []
 }

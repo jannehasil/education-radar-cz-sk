@@ -1,5 +1,5 @@
 import fs from "node:fs/promises";
-import { candidateScore, dedupe, isRecent, matchesWatchlist, parseFeed, updateIndex } from "./radar-lib.mjs";
+import { candidateScore, dedupe, isRecent, matchesWatchlist, northAmericanTradingDate, parseFeed, updateIndex } from "./radar-lib.mjs";
 
 const AUTOMATION_VERSION = "2.0.0";
 const MONITOR_HOURS = 24;
@@ -85,7 +85,8 @@ async function fetchNasdaqQuote({ ticker, currency }, now) {
   const parsed = rows.map((row) => {
     const [month, day, year] = row.date.split("/").map(Number);
     return { date: `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`, price: parsePrice(row.close) };
-  }).filter((row) => Number.isFinite(row.price)).sort((a, b) => b.date.localeCompare(a.date));
+  }).filter((row) => Number.isFinite(row.price) && row.date < northAmericanTradingDate(now))
+    .sort((a, b) => b.date.localeCompare(a.date));
   if (parsed.length < 2) throw new Error(`Finance ${ticker}: neplatná data Nasdaq`);
   return {
     ticker, date: parsed[0].date, price: parsed[0].price,
@@ -112,7 +113,8 @@ async function fetchTmxQuote({ ticker, currency }, now) {
   const body = await response.json();
   const rows = (body?.data?.getCompanyPriceHistory || [])
     .map((row) => ({ date: row.datetime.slice(0, 10), price: Number(row.closePrice) }))
-    .filter((row) => Number.isFinite(row.price)).sort((a, b) => b.date.localeCompare(a.date));
+    .filter((row) => Number.isFinite(row.price) && row.date < northAmericanTradingDate(now))
+    .sort((a, b) => b.date.localeCompare(a.date));
   if (rows.length < 2) throw new Error(`Finance ${ticker}: chybí dvě závěrečné ceny TMX`);
   return {
     ticker, date: rows[0].date, price: rows[0].price,

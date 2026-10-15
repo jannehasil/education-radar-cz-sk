@@ -1,9 +1,14 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { candidateScore, matchesWatchlist, parseFeed, parseRss, renderDailyCards, updateIndex } from "../scripts/radar-lib.mjs";
+import { candidateScore, matchesWatchlist, northAmericanTradingDate, parseFeed, parseRss, renderDailyCards, updateIndex } from "../scripts/radar-lib.mjs";
 
 const markers = ["GLOBAL", "EUROPE", "REGION", "SEDUO"]
   .map((name) => `<!-- AUTO:${name}:START -->\n<!-- AUTO:${name}:END -->`).join("\n");
+
+test("finanční sběr rozpozná aktuální severoamerický obchodní den", () => {
+  assert.equal(northAmericanTradingDate(new Date("2026-10-15T18:00:00Z")), "2026-10-15");
+  assert.equal(northAmericanTradingDate(new Date("2026-10-16T02:00:00Z")), "2026-10-15");
+});
 
 test("RSS parser zachová datum, zdroj a titulek", () => {
   const xml = `<rss><channel><item><title>Novinka Coursera - Example</title><link>https://example.test/a</link><pubDate>Thu, 13 Aug 2026 08:00:00 GMT</pubDate><source>Example</source><description><![CDATA[<p>Popis zprávy</p>]]></description></item></channel></rss>`;

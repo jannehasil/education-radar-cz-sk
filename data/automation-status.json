@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-10-16T09:38:46.331Z",
+  "updatedAt": "2026-10-16T14:43:41.961Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
-    "global": 0,
+    "global": 1,
     "europe": 1,
     "region": 0,
     "seduo": 0
   },
   "candidateCounts": {
     "global": 1,
-    "europe": 1,
+    "europe": 2,
     "region": 0
   },
   "finance": [
@@ -205,8 +205,8 @@
     }
   ],
   "translationStats": {
-    "requested": 1,
-    "succeeded": 1,
+    "requested": 2,
+    "succeeded": 2,
     "failed": 0,
     "provider": "MyMemory"
   },

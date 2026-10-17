@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-10-17T09:10:36.357Z",
+  "updatedAt": "2026-10-17T13:36:25.718Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
-    "global": 1,
+    "global": 0,
     "europe": 0,
     "region": 0,
     "seduo": 0
   },
   "candidateCounts": {
-    "global": 1,
+    "global": 0,
     "europe": 1,
     "region": 0
   },
@@ -205,11 +205,11 @@
     }
   ],
   "translationStats": {
-    "requested": 1,
-    "succeeded": 1,
+    "requested": 0,
+    "succeeded": 0,
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 0,
+  "consecutiveEmptyRuns": 1,
   "sourceErrors": []
 }

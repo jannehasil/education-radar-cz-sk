@@ -39,12 +39,20 @@ const SOURCE_FEEDS = [
 ];
 
 async function fetchText(url) {
-  const response = await fetch(url, {
-    headers: { "user-agent": "EducationRadarBot/2.0 (+https://jannehasil.github.io/education-radar-cz-sk/)" },
-    signal: AbortSignal.timeout(8_000),
-  });
-  if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
-  return response.text();
+  let lastError;
+  for (let attempt = 0; attempt < 2; attempt += 1) {
+    try {
+      const response = await fetch(url, {
+        headers: { "user-agent": "EducationRadarBot/2.0 (+https://jannehasil.github.io/education-radar-cz-sk/)" },
+        signal: AbortSignal.timeout(12_000),
+      });
+      if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+      return response.text();
+    } catch (error) {
+      lastError = error;
+    }
+  }
+  throw lastError;
 }
 
 const FINANCE = [

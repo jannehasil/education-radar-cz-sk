@@ -203,3 +203,20 @@ test("watchlist nezamění platformu Maven za marketingovou agenturu", () => {
   assert.equal(matchesWatchlist(item, ["Maven"]), false);
   assert.equal(matchesWatchlist({ ...item, title: "Maven launches a new cohort learning platform" }, ["Maven"]), true);
 });
+
+test("watchlist nezamění Brilliant.org za dodavatele ApplicantX", () => {
+  const item = {
+    title: "iCIMS unveils candidate fraud strategy",
+    summary: "The marketplace launches with ApplicantX from Brilliant for identity verification.",
+  };
+  assert.equal(matchesWatchlist(item, ["Brilliant"]), false);
+  assert.equal(matchesWatchlist({ ...item, title: "Brilliant launches a new STEM learning feature", summary: "" }, ["Brilliant"]), true);
+});
+
+test("výběr odmítne právnické výzvy akcionářům", () => {
+  assert.ok(candidateScore({
+    title: "Duolingo shareholder alert",
+    summary: "ClaimsFiler reminds investors of the lead plaintiff deadline in a class action lawsuit.",
+    official: false,
+  }) < 2);
+});

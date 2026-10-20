@@ -9,7 +9,7 @@ on:
       - "scripts/**"
       - "tests/**"
   schedule:
-    - cron: "7 7,12 * * *"
+    - cron: "7 7 * * *"
       timezone: "Europe/Prague"
 
 concurrency:

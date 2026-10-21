@@ -148,6 +148,15 @@ test("výběr odmítne technický rozbor dříve spuštěné funkce", () => {
   assert.ok(candidateScore(item) < 2);
 });
 
+test("výběr odmítne konferenční anketu bez nové tržní události", () => {
+  const item = {
+    title: "What we heard from L&D at World of Learning 2026",
+    summary: "The results of a booth survey describe what slows training down for L&D professionals.",
+    official: true,
+  };
+  assert.ok(candidateScore(item) < 2);
+});
+
 test("výběr odmítne jazykové seznamy a obecné rady pro školení", () => {
   assert.ok(candidateScore({
     title: "80+ Most Common Adjectives in English",

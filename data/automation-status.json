@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-10-23T09:55:54.442Z",
+  "updatedAt": "2026-10-24T09:25:35.894Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
@@ -17,31 +17,31 @@
   "finance": [
     {
       "ticker": "COUR",
-      "date": "2026-10-22",
-      "price": 5.07,
-      "changePct": 2.01,
+      "date": "2026-10-23",
+      "price": 5.08,
+      "changePct": 0.2,
       "currency": "USD"
     },
     {
       "ticker": "DUOL",
-      "date": "2026-10-22",
-      "price": 141.39,
-      "changePct": 2.96,
+      "date": "2026-10-23",
+      "price": 143.04,
+      "changePct": 1.17,
       "currency": "USD"
     },
     {
       "ticker": "DTOL",
-      "date": "2026-10-22",
+      "date": "2026-10-23",
       "price": 11.07,
-      "changePct": -0.98,
+      "changePct": 0,
       "currency": "CAD"
     }
   ],
   "selectionStatus": "deterministic-v2",
   "sourceSummary": {
     "configured": 25,
-    "succeeded": 24,
-    "failed": 1,
+    "succeeded": 25,
+    "failed": 0,
     "languages": [
       "cs",
       "de",
@@ -50,7 +50,7 @@
       "fr",
       "sk"
     ],
-    "parsedItems": 502
+    "parsedItems": 522
   },
   "sourceRuns": [
     {
@@ -170,8 +170,8 @@
     {
       "name": "Gründerszene",
       "language": "de",
-      "ok": false,
-      "parsed": 0
+      "ok": true,
+      "parsed": 20
     },
     {
       "name": "Genbeta",
@@ -210,8 +210,6 @@
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 9,
-  "sourceErrors": [
-    "Zdroj Gründerszene: 403 Forbidden"
-  ]
+  "consecutiveEmptyRuns": 10,
+  "sourceErrors": []
 }

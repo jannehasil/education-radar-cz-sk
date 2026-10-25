@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-10-25T11:13:32.472Z",
+  "updatedAt": "2026-10-25T14:58:37.106Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
@@ -15,6 +15,13 @@
     "region": 0
   },
   "finance": [
+    {
+      "ticker": "COUR",
+      "date": "2026-10-23",
+      "price": 5.08,
+      "changePct": 0.2,
+      "currency": "USD"
+    },
     {
       "ticker": "DUOL",
       "date": "2026-10-23",
@@ -203,8 +210,6 @@
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 12,
-  "sourceErrors": [
-    "Finance COUR: chybí dvě závěrečné ceny Nasdaq"
-  ]
+  "consecutiveEmptyRuns": 13,
+  "sourceErrors": []
 }

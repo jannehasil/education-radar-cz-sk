@@ -1,39 +1,39 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-10-28T12:40:21.792Z",
+  "updatedAt": "2026-10-29T12:49:18.940Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
-    "europe": 1,
+    "europe": 0,
     "region": 0,
     "seduo": 0
   },
   "candidateCounts": {
-    "global": 1,
-    "europe": 3,
+    "global": 0,
+    "europe": 1,
     "region": 0
   },
   "finance": [
     {
       "ticker": "COUR",
-      "date": "2026-10-27",
-      "price": 4.75,
-      "changePct": -4.43,
+      "date": "2026-10-28",
+      "price": 4.7,
+      "changePct": -1.05,
       "currency": "USD"
     },
     {
       "ticker": "DUOL",
-      "date": "2026-10-27",
-      "price": 141.31,
-      "changePct": 1.96,
+      "date": "2026-10-28",
+      "price": 135.21,
+      "changePct": -4.32,
       "currency": "USD"
     },
     {
       "ticker": "DTOL",
-      "date": "2026-10-27",
-      "price": 11.07,
-      "changePct": 1.19,
+      "date": "2026-10-28",
+      "price": 11.03,
+      "changePct": -0.36,
       "currency": "CAD"
     }
   ],
@@ -50,7 +50,7 @@
       "fr",
       "sk"
     ],
-    "parsedItems": 522
+    "parsedItems": 452
   },
   "sourceRuns": [
     {
@@ -153,7 +153,7 @@
       "name": "FRENCHWEB",
       "language": "fr",
       "ok": true,
-      "parsed": 100
+      "parsed": 30
     },
     {
       "name": "Maddyness",
@@ -205,11 +205,11 @@
     }
   ],
   "translationStats": {
-    "requested": 1,
-    "succeeded": 1,
+    "requested": 0,
+    "succeeded": 0,
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 0,
+  "consecutiveEmptyRuns": 1,
   "sourceErrors": []
 }

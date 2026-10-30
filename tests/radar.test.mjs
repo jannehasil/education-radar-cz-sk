@@ -39,7 +39,7 @@ test("renderer aktualizuje datum, počet a sekce idempotentně", () => {
   assert.match(once, /Aktualizováno 13\. srpna 2026/);
   assert.match(once, /v 12:15 · Europe\/Prague/);
   assert.match(once, /Dnes zachycen 1 nový ověřený signál/);
-  assert.match(once, /<strong>1<\/strong><span>nová zpráva za 24 h/);
+  assert.match(once, /<strong>1<\/strong><span>nová zpráva za 72 h/);
   assert.match(once, /Coursera představila novinku/);
   assert.match(once, /Původní zdroj: Coursera/);
   assert.match(once, /17 z 19 přímých zdrojů/);
@@ -51,7 +51,7 @@ test("renderer bez novější zprávy zachová předchozí ověřenou kartu", ()
   const output = updateIndex(input, result, new Date("2026-09-01T10:15:00.000Z"));
   assert.match(output, /Ověřený signál/);
   assert.match(output, /Dnes bez nového ověřeného tržního signálu/);
-  assert.match(output, /<strong>0<\/strong><span>nových zpráv za 24 h/);
+  assert.match(output, /<strong>0<\/strong><span>nových zpráv za 72 h/);
 });
 
 test("renderer kumuluje posledních šest automatických karet", () => {

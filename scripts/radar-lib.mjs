@@ -157,6 +157,7 @@ export function replaceMarker(html, name, content) {
   return html.replace(pattern, `${start}\n${content}\n${end}`);
 }
 
+export const MONITOR_HOURS = 72;
 const DAILY_CARD_LIMIT = 6;
 
 function extractDailyCards(content) {
@@ -270,7 +271,7 @@ export function updateIndex(html, result, now = new Date()) {
   html = html.replace(/<span class="dateBadge">[\s\S]*?<\/span>/, `<span class="dateBadge">Aktualizováno ${czechLongDate(now)}</span>`);
   html = html.replace(/<span class="updateText">[\s\S]*?<\/span>/, `<span class="updateText">v ${pragueTime(now)} · Europe/Prague</span>`);
   html = html.replace(/<section class="dailyStatus"[\s\S]*?<\/section>/, `<section class="dailyStatus" aria-label="Stav dnešní aktualizace"><span>Aktualizace ${Number(p.day)}. ${Number(p.month)}.</span><div><strong>${statusHeadline}</strong><p>${statusText}</p></div></section>`);
-  html = html.replace(/(<section class="summary"[\s\S]*?<div><strong>3<\/strong>[\s\S]*?<div><strong>93<\/strong>[\s\S]*?<div><strong>)\d+(<\/strong><span>)(?:nová zpráva|nové zprávy|nových zpráv) za (?:24|48) h(<\/span><\/div>)/, `$1${newCount}$2${newsCountLabel} za 24 h$3`);
+  html = html.replace(/(<section class="summary"[\s\S]*?<div><strong>3<\/strong>[\s\S]*?<div><strong>93<\/strong>[\s\S]*?<div><strong>)\d+(<\/strong><span>)(?:nová zpráva|nové zprávy|nových zpráv) za \d+ h(<\/span><\/div>)/, `$1${newCount}$2${newsCountLabel} za ${MONITOR_HOURS} h$3`);
   const windowStart = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
   html = html.replace(/<p class="mediaDate">[\s\S]*?<\/p>/, `<p class="mediaDate">${czechShortDate(windowStart)} – ${czechShortDate(now)} · kontrolováno při aktualizaci reportu</p>`);
   html = replaceMarkerWithNewerItems(html, "GLOBAL", result.global, "global");

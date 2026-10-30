@@ -1,8 +1,7 @@
 import fs from "node:fs/promises";
-import { candidateScore, dedupe, isRecent, matchesWatchlist, northAmericanTradingDate, parseFeed, updateIndex } from "./radar-lib.mjs";
+import { MONITOR_HOURS, candidateScore, dedupe, isRecent, matchesWatchlist, northAmericanTradingDate, parseFeed, updateIndex } from "./radar-lib.mjs";
 
 const AUTOMATION_VERSION = "2.0.0";
-const MONITOR_HOURS = 24;
 
 const WATCHLISTS = {
   global: ["Coursera", "Udemy", "edX", "LinkedIn Learning", "Skillshare", "MasterClass", "Pluralsight", "DataCamp", "Codecademy", "Udacity", "Khan Academy", "Brilliant", "Maven", "Reforge", "DeepLearning.AI", "Duolingo"],

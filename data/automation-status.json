@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-10-29T12:49:18.940Z",
+  "updatedAt": "2026-10-30T15:27:07.559Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
@@ -10,38 +10,38 @@
     "seduo": 0
   },
   "candidateCounts": {
-    "global": 0,
-    "europe": 1,
+    "global": 3,
+    "europe": 3,
     "region": 0
   },
   "finance": [
     {
       "ticker": "COUR",
-      "date": "2026-10-28",
-      "price": 4.7,
-      "changePct": -1.05,
+      "date": "2026-10-29",
+      "price": 4.66,
+      "changePct": -0.85,
       "currency": "USD"
     },
     {
       "ticker": "DUOL",
-      "date": "2026-10-28",
-      "price": 135.21,
-      "changePct": -4.32,
+      "date": "2026-10-29",
+      "price": 136.39,
+      "changePct": 0.87,
       "currency": "USD"
     },
     {
       "ticker": "DTOL",
-      "date": "2026-10-28",
-      "price": 11.03,
-      "changePct": -0.36,
+      "date": "2026-10-29",
+      "price": 11.33,
+      "changePct": 2.72,
       "currency": "CAD"
     }
   ],
   "selectionStatus": "deterministic-v2",
   "sourceSummary": {
     "configured": 25,
-    "succeeded": 25,
-    "failed": 0,
+    "succeeded": 24,
+    "failed": 1,
     "languages": [
       "cs",
       "de",
@@ -50,7 +50,7 @@
       "fr",
       "sk"
     ],
-    "parsedItems": 452
+    "parsedItems": 422
   },
   "sourceRuns": [
     {
@@ -152,8 +152,8 @@
     {
       "name": "FRENCHWEB",
       "language": "fr",
-      "ok": true,
-      "parsed": 30
+      "ok": false,
+      "parsed": 0
     },
     {
       "name": "Maddyness",
@@ -210,6 +210,8 @@
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 1,
-  "sourceErrors": []
+  "consecutiveEmptyRuns": 2,
+  "sourceErrors": [
+    "Zdroj FRENCHWEB: 503 Service Unavailable"
+  ]
 }

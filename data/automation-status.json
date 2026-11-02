@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-10-30T15:27:07.559Z",
+  "updatedAt": "2026-11-02T18:58:40.925Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
@@ -10,30 +10,30 @@
     "seduo": 0
   },
   "candidateCounts": {
-    "global": 3,
-    "europe": 3,
-    "region": 0
+    "global": 1,
+    "europe": 0,
+    "region": 1
   },
   "finance": [
     {
       "ticker": "COUR",
-      "date": "2026-10-29",
-      "price": 4.66,
-      "changePct": -0.85,
+      "date": "2026-10-30",
+      "price": 3.47,
+      "changePct": -25.54,
       "currency": "USD"
     },
     {
       "ticker": "DUOL",
-      "date": "2026-10-29",
-      "price": 136.39,
-      "changePct": 0.87,
+      "date": "2026-10-30",
+      "price": 131.59,
+      "changePct": -3.52,
       "currency": "USD"
     },
     {
       "ticker": "DTOL",
-      "date": "2026-10-29",
-      "price": 11.33,
-      "changePct": 2.72,
+      "date": "2026-10-30",
+      "price": 10.76,
+      "changePct": -5.03,
       "currency": "CAD"
     }
   ],
@@ -50,7 +50,7 @@
       "fr",
       "sk"
     ],
-    "parsedItems": 422
+    "parsedItems": 432
   },
   "sourceRuns": [
     {
@@ -152,8 +152,8 @@
     {
       "name": "FRENCHWEB",
       "language": "fr",
-      "ok": false,
-      "parsed": 0
+      "ok": true,
+      "parsed": 30
     },
     {
       "name": "Maddyness",
@@ -170,8 +170,8 @@
     {
       "name": "Gründerszene",
       "language": "de",
-      "ok": true,
-      "parsed": 20
+      "ok": false,
+      "parsed": 0
     },
     {
       "name": "Genbeta",
@@ -210,8 +210,8 @@
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 2,
+  "consecutiveEmptyRuns": 3,
   "sourceErrors": [
-    "Zdroj FRENCHWEB: 503 Service Unavailable"
+    "Zdroj Gründerszene: 403 Forbidden"
   ]
 }

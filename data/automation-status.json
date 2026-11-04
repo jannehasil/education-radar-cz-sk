@@ -1,39 +1,39 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-11-02T18:58:40.925Z",
+  "updatedAt": "2026-11-04T16:41:45.776Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 0,
-    "europe": 0,
+    "europe": 2,
     "region": 0,
     "seduo": 0
   },
   "candidateCounts": {
-    "global": 1,
-    "europe": 0,
-    "region": 1
+    "global": 3,
+    "europe": 2,
+    "region": 0
   },
   "finance": [
     {
       "ticker": "COUR",
-      "date": "2026-10-30",
-      "price": 3.47,
-      "changePct": -25.54,
+      "date": "2026-11-03",
+      "price": 3.71,
+      "changePct": -2.11,
       "currency": "USD"
     },
     {
       "ticker": "DUOL",
-      "date": "2026-10-30",
-      "price": 131.59,
-      "changePct": -3.52,
+      "date": "2026-11-03",
+      "price": 128,
+      "changePct": -5.37,
       "currency": "USD"
     },
     {
       "ticker": "DTOL",
-      "date": "2026-10-30",
-      "price": 10.76,
-      "changePct": -5.03,
+      "date": "2026-11-03",
+      "price": 10.93,
+      "changePct": -0.64,
       "currency": "CAD"
     }
   ],
@@ -205,12 +205,12 @@
     }
   ],
   "translationStats": {
-    "requested": 0,
-    "succeeded": 0,
+    "requested": 2,
+    "succeeded": 2,
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 3,
+  "consecutiveEmptyRuns": 0,
   "sourceErrors": [
     "Zdroj Gründerszene: 403 Forbidden"
   ]

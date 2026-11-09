@@ -1,39 +1,39 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-11-06T16:29:41.663Z",
+  "updatedAt": "2026-11-09T19:20:55.636Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
-    "global": 1,
-    "europe": 1,
+    "global": 0,
+    "europe": 0,
     "region": 0,
     "seduo": 0
   },
   "candidateCounts": {
-    "global": 3,
-    "europe": 1,
+    "global": 0,
+    "europe": 0,
     "region": 0
   },
   "finance": [
     {
       "ticker": "COUR",
-      "date": "2026-11-05",
-      "price": 3.75,
-      "changePct": -3.85,
+      "date": "2026-11-06",
+      "price": 3.74,
+      "changePct": -0.27,
       "currency": "USD"
     },
     {
       "ticker": "DUOL",
-      "date": "2026-11-05",
-      "price": 157.02,
-      "changePct": -2.64,
+      "date": "2026-11-06",
+      "price": 160.42,
+      "changePct": 2.17,
       "currency": "USD"
     },
     {
       "ticker": "DTOL",
-      "date": "2026-11-05",
-      "price": 11.69,
-      "changePct": 1.92,
+      "date": "2026-11-06",
+      "price": 11.64,
+      "changePct": -0.43,
       "currency": "CAD"
     }
   ],
@@ -205,13 +205,13 @@
     }
   ],
   "translationStats": {
-    "requested": 2,
-    "succeeded": 2,
+    "requested": 0,
+    "succeeded": 0,
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 0,
+  "consecutiveEmptyRuns": 1,
   "sourceErrors": [
-    "Zdroj EU-Startups: 403 Forbidden"
+    "Zdroj EU-Startups: The operation was aborted due to timeout"
   ]
 }

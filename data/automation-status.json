@@ -1,47 +1,47 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-11-11T16:47:01.363Z",
+  "updatedAt": "2026-11-13T16:51:16.921Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
-    "global": 0,
+    "global": 1,
     "europe": 0,
     "region": 0,
     "seduo": 0
   },
   "candidateCounts": {
-    "global": 1,
-    "europe": 1,
+    "global": 3,
+    "europe": 0,
     "region": 0
   },
   "finance": [
     {
       "ticker": "COUR",
-      "date": "2026-11-10",
-      "price": 3.76,
-      "changePct": 0.27,
+      "date": "2026-11-12",
+      "price": 3.56,
+      "changePct": -3,
       "currency": "USD"
     },
     {
       "ticker": "DUOL",
-      "date": "2026-11-10",
-      "price": 156.67,
-      "changePct": 1.57,
+      "date": "2026-11-12",
+      "price": 157.42,
+      "changePct": -4.08,
       "currency": "USD"
     },
     {
       "ticker": "DTOL",
-      "date": "2026-11-10",
-      "price": 12.1,
-      "changePct": 1.26,
+      "date": "2026-11-12",
+      "price": 11.97,
+      "changePct": -0.75,
       "currency": "CAD"
     }
   ],
   "selectionStatus": "deterministic-v2",
   "sourceSummary": {
     "configured": 25,
-    "succeeded": 24,
-    "failed": 1,
+    "succeeded": 23,
+    "failed": 2,
     "languages": [
       "cs",
       "de",
@@ -50,7 +50,7 @@
       "fr",
       "sk"
     ],
-    "parsedItems": 442
+    "parsedItems": 502
   },
   "sourceRuns": [
     {
@@ -111,7 +111,7 @@
       "name": "Learning News",
       "language": "en",
       "ok": true,
-      "parsed": 20
+      "parsed": 100
     },
     {
       "name": "FE News",
@@ -170,8 +170,8 @@
     {
       "name": "Gründerszene",
       "language": "de",
-      "ok": true,
-      "parsed": 20
+      "ok": false,
+      "parsed": 0
     },
     {
       "name": "Genbeta",
@@ -205,13 +205,14 @@
     }
   ],
   "translationStats": {
-    "requested": 0,
-    "succeeded": 0,
+    "requested": 1,
+    "succeeded": 1,
     "failed": 0,
     "provider": "MyMemory"
   },
-  "consecutiveEmptyRuns": 2,
+  "consecutiveEmptyRuns": 0,
   "sourceErrors": [
-    "Zdroj EU-Startups: 403 Forbidden"
+    "Zdroj EU-Startups: 403 Forbidden",
+    "Zdroj Gründerszene: 403 Forbidden"
   ]
 }

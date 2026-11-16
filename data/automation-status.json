@@ -1,47 +1,47 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-11-13T16:51:16.921Z",
+  "updatedAt": "2026-11-16T19:03:46.237Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
     "global": 1,
-    "europe": 0,
+    "europe": 1,
     "region": 0,
     "seduo": 0
   },
   "candidateCounts": {
-    "global": 3,
-    "europe": 0,
-    "region": 0
+    "global": 1,
+    "europe": 1,
+    "region": 1
   },
   "finance": [
     {
       "ticker": "COUR",
-      "date": "2026-11-12",
-      "price": 3.56,
-      "changePct": -3,
+      "date": "2026-11-13",
+      "price": 3.51,
+      "changePct": -1.4,
       "currency": "USD"
     },
     {
       "ticker": "DUOL",
-      "date": "2026-11-12",
-      "price": 157.42,
-      "changePct": -4.08,
+      "date": "2026-11-13",
+      "price": 165.31,
+      "changePct": 5.01,
       "currency": "USD"
     },
     {
       "ticker": "DTOL",
-      "date": "2026-11-12",
-      "price": 11.97,
-      "changePct": -0.75,
+      "date": "2026-11-13",
+      "price": 11.79,
+      "changePct": -1.5,
       "currency": "CAD"
     }
   ],
   "selectionStatus": "deterministic-v2",
   "sourceSummary": {
     "configured": 25,
-    "succeeded": 23,
-    "failed": 2,
+    "succeeded": 24,
+    "failed": 1,
     "languages": [
       "cs",
       "de",
@@ -50,7 +50,7 @@
       "fr",
       "sk"
     ],
-    "parsedItems": 502
+    "parsedItems": 522
   },
   "sourceRuns": [
     {
@@ -170,8 +170,8 @@
     {
       "name": "Gründerszene",
       "language": "de",
-      "ok": false,
-      "parsed": 0
+      "ok": true,
+      "parsed": 20
     },
     {
       "name": "Genbeta",
@@ -205,14 +205,13 @@
     }
   ],
   "translationStats": {
-    "requested": 1,
-    "succeeded": 1,
+    "requested": 2,
+    "succeeded": 2,
     "failed": 0,
     "provider": "MyMemory"
   },
   "consecutiveEmptyRuns": 0,
   "sourceErrors": [
-    "Zdroj EU-Startups: 403 Forbidden",
-    "Zdroj Gründerszene: 403 Forbidden"
+    "Zdroj EU-Startups: 403 Forbidden"
   ]
 }

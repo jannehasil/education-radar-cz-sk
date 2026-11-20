@@ -1,39 +1,39 @@
 {
   "schemaVersion": 1,
   "automationVersion": "2.0.0",
-  "updatedAt": "2026-11-18T17:40:54.640Z",
+  "updatedAt": "2026-11-20T17:25:37.155Z",
   "timezone": "Europe/Prague",
   "selectedCounts": {
-    "global": 2,
-    "europe": 1,
+    "global": 0,
+    "europe": 2,
     "region": 0,
     "seduo": 0
   },
   "candidateCounts": {
-    "global": 3,
-    "europe": 1,
+    "global": 1,
+    "europe": 4,
     "region": 0
   },
   "finance": [
     {
       "ticker": "COUR",
-      "date": "2026-11-17",
-      "price": 3.55,
-      "changePct": -1.11,
+      "date": "2026-11-19",
+      "price": 3.45,
+      "changePct": -3.63,
       "currency": "USD"
     },
     {
       "ticker": "DUOL",
-      "date": "2026-11-17",
-      "price": 160.08,
-      "changePct": -5.14,
+      "date": "2026-11-19",
+      "price": 149.38,
+      "changePct": -6.81,
       "currency": "USD"
     },
     {
       "ticker": "DTOL",
-      "date": "2026-11-17",
-      "price": 11.61,
-      "changePct": -1.28,
+      "date": "2026-11-19",
+      "price": 11.56,
+      "changePct": 0.26,
       "currency": "CAD"
     }
   ],
@@ -205,8 +205,8 @@
     }
   ],
   "translationStats": {
-    "requested": 3,
-    "succeeded": 3,
+    "requested": 2,
+    "succeeded": 2,
     "failed": 0,
     "provider": "MyMemory"
   },
